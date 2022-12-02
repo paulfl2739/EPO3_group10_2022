@@ -10,7 +10,7 @@ end ram;
 architecture behaviour of rom is
 begin
     with address select data <=
-        "0010001000001000" when "000", -- ctrl3 register
-        "0010000001001111" when "001", -- ctrl1 register
+        "0010001000001000" when "00", -- ctrl3 register
+        "0010000001001111" when "01", -- ctrl1 register
         "0101001000000000" when others; -- xhigh register
 end behaviour;
