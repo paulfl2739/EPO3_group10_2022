@@ -1,0 +1,19 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity data_controller is
+	port (
+		enable		:	in	std_logic;	--to turn on/off the driver
+		clk		:	in	std_logic;
+		reset		:	in	std_logic;
+		spc_clk		:	in	std_logic;
+		prev_spc_clk	:	in	std_logic;
+		cycle		:	in	std_logic_vector(3 downto 0);  
+		
+		sdi_in		:	out	std_logic	--the sequence of bits sent to the chip for proper readout
+
+	);
+end entity data_controller;
+
+--create fsm which updates at falling edge of spc_clk, like the main fsm. 

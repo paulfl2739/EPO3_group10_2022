@@ -1,0 +1,34 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity spc_clk_testbench is
+end entity spc_clk_testbench;
+
+architecture structural of spc_clk_testbench is
+
+component spc_clockgen is
+	port (
+		clk		:	in	std_logic;
+		reset		:	in	std_logic;
+		
+		spc_clk		:	out	std_logic
+	);
+end component spc_clockgen;
+
+signal clk, reset, spc_clk : std_logic;
+begin
+	clk <=
+		'1' after 0 ns,
+		'0' after 20 ns when clk /= '0' else '1' after 20 ns;
+	reset <=
+		'1' after 0 ns,
+		'0' after 100 ns;
+
+lb1: spc_clockgen port map(
+		clk		=>	clk,
+		reset		=>	reset,
+		spc_clk		=>	spc_clk
+		);
+
+end architecture structural;

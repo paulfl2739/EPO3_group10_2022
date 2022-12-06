@@ -1,0 +1,315 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022
+Eclockgen
+Z1 w1669720590
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/10mhzclockgen.vhd
+Z6 FC:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/10mhzclockgen.vhd
+l0
+L5
+Vb6Sl@4z?kKTS?]Y@LG5O30
+!s100 _@Kc:PV8SlbWodB7W?bMS1
+Z7 OL;C;10.6g;65
+32
+Z8 !s110 1670315128
+!i10b 1
+Z9 !s108 1670315128.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/10mhzclockgen.vhd|
+Z11 !s107 C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/10mhzclockgen.vhd|
+!i113 0
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehaviour
+R2
+R3
+R4
+DEx4 work 8 clockgen 0 22 b6Sl@4z?kKTS?]Y@LG5O30
+l20
+L14
+VD5IkVnA4k8828c:hGNEFA0
+!s100 3a6hNI9X0TR0P4XM>HJO?3
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Edata_controller
+w1670313891
+R2
+R3
+R4
+R0
+8C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spi_data_controller.vhd
+FC:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spi_data_controller.vhd
+l0
+L5
+V3D0mWZ51:RgZh_1^GYBM<0
+!s100 7b8G5z5jzamI]>^zlj6dF2
+R7
+32
+R8
+!i10b 1
+R9
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spi_data_controller.vhd|
+!s107 C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spi_data_controller.vhd|
+!i113 0
+R12
+R13
+Edriver
+Z14 w1669996280
+R2
+R3
+R4
+R0
+Z15 8C:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\main.vhd
+Z16 FC:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\main.vhd
+l0
+L5
+VJUCTjOJdcTjin_KL13mOO2
+!s100 `8P?o[Fzj9BAl:cO=0e_<1
+R7
+33
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|C:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\main.vhd|
+Z18 !s107 C:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\main.vhd|
+!i113 0
+Z19 o-work work -2008 -explicit
+R13
+Abehaviour
+R2
+R3
+R4
+DEx4 work 6 driver 0 22 JUCTjOJdcTjin_KL13mOO2
+33
+R8
+l32
+L23
+VPhWhJK6P1A09dWgW3FJmL2
+!s100 I1z:l`_7f]D:`h4YOnzg;2
+R7
+!i10b 1
+R9
+R17
+R18
+!i113 0
+R19
+R13
+Eedgedetector
+Z20 w1669732144
+R3
+R4
+R0
+Z21 8C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/falling_edge_spc.vhd
+Z22 FC:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/falling_edge_spc.vhd
+l0
+L4
+VY=Gl_ahB[<GNi^o^24bR`3
+!s100 DIfU^M_o1MORPfQm7^hhJ3
+R7
+32
+R8
+!i10b 1
+R9
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/falling_edge_spc.vhd|
+Z24 !s107 C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/falling_edge_spc.vhd|
+!i113 0
+R12
+R13
+Aedgedetector_rtl
+R3
+R4
+DEx4 work 12 edgedetector 0 22 Y=Gl_ahB[<GNi^o^24bR`3
+32
+R8
+l16
+L12
+V;c]KWCMP]O1N:De4P64aA2
+!s100 hkQOl:8BY^XV?R:U`UKTK1
+R7
+!i10b 1
+R9
+R23
+R24
+!i113 0
+R12
+R13
+Ehigh_edgedetector
+Z25 w1669985654
+R3
+R4
+R0
+Z26 8C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/rising_edge_spc.vhd
+Z27 FC:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/rising_edge_spc.vhd
+l0
+L4
+V>_TR<BM1?1DX9l;HkL`EN3
+!s100 58Td^VaKR4TU?4o2]m8<S1
+R7
+32
+R8
+!i10b 1
+R9
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/rising_edge_spc.vhd|
+Z29 !s107 C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/rising_edge_spc.vhd|
+!i113 0
+R12
+R13
+Ahigh_edgedetector_rtl
+R3
+R4
+DEx4 work 17 high_edgedetector 0 22 >_TR<BM1?1DX9l;HkL`EN3
+32
+R8
+l16
+L12
+VLYNGT;PKemX48JKX;BXO42
+!s100 kzDnQo2o;[dEEYK35:<ao0
+R7
+!i10b 1
+R9
+R28
+R29
+!i113 0
+R12
+R13
+Emain_testbench
+Z30 w1669996367
+R2
+R3
+R4
+R0
+Z31 8C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/main_tb.vhd
+Z32 FC:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/main_tb.vhd
+l0
+L5
+V3jOXdkjM`c@B5;;<7_92>3
+!s100 FSY`31@GXhz3NTc?N7;V72
+R7
+32
+R8
+!i10b 1
+R9
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/main_tb.vhd|
+Z34 !s107 C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/main_tb.vhd|
+!i113 0
+R12
+R13
+Astructural
+R2
+R3
+R4
+DEx4 work 14 main_testbench 0 22 3jOXdkjM`c@B5;;<7_92>3
+32
+R8
+l57
+L8
+VMZE@b`222kMzH^kzRSl1]2
+!s100 RUbL^:`3oO1NnZ?Tf0_1[2
+R7
+!i10b 1
+R9
+R33
+R34
+!i113 0
+R12
+R13
+Espc_clk_testbench
+Z35 w1669728598
+R2
+R3
+R4
+R0
+Z36 8C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen_tb.vhd
+Z37 FC:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen_tb.vhd
+l0
+L5
+V^eZ28JNjJYiS^fZL8NVPT0
+!s100 6l`dd947aTEjLGf3fEhcJ0
+R7
+32
+R8
+!i10b 1
+R9
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen_tb.vhd|
+Z39 !s107 C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen_tb.vhd|
+!i113 0
+R12
+R13
+Astructural
+R2
+R3
+R4
+DEx4 work 17 spc_clk_testbench 0 22 ^eZ28JNjJYiS^fZL8NVPT0
+l20
+L8
+VCAKklnCDcL:0MDm4:hRR[3
+!s100 KH`R_3BGL0dd5ie_X@ISU0
+R7
+32
+R8
+!i10b 1
+R9
+R38
+R39
+!i113 0
+R12
+R13
+Espc_clockgen
+Z40 w1669994827
+R2
+R3
+R4
+R0
+Z41 8C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen.vhd
+Z42 FC:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen.vhd
+l0
+L5
+V01<amQ>MdS=iaoBQ6B8?;0
+!s100 _Dh8]@FZT^WgXPMWU[Z_j0
+R7
+32
+R8
+!i10b 1
+R9
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen.vhd|
+Z44 !s107 C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen.vhd|
+!i113 0
+R12
+R13
+Abehaviour
+R2
+R3
+R4
+DEx4 work 12 spc_clockgen 0 22 01<amQ>MdS=iaoBQ6B8?;0
+32
+R8
+l21
+L14
+VL:Ul`e9kK04OGoA6c89k`2
+!s100 PkbJeO5?>3Q2YbPAKiloL2
+R7
+!i10b 1
+R9
+R43
+R44
+!i113 0
+R12
+R13

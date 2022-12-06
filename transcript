@@ -1,0 +1,40 @@
+# Compile of 10mhzclockgen.vhd was successful.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd failed with 19 errors.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of rom.vhd failed with 1 errors.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# 9 compiles, 3 failed with 21 errors.
+# Compile of 10mhzclockgen.vhd was successful.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of rom.vhd failed with 1 errors.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# 9 compiles, 2 failed with 2 errors.
+vsim -novopt work.main_testbench
+# vsim -novopt work.main_testbench 
+# Start time: 09:25:40 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+add wave -r /*
+run 20000 ns
