@@ -2,6 +2,8 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+-- bad implementation of ROM.  NOT USED --
+
 entity data_read is
     port(spi_clk : in  std_logic;
          s1, s0  : in  std_logic;

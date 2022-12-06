@@ -4,10 +4,10 @@ use ieee.numeric_std.all;
 
 entity spc_clockgen is
 	port (
-		clk		:	in	std_logic;
+		clk		:	in	std_logic; -- 25 MHz
 		reset		:	in	std_logic;
 		
-		spc_clk		:	out	std_logic
+		spc_clk		:	out	std_logic --12.5 MHz
 	);
 end entity spc_clockgen;
 

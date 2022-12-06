@@ -6,7 +6,6 @@ entity rom is
     port(address : in  std_logic_vector(1 downto 0);
          data    : out std_logic_vector(15 downto 0));
 end ram;
-
 architecture behaviour of rom is
 begin
     with address select data <=
