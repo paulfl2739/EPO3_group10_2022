@@ -2,9 +2,14 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+-- NOT USED --
+
+
+
+
 entity clockgen is
 	port (
-		clk		:	in	std_logic;
+		clk		:	in	std_logic; -- 25 MHz
 		reset		:	in	std_logic;
 		
 		tick10mhz	:	out	std_logic
