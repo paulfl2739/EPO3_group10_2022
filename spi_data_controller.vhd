@@ -2,29 +2,28 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity data_controller is
+entity spi_data_controller is
 	port (
-		enable		:	in	std_logic;	--to turn on/off the driver
 		clk		:	in	std_logic;
 		reset		:	in	std_logic;
-		spc_clk		:	in	std_logic;
-		prev_spc_clk	:	in	std_logic;
-		cycle		:	in	std_logic_vector(3 downto 0);  
+		start_switch	:	in	std_logic;
 		
-		sdi_in		:	out	std_logic	--the sequence of bits sent to the chip for proper readout
+		data_ready	:	in	std_logic; --output from spi driver when new data can be sent/read
+		drdy		:	in	std_logic; --output from gyro chip, when chip has calculated new data this pin is pulled high.
 
+		enable		:	out	std_logic;	--to turn on/off the drive
+		sdi_select	:	out	std_logic_vector(2 downto 0)
 	);
-end entity data_controller;
+end entity spi_data_controller;
 
-architecture behaviour of data_controller is
+architecture behaviour of spi_data_controller is
 
-type configuration_state is (reset_state, start_transmission
-
---create fsm which updates at falling edge of spc_clk, like the main fsm. 
+type configuration_state is (reset_state, wait_for_start, ctrl_3, ctrl_3_wait, low_odr, low_odr_wait, ctrl_1, ctrl_1_wait, wait_for_drdy, x_high, x_high_wait);
+signal state, new_state:				configuration_state;
 
 begin
 
-	process(clk, reset, spc_clk) 
+	process(clk, reset) 
 	begin
 		if (reset = '1') then
 			state		<=	reset_state;
@@ -36,67 +35,127 @@ begin
 		end if;
 	end process;
 
-	process(state, enable, spc_clk, edge, count, prev_spc_clk, sdi_in)
+	process(state, data_ready, drdy, start_switch)
 	begin
 		case state is
 			when reset_state =>
-				cs		<=	'1';
-				spc		<=	'1';
+				enable		<=	'0';
+				sdi_select	<=	"001"; --ctrl3 bit sequence is selected 
+		
+				new_state	<=	wait_for_start;
 
-				sdi		<=	'0';
-				new_count 	<= 	count; 
+			when wait_for_start =>
+				enable		<=	'0';
+				sdi_select	<=	"001";
 			
---s
-			if (enable = '1' and (spc_clk = '0' and prev_spc_clk = '1')) then--remember spc clk value, old value 1 new value 0 
-
-				new_state	<=	start_transmission; --go to start transmission when spc_clk 1 -> 0, 
+			if (start_switch = '1') then
+				new_state	<=	ctrl_3;
 			else
-				new_state	<=	reset_state;
-			end if;
-
-
-			when start_transmission =>
-				cs	<=	'0';
-				spc	<=	spc_clk;
-
-				sdi	<=	'0';
-			
-			if (edge = '1') then --this will increment the count, every time edge equals zero in this state, edge is used as it only becomes zero once in this state. 
-				new_count 	<= 	count + 1; 
-			else
-				new_count	<=	count;
-			end if;
-
-			
-			if (enable = '1' and (spc_clk = '0' and prev_spc_clk = '1')) then
-				new_state	<=	ms_state;
-
-			else
-				new_state	<=	start_transmission;
+				new_state	<=	wait_for_start;
 			end if;
 
 				
 
-			when ms_state =>
-				cs	<=	'0';
-				spc	<=	spc_clk;
+			when ctrl_3 =>
+				enable		<=	'1';
+				sdi_select	<=	"001";
 
-				sdi	<=	'0';
-			if (enable = '1' and (spc_clk = '0' and prev_spc_clk = '1')) then
-				new_state	<=	adress_5;
+
+			if (data_ready = '0') then
+				new_state	<=	ctrl_3_wait;
 			else
-				new_state	<=	ms_state;
+				new_state	<=	ctrl_3;
 			end if;
 
+			when ctrl_3_wait =>
+				enable		<=	'0';
+				sdi_select	<=	"001";
 
-			when adress_5 =>
-				cs	<=	'0';
-				spc	<=	spc_clk;
 
-				sdi	<=	'1';
-			
-				if (enable = '1' and (spc_clk = '0' and prev_spc_clk = '1')) then
-					new_state	<=	adress_4;
-				else
-					new_state	<=	adress_5;
-				end if;
+			if (data_ready = '1') then
+				new_state	<=	low_odr;
+			else
+				new_state	<=	ctrl_3_wait;
+			end if;
+
+			when low_odr =>
+				enable		<=	'1';
+				sdi_select	<=	"101";
+
+
+			if (data_ready = '0') then
+				new_state	<=	low_odr_wait;
+			else
+				new_state	<=	low_odr;
+			end if;
+
+			when low_odr_wait =>
+				enable		<=	'0';
+				sdi_select	<=	"101";
+
+
+			if (data_ready = '1') then
+				new_state	<=	ctrl_1;
+			else
+				new_state	<=	low_odr_wait;
+			end if;
+
+			when ctrl_1 =>
+				enable		<=	'1';
+				sdi_select	<=	"010";
+
+
+			if (data_ready = '0') then
+				new_state	<=	ctrl_1_wait;
+			else
+				new_state	<=	ctrl_1;
+			end if;
+
+			when ctrl_1_wait =>
+				enable		<=	'0';
+				sdi_select	<=	"010";
+
+
+			if (data_ready = '1') then
+				new_state	<=	wait_for_drdy;
+			else
+				new_state	<=	ctrl_1_wait;
+			end if;
+
+			when wait_for_drdy =>
+				enable		<=	'0';
+				sdi_select	<=	"100";
+
+
+			if (data_ready = '1' and drdy = '1') then
+				new_state	<=	x_high;
+			else
+				new_state	<=	wait_for_drdy;
+			end if;
+
+			when x_high =>
+				enable		<=	'1';
+				sdi_select	<=	"100";
+
+
+			if (data_ready = '0') then
+				new_state	<=	x_high_wait;
+			else
+				new_state	<=	x_high;
+			end if;
+
+			when x_high_wait =>
+				enable		<=	'0';
+				sdi_select	<=	"100";
+
+
+			if (data_ready = '1') then
+				new_state	<=	wait_for_drdy;
+			else
+				new_state	<=	x_high_wait;
+			end if;
+		end case;
+	end process;
+end architecture behaviour;
+
+		

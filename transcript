@@ -38,3 +38,1135 @@ vsim -novopt work.main_testbench
 # Loading work.high_edgedetector(high_edgedetector_rtl)
 add wave -r /*
 run 20000 ns
+# Compile of rom.vhd failed with 2 errors.
+# Compile of rom.vhd failed with 2 errors.
+# Compile of storage.vhd failed with 2 errors.
+# Compile of storage.vhd was successful with warnings.
+# Compile of storage.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of main_tb.vhd failed with 2 errors.
+# Compile of main_tb.vhd failed with 2 errors.
+# Compile of main_tb.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of storage.vhd was successful.
+# Compile of 10mhzclockgen.vhd was successful.
+# Compile of main.vhd was successful.
+vsim -novopt work.main_testbench
+# End time: 10:34:48 on Dec 06,2022, Elapsed time: 1:09:08
+# Errors: 0, Warnings: 1
+# vsim -novopt work.main_testbench 
+# Start time: 10:34:48 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Loading work.edgedetector(edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+add wave -r /*
+run 20000 ns
+# Compile of 10mhzclockgen.vhd was successful.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 9 compiles, 1 failed with 1 error.
+vsim -novopt work.main_testbench
+# End time: 10:40:18 on Dec 06,2022, Elapsed time: 0:05:30
+# Errors: 0, Warnings: 1
+# vsim -novopt work.main_testbench 
+# Start time: 10:40:18 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+add wave -r /*
+run 20000 ns
+# Compile of 10mhzclockgen.vhd was successful.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 9 compiles, 1 failed with 1 error.
+vsim -novopt work.main_testbench
+# End time: 10:47:07 on Dec 06,2022, Elapsed time: 0:06:49
+# Errors: 0, Warnings: 1
+# vsim -novopt work.main_testbench 
+# Start time: 10:47:07 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+add wave -r /*
+run 20000 ns
+# Compile of 10mhzclockgen.vhd was successful.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 9 compiles, 1 failed with 1 error.
+# Compile of 10mhzclockgen.vhd was successful.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 9 compiles, 1 failed with 1 error.
+vsim -novopt work.main_testbench
+# End time: 10:52:52 on Dec 06,2022, Elapsed time: 0:05:45
+# Errors: 0, Warnings: 1
+# vsim -novopt work.main_testbench 
+# Start time: 10:52:52 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+add wave -r /*
+run 20000 ns
+# Compile of 10mhzclockgen.vhd was successful.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd failed with 2 errors.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 9 compiles, 2 failed with 3 errors.
+# Compile of 10mhzclockgen.vhd was successful.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd failed with 1 errors.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 9 compiles, 2 failed with 2 errors.
+# Compile of 10mhzclockgen.vhd was successful.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 9 compiles, 1 failed with 1 error.
+vsim -novopt work.main_testbench
+# End time: 11:04:31 on Dec 06,2022, Elapsed time: 0:11:39
+# Errors: 0, Warnings: 1
+# vsim -novopt work.main_testbench 
+# Start time: 11:04:31 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+add wave -r /*
+run 20000 ns
+# Compile of 10mhzclockgen.vhd was successful.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 9 compiles, 1 failed with 1 error.
+vsim -novopt work.main_testbench
+# End time: 11:07:16 on Dec 06,2022, Elapsed time: 0:02:45
+# Errors: 0, Warnings: 1
+# vsim -novopt work.main_testbench 
+# Start time: 11:07:16 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+add wave -r /*
+run 20000n s
+# Invalid time value: 20000n s
+run 20000 ns
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+vsim -novopt work.main_testbench
+# End time: 11:38:45 on Dec 06,2022, Elapsed time: 0:31:29
+# Errors: 1, Warnings: 1
+# vsim -novopt work.main_testbench 
+# Start time: 11:38:45 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+add wave -r /*
+run 20000 ns
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+vsim -novopt work.main_testbench
+# End time: 11:42:15 on Dec 06,2022, Elapsed time: 0:03:30
+# Errors: 0, Warnings: 1
+# vsim -novopt work.main_testbench 
+# Start time: 11:42:16 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+add wave -r /*
+wrun 20000 ns
+# invalid command name "wrun"
+run 20000 ns
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd failed with 2 errors.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 8 compiles, 2 failed with 3 errors.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd failed with 2 errors.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 8 compiles, 2 failed with 3 errors.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd failed with 2 errors.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 8 compiles, 2 failed with 3 errors.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+vsim -novopt work.main_testbench
+# End time: 11:46:59 on Dec 06,2022, Elapsed time: 0:04:43
+# Errors: 1, Warnings: 1
+# vsim -novopt work.main_testbench 
+# Start time: 11:46:59 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+add wave -r /*
+run 20000 ns
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+vsim -novopt work.main_testbench
+# End time: 11:57:23 on Dec 06,2022, Elapsed time: 0:10:24
+# Errors: 0, Warnings: 1
+# vsim -novopt work.main_testbench 
+# Start time: 11:57:23 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# ** Fatal: (vsim-3817) Port "sdo" of entity "driver" is not in the component being instantiated.
+#    Time: 0 ns  Iteration: 0  Instance: /main_testbench/lb2 File: C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/main.vhd Line: 14
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 11:57:23 on Dec 06,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd failed with 2 errors.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 8 compiles, 2 failed with 3 errors.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd failed with 2 errors.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 8 compiles, 2 failed with 3 errors.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd failed with 3 errors.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 8 compiles, 2 failed with 4 errors.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+vsim -novopt work.main_testbench
+# vsim -novopt work.main_testbench 
+# Start time: 12:01:38 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+# ** Warning: (vsim-8683) Uninitialized out port /main_testbench/lb2/gyro_data(7 downto 0) has no driver.
+# This port will contribute value (8'hXX) to the signal network.
+add wave -r /*
+run 20000 ns
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+vsim -novopt work.main_testbench
+# End time: 12:06:06 on Dec 06,2022, Elapsed time: 0:04:28
+# Errors: 0, Warnings: 2
+# vsim -novopt work.main_testbench 
+# Start time: 12:06:06 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+add wave -r /*
+run 20000 ns
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+vsim -novopt work.main_testbench
+# End time: 12:27:07 on Dec 06,2022, Elapsed time: 0:21:01
+# Errors: 0, Warnings: 1
+# vsim -novopt work.main_testbench 
+# Start time: 12:27:07 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+add wave -r /*
+run 20000 ns
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+vsim -novopt work.main_testbench
+# End time: 13:49:06 on Dec 06,2022, Elapsed time: 1:21:59
+# Errors: 0, Warnings: 1
+# vsim -novopt work.main_testbench 
+# Start time: 13:49:06 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+add wave -r /*
+run 20000 ns
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+vsim -novopt work.main_testbench
+# End time: 13:50:28 on Dec 06,2022, Elapsed time: 0:01:22
+# Errors: 0, Warnings: 1
+# vsim -novopt work.main_testbench 
+# Start time: 13:50:28 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+add wave -r /*
+run 20000 ns
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+vsim -novopt work.main_testbench
+# End time: 14:04:07 on Dec 06,2022, Elapsed time: 0:13:39
+# Errors: 0, Warnings: 1
+# vsim -novopt work.main_testbench 
+# Start time: 14:04:07 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+add wave -r /*
+run 20000 ns
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+vsim -novopt work.main_testbench
+# End time: 14:13:02 on Dec 06,2022, Elapsed time: 0:08:55
+# Errors: 0, Warnings: 1
+# vsim -novopt work.main_testbench 
+# Start time: 14:13:02 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+add wave -r /*
+run 20000 ns
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+vsim -novopt work.main_testbench
+# End time: 14:14:00 on Dec 06,2022, Elapsed time: 0:00:58
+# Errors: 0, Warnings: 1
+# vsim -novopt work.main_testbench 
+# Start time: 14:14:00 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+add wave -r /*
+run 20000 ns
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 20 errors.
+# Compile of storage.vhd was successful.
+# 8 compiles, 1 failed with 20 errors.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 4 errors.
+# Compile of storage.vhd was successful.
+# 8 compiles, 1 failed with 4 errors.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd failed with 1 errors.
+# Compile of storage.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd was successful.
+# Compile of storage.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd was successful.
+# Compile of storage.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd failed with 4 errors.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd was successful.
+# Compile of storage.vhd was successful.
+# 8 compiles, 1 failed with 4 errors.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd failed with 3 errors.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd was successful.
+# Compile of storage.vhd was successful.
+# 8 compiles, 1 failed with 3 errors.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd failed with 2 errors.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd was successful.
+# Compile of storage.vhd was successful.
+# 8 compiles, 1 failed with 2 errors.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd was successful.
+# Compile of storage.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd was successful.
+# Compile of storage.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -novopt work.main_testbench
+# End time: 15:17:24 on Dec 06,2022, Elapsed time: 1:03:24
+# Errors: 0, Warnings: 1
+# vsim -novopt work.main_testbench 
+# Start time: 15:17:24 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_data_controller(behaviour)
+# Loading work.spi_data_controller(behaviour)
+add wave -r /*
+run 20000 ns
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd was successful.
+# Compile of storage.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -novopt work.main_testbench
+# End time: 15:19:33 on Dec 06,2022, Elapsed time: 0:02:09
+# Errors: 0, Warnings: 1
+# vsim -novopt work.main_testbench 
+# Start time: 15:19:33 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_data_controller(behaviour)
+# Loading work.spi_data_controller(behaviour)
+add wave -r /*
+run 20000 ns
+run 20000 ns
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd was successful.
+# Compile of storage.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+run 60000 ns
+# Causality operation skipped due to absence of debug database file
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd was successful.
+# Compile of storage.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -novopt work.main_testbench
+# End time: 15:56:11 on Dec 06,2022, Elapsed time: 0:36:38
+# Errors: 17, Warnings: 2
+# vsim -novopt work.main_testbench 
+# Start time: 15:56:11 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_data_controller(behaviour)
+# Loading work.spi_data_controller(behaviour)
+add wave -r /*
+run 60000 ns
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd was successful.
+# Compile of storage.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -novopt work.main_testbench
+# End time: 15:58:36 on Dec 06,2022, Elapsed time: 0:02:25
+# Errors: 0, Warnings: 1
+# vsim -novopt work.main_testbench 
+# Start time: 15:58:36 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_data_controller(behaviour)
+# Loading work.spi_data_controller(behaviour)
+add wave -r /*
+run 60000 ns
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd was successful.
+# Compile of storage.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -novopt work.main_testbench
+# End time: 16:03:50 on Dec 06,2022, Elapsed time: 0:05:14
+# Errors: 0, Warnings: 1
+# vsim -novopt work.main_testbench 
+# Start time: 16:03:50 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_data_controller(behaviour)
+# Loading work.spi_data_controller(behaviour)
+add wave -r /*
+run 60000 ns
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd was successful.
+# Compile of storage.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -novopt work.main_testbench
+# End time: 16:09:07 on Dec 06,2022, Elapsed time: 0:05:17
+# Errors: 0, Warnings: 1
+# vsim -novopt work.main_testbench 
+# Start time: 16:09:07 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_data_controller(behaviour)
+# Loading work.spi_data_controller(behaviour)
+add wave -r /*
+run 60000 ns
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd was successful.
+# Compile of storage.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -novopt work.main_testbench
+# End time: 16:15:35 on Dec 06,2022, Elapsed time: 0:06:28
+# Errors: 0, Warnings: 1
+# vsim -novopt work.main_testbench 
+# Start time: 16:15:35 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_data_controller(behaviour)
+# Loading work.spi_data_controller(behaviour)
+add wave -r /*
+run 60000 ns
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd failed with 3 errors.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd was successful.
+# Compile of storage.vhd was successful.
+# 8 compiles, 1 failed with 3 errors.
+# Compile of falling_edge_spc.vhd was successful.
+# Compile of main.vhd was successful.
+# Compile of main_tb.vhd was successful.
+# Compile of rising_edge_spc.vhd was successful.
+# Compile of spcgen.vhd was successful.
+# Compile of spcgen_tb.vhd was successful.
+# Compile of spi_data_controller.vhd was successful.
+# Compile of storage.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -novopt work.main_testbench
+# End time: 16:54:03 on Dec 06,2022, Elapsed time: 0:38:28
+# Errors: 18, Warnings: 1
+# vsim -novopt work.main_testbench 
+# Start time: 16:54:03 on Dec 06,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.main_testbench(structural)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_testbench(structural)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spc_clockgen(behaviour)
+# Loading work.spc_clockgen(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.driver(behaviour)
+# Loading work.driver(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.edgedetector(edgedetector_rtl)
+# Loading work.edgedetector(edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.high_edgedetector(high_edgedetector_rtl)
+# Loading work.high_edgedetector(high_edgedetector_rtl)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_rom(behaviour)
+# Loading work.spi_rom(behaviour)
+# Refreshing C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/work.spi_data_controller(behaviour)
+# Loading work.spi_data_controller(behaviour)
+add wave -r /*
+run 60000 ns
+# End time: 16:56:36 on Dec 06,2022, Elapsed time: 0:02:33
+# Errors: 0, Warnings: 1
