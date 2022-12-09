@@ -1,0 +1,26 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity edgedetector is
+   port (
+      clk 	     :in std_logic;
+      spc_clk        :in std_logic;
+      edge 	     :out std_logic
+   );
+end edgedetector;
+
+architecture edgedetector_rtl of edgedetector is
+
+   signal reg1 :std_logic;
+
+begin
+reg: process(clk)
+begin
+   if (clk'event and clk = '1') then
+      reg1  <= spc_clk;
+  end if;
+end process;
+
+edge <= (reg1 and (not spc_clk));
+
+end edgedetector_rtl;

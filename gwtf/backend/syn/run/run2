@@ -1,0 +1,1 @@
+ssh -XY noakant@ce-epo3-cad.ewi.tudelft.nl cd /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf/backend/syn/run\; genus -files ../tcl/syn2.tcl
