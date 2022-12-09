@@ -1,0 +1,50 @@
+configuration driver_synthesised_cfg of driver is
+   for synthesised
+      -- skipping lhqd1bwp7t because it is not a local entity
+      -- skipping or3d4bwp7t because it is not a local entity
+      -- skipping cknd4bwp7t because it is not a local entity
+      -- skipping dfcnqd1bwp7t because it is not a local entity
+      -- skipping oai221d0bwp7t because it is not a local entity
+      -- skipping lnd1bwp7t because it is not a local entity
+      -- skipping oai211d1bwp7t because it is not a local entity
+      -- skipping lhd1bwp7t because it is not a local entity
+      -- skipping aoi221d0bwp7t because it is not a local entity
+      -- skipping ind4d0bwp7t because it is not a local entity
+      -- skipping aoi21d0bwp7t because it is not a local entity
+      -- skipping ao211d0bwp7t because it is not a local entity
+      -- skipping ind2d0bwp7t because it is not a local entity
+      -- skipping maoi22d0bwp7t because it is not a local entity
+      -- skipping ao221d0bwp7t because it is not a local entity
+      -- skipping oai21d0bwp7t because it is not a local entity
+      -- skipping ioa21d0bwp7t because it is not a local entity
+      -- skipping invd0bwp7t because it is not a local entity
+      -- skipping oai211d0bwp7t because it is not a local entity
+      -- skipping ao21d0bwp7t because it is not a local entity
+      -- skipping oai22d0bwp7t because it is not a local entity
+      -- skipping aoi31d0bwp7t because it is not a local entity
+      -- skipping oai32d0bwp7t because it is not a local entity
+      -- skipping oai31d0bwp7t because it is not a local entity
+      -- skipping oa21d0bwp7t because it is not a local entity
+      -- skipping nd2d0bwp7t because it is not a local entity
+      -- skipping inr2d0bwp7t because it is not a local entity
+      -- skipping inr2xd0bwp7t because it is not a local entity
+      -- skipping ind3d0bwp7t because it is not a local entity
+      -- skipping ckan2d1bwp7t because it is not a local entity
+      -- skipping oai222d0bwp7t because it is not a local entity
+      -- skipping aoi22d0bwp7t because it is not a local entity
+      -- skipping ha1d0bwp7t because it is not a local entity
+      -- skipping an3d0bwp7t because it is not a local entity
+      -- skipping aoi222d0bwp7t because it is not a local entity
+      -- skipping nr2d0bwp7t because it is not a local entity
+      -- skipping or2d4bwp7t because it is not a local entity
+      -- skipping aoi32d0bwp7t because it is not a local entity
+      -- skipping nd2d1bwp7t because it is not a local entity
+      -- skipping aoi211d0bwp7t because it is not a local entity
+      -- skipping nr2xd0bwp7t because it is not a local entity
+      -- skipping cknd0bwp7t because it is not a local entity
+      -- skipping invd4bwp7t because it is not a local entity
+      -- skipping dfcnd1bwp7t because it is not a local entity
+      -- skipping xnr2d1bwp7t because it is not a local entity
+      -- skipping dfcnd0bwp7t because it is not a local entity
+   end for;
+end driver_synthesised_cfg;

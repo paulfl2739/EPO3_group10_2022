@@ -1,0 +1,193 @@
+(DELAYFILE
+  (SDFVERSION  "OVI 3.0")
+  (DESIGN      "spi_rom")
+  (DATE        "Thu Dec 08 15:53:31 CET 2022")
+  (VENDOR      "Cadence, Inc.")
+  (PROGRAM     "Genus(TM) Synthesis Solution")
+  (VERSION     "17.11-s014_1")
+  (DIVIDER     .)
+  (VOLTAGE     ::1.62)
+  (PROCESS     "::1.0")
+  (TEMPERATURE ::125.0)
+  (TIMESCALE   1ps)
+  (CELL
+     (CELLTYPE "OR2D4BWP7T")
+     (INSTANCE g84)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (IOPATH A1 Z (::1433) (::1116))
+          (IOPATH A2 Z (::1307) (::847))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OR2D4BWP7T")
+     (INSTANCE g82)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (IOPATH A1 Z (::1433) (::1116))
+          (IOPATH A2 Z (::1499) (::1057))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OR3D4BWP7T")
+     (INSTANCE g85)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT A3 (::0.0))
+          (IOPATH A3 Z (::1443) (::1274))
+          (IOPATH A1 Z (::1378) (::1009))
+          (IOPATH A2 Z (::1499) (::1235))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OR2D4BWP7T")
+     (INSTANCE g83)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (IOPATH A1 Z (::1432) (::1114))
+          (IOPATH A2 Z (::1307) (::844))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CKAN2D4BWP7T")
+     (INSTANCE g87)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (IOPATH A1 Z (::1511) (::1509))
+          (IOPATH A2 Z (::1311) (::1262))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INR2D0BWP7T")
+     (INSTANCE g88)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT B1 (::0.0))
+          (IOPATH A1 ZN (::341) (::556))
+          (IOPATH B1 ZN (::262) (::134))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CKAN2D8BWP7T")
+     (INSTANCE g89)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (IOPATH A1 Z (::1493) (::1514))
+          (IOPATH A2 Z (::1305) (::1272))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CKAN2D4BWP7T")
+     (INSTANCE g86)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (IOPATH A1 Z (::1356) (::1249))
+          (IOPATH A2 Z (::1291) (::1261))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CKAN2D4BWP7T")
+     (INSTANCE g91)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (IOPATH A1 Z (::1339) (::1266))
+          (IOPATH A2 Z (::1293) (::1255))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NR2D0BWP7T")
+     (INSTANCE g90)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (IOPATH A1 ZN (::253) (::105))
+          (IOPATH A2 ZN (::265) (::130))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CKAN2D4BWP7T")
+     (INSTANCE g93)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (IOPATH A1 Z (::1317) (::1257))
+          (IOPATH A2 Z (::1308) (::1273))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INR2D0BWP7T")
+     (INSTANCE g92)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT B1 (::0.0))
+          (IOPATH A1 ZN (::446) (::255))
+          (IOPATH B1 ZN (::354) (::140))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVD0BWP7T")
+     (INSTANCE g96)
+     (DELAY
+        (ABSOLUTE
+          (PORT I (::0.0))
+          (IOPATH I ZN (::133) (::110))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVD0BWP7T")
+     (INSTANCE g95)
+     (DELAY
+        (ABSOLUTE
+          (PORT I (::0.0))
+          (IOPATH I ZN (::125) (::100))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVD0BWP7T")
+     (INSTANCE g94)
+     (DELAY
+        (ABSOLUTE
+          (PORT I (::0.0))
+          (IOPATH I ZN (::173) (::141))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "TIELBWP7T")
+     (INSTANCE tie_0_cell)
+  )
+)

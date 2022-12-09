@@ -1,0 +1,575 @@
+Library vendor : Model Technology
+Maximum unnamed designs : 3
+ENTITY driver
+    Source modified time: Thu Dec  8 15:29:06 2022
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+    HDL source file: VHDL/driver.vhd
+    Source file: VHDL/driver.vhd
+    Start location: VHDL/driver.vhd:5
+    Version string: LRZf6ZDVfQ?B=EF=G2AAZ2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 15:29:06 2022
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY routed
+    Source modified time: Thu Dec  8 15:37:46 2022
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: E work driver LRZf6ZDVfQ?B=EF=G2AAZ2
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/driver_PAR.vhd
+    Source file: VHDL/driver_PAR.vhd
+    Start location: VHDL/driver_PAR.vhd:7
+    Version string: K5e5I6De7jMQ83b<6o_QN3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 15:38:59 2022
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+  ARCHITECTURE BODY synthesised
+    Source modified time: Thu Dec  8 15:33:55 2022
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: E work driver LRZf6ZDVfQ?B=EF=G2AAZ2
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/driver_SYN.vhd
+    Source file: VHDL/driver_SYN.vhd
+    Start location: VHDL/driver_SYN.vhd:7
+    Version string: e;XJEDAFmcThb8_WP_9@?2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 15:35:29 2022
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+  ARCHITECTURE BODY behaviour
+    Source modified time: Thu Dec  8 15:29:40 2022
+    Depends on: E work driver LRZf6ZDVfQ?B=EF=G2AAZ2
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/driver-behaviour.vhd
+    Source file: VHDL/driver-behaviour.vhd
+    Start location: VHDL/driver-behaviour.vhd:5
+    Version string: FA7gfC64MdF^6Y@WL1AnP0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 15:29:40 2022
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+VHDL CONFIGURATION driver_behaviour_cfg
+    Configuration applies to entity: driver
+    Block configuration applies to architecture: behaviour
+    Depends on: A work driver behaviour FA7gfC64MdF^6Y@WL1AnP0
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work driver LRZf6ZDVfQ?B=EF=G2AAZ2
+    Source modified time: Thu Dec  8 15:29:43 2022
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+    HDL source file: VHDL/driver_behaviour_cfg.vhd
+    Source file: VHDL/driver_behaviour_cfg.vhd
+    Start location: VHDL/driver_behaviour_cfg.vhd:1
+    Version string: MNUYD[O1S6CT[L9@1c_[j3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 15:29:44 2022
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+VHDL CONFIGURATION driver_synthesised_cfg
+    Configuration applies to entity: driver
+    Block configuration applies to architecture: synthesised
+    Depends on: A work driver synthesised e;XJEDAFmcThb8_WP_9@?2
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work driver LRZf6ZDVfQ?B=EF=G2AAZ2
+    Source modified time: Thu Dec  8 15:36:12 2022
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+    HDL source file: VHDL/driver_synthesised_cfg.vhd
+    Source file: VHDL/driver_synthesised_cfg.vhd
+    Start location: VHDL/driver_synthesised_cfg.vhd:1
+    Version string: b8:L:2DEi>4C`R7]Cmg5S2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 15:36:13 2022
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY edgedetector
+    Source modified time: Thu Dec  8 16:28:11 2022
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+    HDL source file: VHDL/edge_detector.vhd
+    Source file: VHDL/edge_detector.vhd
+    Start location: VHDL/edge_detector.vhd:4
+    Version string: 8lccWDKCbk19g42Y;P2bm2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 16:28:11 2022
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY synthesised
+    Source modified time: Thu Dec  8 16:29:09 2022
+    Depends on: E work edgedetector 8lccWDKCbk19g42Y;P2bm2
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/edgedetector_SYN.vhd
+    Source file: VHDL/edgedetector_SYN.vhd
+    Start location: VHDL/edgedetector_SYN.vhd:7
+    Version string: ?;bKKPeF6n2gTJ<jP>_i;0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 16:30:00 2022
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+  ARCHITECTURE BODY edgedetector_rtl
+    Source modified time: Thu Dec  8 16:28:35 2022
+    Depends on: E work edgedetector 8lccWDKCbk19g42Y;P2bm2
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/edgedetector-behaviour.vhd
+    Source file: VHDL/edgedetector-behaviour.vhd
+    Start location: VHDL/edgedetector-behaviour.vhd:4
+    Version string: Fcd:gh<<J3KXd8UL>LohU3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 16:28:36 2022
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+VHDL CONFIGURATION edgedetector_edgedetector_rtl_cfg
+    Configuration applies to entity: edgedetector
+    Block configuration applies to architecture: edgedetector_rtl
+    Depends on: A work edgedetector edgedetector_rtl Fcd:gh<<J3KXd8UL>LohU3
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work edgedetector 8lccWDKCbk19g42Y;P2bm2
+    Source modified time: Thu Dec  8 16:28:41 2022
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+    HDL source file: VHDL/edgedetector_edgedetector_rtl_cfg.vhd
+    Source file: VHDL/edgedetector_edgedetector_rtl_cfg.vhd
+    Start location: VHDL/edgedetector_edgedetector_rtl_cfg.vhd:1
+    Version string: b7>^JLPJ_SUC9le2_Dbg`2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 16:28:41 2022
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY high_edgedetec
+    Source modified time: Thu Dec  8 16:31:08 2022
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+    HDL source file: VHDL/high_edgedetec.vhd
+    Source file: VHDL/high_edgedetec.vhd
+    Start location: VHDL/high_edgedetec.vhd:4
+    Version string: aeeaL;5Og^ik?;Lb<^LLK3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 16:31:08 2022
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY synthesised
+    Source modified time: Thu Dec  8 16:32:10 2022
+    Depends on: E work high_edgedetec aeeaL;5Og^ik?;Lb<^LLK3
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/high_edgedetec_SYN.vhd
+    Source file: VHDL/high_edgedetec_SYN.vhd
+    Start location: VHDL/high_edgedetec_SYN.vhd:7
+    Version string: l4cYZkLmz_gf^CReSG5BR0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 16:34:35 2022
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+  ARCHITECTURE BODY high_edgedetector_rtl
+    Source modified time: Thu Dec  8 16:31:41 2022
+    Depends on: E work high_edgedetec aeeaL;5Og^ik?;Lb<^LLK3
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/high_edgedetec-behaviour.vhd
+    Source file: VHDL/high_edgedetec-behaviour.vhd
+    Start location: VHDL/high_edgedetec-behaviour.vhd:5
+    Version string: aS>iOK7?=o_4d==2IP]W@1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 16:31:41 2022
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+VHDL CONFIGURATION high_edgedetec_high_edgedetector_rtl_cfg
+    Configuration applies to entity: high_edgedetec
+    Block configuration applies to architecture: high_edgedetector_rtl
+    Depends on: A work high_edgedetec high_edgedetector_rtl aS>iOK7?=o_4d==2IP]W@1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work high_edgedetec aeeaL;5Og^ik?;Lb<^LLK3
+    Source modified time: Thu Dec  8 16:31:48 2022
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+    HDL source file: VHDL/high_edgedetec_high_edgedetector_rtl_cfg.vhd
+    Source file: VHDL/high_edgedetec_high_edgedetector_rtl_cfg.vhd
+    Start location: VHDL/high_edgedetec_high_edgedetector_rtl_cfg.vhd:1
+    Version string: 0b4<331?oWSL]=fKobPlU3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 16:31:48 2022
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY spc_clockgen
+    Source modified time: Thu Dec  8 15:22:14 2022
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+    HDL source file: VHDL/spc_clockgen.vhd
+    Source file: VHDL/spc_clockgen.vhd
+    Start location: VHDL/spc_clockgen.vhd:5
+    Version string: QPE4c>5hn_lF21<c6eHP60
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 15:22:14 2022
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY routed
+    Source modified time: Thu Dec  8 16:09:52 2022
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: E work spc_clockgen QPE4c>5hn_lF21<c6eHP60
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/spc_clockgen_PAR.vhd
+    Source file: VHDL/spc_clockgen_PAR.vhd
+    Start location: VHDL/spc_clockgen_PAR.vhd:7
+    Version string: ^=>_8Yo5GTU`1l2WQE<IP2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 16:20:55 2022
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+  ARCHITECTURE BODY synthesised
+    Source modified time: Thu Dec  8 15:46:34 2022
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: E work spc_clockgen QPE4c>5hn_lF21<c6eHP60
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/spc_clockgen_SYN.vhd
+    Source file: VHDL/spc_clockgen_SYN.vhd
+    Start location: VHDL/spc_clockgen_SYN.vhd:7
+    Version string: Annc2;Fc6PN^95fMQYL@T1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 15:47:01 2022
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+  ARCHITECTURE BODY behaviour
+    Source modified time: Thu Dec  8 15:22:59 2022
+    Depends on: E work spc_clockgen QPE4c>5hn_lF21<c6eHP60
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/spc_clockgen-behaviour.vhd
+    Source file: VHDL/spc_clockgen-behaviour.vhd
+    Start location: VHDL/spc_clockgen-behaviour.vhd:5
+    Version string: D_bGM83kiSSHfgWkL3zj72
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 15:22:59 2022
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+VHDL CONFIGURATION spc_clockgen_behaviour_cfg
+    Configuration applies to entity: spc_clockgen
+    Block configuration applies to architecture: behaviour
+    Depends on: A work spc_clockgen behaviour D_bGM83kiSSHfgWkL3zj72
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work spc_clockgen QPE4c>5hn_lF21<c6eHP60
+    Source modified time: Thu Dec  8 15:23:05 2022
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+    HDL source file: VHDL/spc_clockgen_behaviour_cfg.vhd
+    Source file: VHDL/spc_clockgen_behaviour_cfg.vhd
+    Start location: VHDL/spc_clockgen_behaviour_cfg.vhd:1
+    Version string: `bV^mYg`kNVQa1IC`lP<Z1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 15:23:05 2022
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+VHDL CONFIGURATION spc_clockgen_synthesised_cfg
+    Configuration applies to entity: spc_clockgen
+    Block configuration applies to architecture: synthesised
+    Depends on: A work spc_clockgen synthesised Annc2;Fc6PN^95fMQYL@T1
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work spc_clockgen QPE4c>5hn_lF21<c6eHP60
+    Source modified time: Thu Dec  8 16:08:22 2022
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+    HDL source file: VHDL/spc_clockgen_synthesised_cfg.vhd
+    Source file: VHDL/spc_clockgen_synthesised_cfg.vhd
+    Start location: VHDL/spc_clockgen_synthesised_cfg.vhd:1
+    Version string: m:5K=nGE5PJE9dY=fQBHC1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 16:08:22 2022
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY spi_data_ctrl
+    Source modified time: Thu Dec  8 15:32:39 2022
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+    HDL source file: VHDL/spi_data_ctrl.vhd
+    Source file: VHDL/spi_data_ctrl.vhd
+    Start location: VHDL/spi_data_ctrl.vhd:6
+    Version string: l_<BKTUnBLco6Ean4=GDF3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 15:32:39 2022
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY synthesised
+    Source modified time: Thu Dec  8 15:51:05 2022
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: E work spi_data_ctrl l_<BKTUnBLco6Ean4=GDF3
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/spi_data_ctrl_SYN.vhd
+    Source file: VHDL/spi_data_ctrl_SYN.vhd
+    Start location: VHDL/spi_data_ctrl_SYN.vhd:7
+    Version string: FHPmg2RLUmXF`O0De^iFE1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 15:51:33 2022
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+  ARCHITECTURE BODY behaviour
+    Source modified time: Thu Dec  8 15:33:10 2022
+    Depends on: E work spi_data_ctrl l_<BKTUnBLco6Ean4=GDF3
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/spi_data_ctrl-behaviour.vhd
+    Source file: VHDL/spi_data_ctrl-behaviour.vhd
+    Start location: VHDL/spi_data_ctrl-behaviour.vhd:5
+    Version string: SN?a93d:A4gFYP9>NMLjE3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 15:33:10 2022
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+VHDL CONFIGURATION spi_data_ctrl_behaviour_cfg
+    Configuration applies to entity: spi_data_ctrl
+    Block configuration applies to architecture: behaviour
+    Depends on: A work spi_data_ctrl behaviour SN?a93d:A4gFYP9>NMLjE3
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work spi_data_ctrl l_<BKTUnBLco6Ean4=GDF3
+    Source modified time: Thu Dec  8 15:33:20 2022
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+    HDL source file: VHDL/spi_data_ctrl_behaviour_cfg.vhd
+    Source file: VHDL/spi_data_ctrl_behaviour_cfg.vhd
+    Start location: VHDL/spi_data_ctrl_behaviour_cfg.vhd:1
+    Version string: dUI85jN5:@B`5Q2jjC]WU1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 15:33:20 2022
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY spi_rom
+    Source modified time: Thu Dec  8 15:23:59 2022
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+    HDL source file: VHDL/spi_rom.vhd
+    Source file: VHDL/spi_rom.vhd
+    Start location: VHDL/spi_rom.vhd:5
+    Version string: ?@O90FhkTobT0^;kRNDm^1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 15:23:59 2022
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY synthesised
+    Source modified time: Thu Dec  8 15:53:32 2022
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: E work spi_rom ?@O90FhkTobT0^;kRNDm^1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/spi_rom_SYN.vhd
+    Source file: VHDL/spi_rom_SYN.vhd
+    Start location: VHDL/spi_rom_SYN.vhd:7
+    Version string: _K?6SE3HN6ENdRgPiB2On2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 15:54:03 2022
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+  ARCHITECTURE BODY behaviour
+    Source modified time: Thu Dec  8 15:24:26 2022
+    Depends on: E work spi_rom ?@O90FhkTobT0^;kRNDm^1
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/spi_rom-behaviour.vhd
+    Source file: VHDL/spi_rom-behaviour.vhd
+    Start location: VHDL/spi_rom-behaviour.vhd:5
+    Version string: ;kBQ:G7:iW4P`WOIcnWDh1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 15:24:26 2022
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+VHDL CONFIGURATION spi_rom_behaviour_cfg
+    Configuration applies to entity: spi_rom
+    Block configuration applies to architecture: behaviour
+    Depends on: A work spi_rom behaviour ;kBQ:G7:iW4P`WOIcnWDh1
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work spi_rom ?@O90FhkTobT0^;kRNDm^1
+    Source modified time: Thu Dec  8 15:24:31 2022
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+    HDL source file: VHDL/spi_rom_behaviour_cfg.vhd
+    Source file: VHDL/spi_rom_behaviour_cfg.vhd
+    Start location: VHDL/spi_rom_behaviour_cfg.vhd:1
+    Version string: 5khWa1E^I_9c4OHTDZ[f^2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 15:24:31 2022
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY spi_top_level
+    Source modified time: Thu Dec  8 16:41:54 2022
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+    HDL source file: VHDL/spi_top_lvl.vhd
+    Source file: VHDL/spi_top_lvl.vhd
+    Start location: VHDL/spi_top_lvl.vhd:5
+    Version string: fNcfV9HLb?gBNd0T0oVi=3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 16:42:16 2022
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY structural
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work spi_top_level fNcfV9HLb?gBNd0T0oVi=3
+    Start location: VHDL/spi_top_lvl.vhd:19
+    Version string: T_7@>FPFibj`4ma7Z_ijU0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 16:42:16 2022
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+    Source file: VHDL/spi_top_lvl.vhd
+    Source modified time: Thu Dec  8 16:41:54 2022
+    HDL source file: VHDL/spi_top_lvl.vhd
+VHDL CONFIGURATION spi_top_level_structural_cfg
+    Configuration applies to entity: spi_top_level
+    Block configuration applies to architecture: structural
+    Depends on: E work spi_data_ctrl l_<BKTUnBLco6Ean4=GDF3
+    Depends on: E work spi_rom ?@O90FhkTobT0^;kRNDm^1
+    Depends on: E work high_edgedetec aeeaL;5Og^ik?;Lb<^LLK3
+    Depends on: E work edgedetector 8lccWDKCbk19g42Y;P2bm2
+    Depends on: E work driver LRZf6ZDVfQ?B=EF=G2AAZ2
+    Depends on: E work spc_clockgen QPE4c>5hn_lF21<c6eHP60
+    Depends on: C work spi_data_ctrl_behaviour_cfg dUI85jN5:@B`5Q2jjC]WU1
+    Depends on: C work spi_rom_behaviour_cfg 5khWa1E^I_9c4OHTDZ[f^2
+    Depends on: C work high_edgedetec_high_edgedetector_rtl_cfg 0b4<331?oWSL]=fKobPlU3
+    Depends on: C work edgedetector_edgedetector_rtl_cfg b7>^JLPJ_SUC9le2_Dbg`2
+    Depends on: C work driver_synthesised_cfg b8:L:2DEi>4C`R7]Cmg5S2
+    Depends on: C work spc_clockgen_synthesised_cfg m:5K=nGE5PJE9dY=fQBHC1
+    Depends on: A work spi_top_level structural T_7@>FPFibj`4ma7Z_ijU0
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work spi_top_level fNcfV9HLb?gBNd0T0oVi=3
+    Source modified time: Thu Dec  8 16:42:08 2022
+    Source directory: /home/noakant/Documents/EPO3/electrojump/EPO3_group10_2022/gwtf
+    HDL source file: VHDL/spi_top_level_structural_cfg.vhd
+    Source file: VHDL/spi_top_level_structural_cfg.vhd
+    Start location: VHDL/spi_top_level_structural_cfg.vhd:1
+    Version string: 0;l337Fjcz_5lbL7O?BL?1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Dec  8 16:42:16 2022
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0

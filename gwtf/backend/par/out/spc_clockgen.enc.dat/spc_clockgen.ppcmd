@@ -1,0 +1,31 @@
+# PPCMD 1 
+# sroute 
+# 2 
+# 16 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 1 
+
+# PPCMD 2 
+# addStripe -nets {dgnd dvdd} -layer METAL4 -width 2 -number_of_sets 5 -spacing 0.5
+# 1 
+# 2 
+# 1 
+# 0 
+# 0 
+# 1 
+# BOX_LIST 
+# 0 0 649600 649600 0 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# dvdd 4000 4 0 5000 651600 160150 0 0 
+# dgnd 4000 4 0 0 651600 160150 0 0 
+# END_NET_INFO_LIST 
+# END_PPCMD 2 
+
