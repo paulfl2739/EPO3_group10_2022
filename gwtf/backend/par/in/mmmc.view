@@ -1,0 +1,16 @@
+# Version:1.0 MMMC View Definition File
+# Do Not Remove Above Line
+create_rc_corner -name rc_bc -cap_table {/data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Back_End/lef/tcb018gbwp7t_270a/techfiles/captable/t018lo_1p6m_typical.captable} -T {0} -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0} -postRoute_clkcap {0.0}
+create_rc_corner -name rc_wc -cap_table {/data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Back_End/lef/tcb018gbwp7t_270a/techfiles/captable/t018lo_1p6m_typical.captable} -T {125} -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0} -postRoute_clkcap {0.0}
+create_op_cond -name op_bc -library_file {/data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7tbc.lib} -P {1} -V {1.98} -T {0}
+create_op_cond -name op_wc -library_file {/data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7tbc.lib} -P {1} -V {1.62} -T {125}
+create_library_set -name wc -timing {/data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib}
+create_library_set -name bc -timing {/data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7tbc.lib}
+create_constraint_mode -name timing_constrain -sdc_files {../in/top.sdc}
+create_delay_corner -name wc -library_set {wc} -rc_corner {rc_wc}
+create_delay_corner -name bc -library_set {bc} -rc_corner {rc_bc}
+create_analysis_view -name setup_wc -constraint_mode {timing_constrain} -delay_corner {wc}
+create_analysis_view -name setup_bc -constraint_mode {timing_constrain} -delay_corner {bc}
+create_analysis_view -name hold_bc -constraint_mode {timing_constrain} -delay_corner {bc}
+create_analysis_view -name hold_wc -constraint_mode {timing_constrain} -delay_corner {wc}
+set_analysis_view -setup {setup_wc setup_bc} -hold {hold_bc hold_wc}

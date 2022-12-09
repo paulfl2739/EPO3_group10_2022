@@ -1,0 +1,4 @@
+rm -f innovus.cmd*
+rm -f innovus.log*
+rm -f *.rpt
+rm -f *.rpt.old

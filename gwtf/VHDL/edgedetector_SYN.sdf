@@ -1,0 +1,50 @@
+(DELAYFILE
+  (SDFVERSION  "OVI 3.0")
+  (DESIGN      "edgedetector")
+  (DATE        "Thu Dec 08 16:29:09 CET 2022")
+  (VENDOR      "Cadence, Inc.")
+  (PROGRAM     "Genus(TM) Synthesis Solution")
+  (VERSION     "17.11-s014_1")
+  (DIVIDER     .)
+  (VOLTAGE     ::1.62)
+  (PROCESS     "::1.0")
+  (TEMPERATURE ::125.0)
+  (TIMESCALE   1ps)
+  (CELL
+     (CELLTYPE "AN2D4BWP7T")
+     (INSTANCE g11)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (IOPATH A1 Z (::1223) (::721))
+          (IOPATH A2 Z (::1232) (::750))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "DFQD1BWP7T")
+     (INSTANCE reg1_reg)
+     (DELAY
+        (ABSOLUTE
+          (PORT CP (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CP Q (::342) (::396))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CP) (::81) (::46))
+        (SETUPHOLD (posedge D) (posedge CP) (::99) (::-11))
+     )
+  )
+  (CELL
+     (CELLTYPE "CKND0BWP7T")
+     (INSTANCE g13)
+     (DELAY
+        (ABSOLUTE
+          (PORT I (::0.0))
+          (IOPATH I ZN (::97) (::118))
+        )
+     )
+  )
+)
