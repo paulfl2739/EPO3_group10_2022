@@ -15,7 +15,6 @@ component driver is
 		spc_clk		:	in	std_logic;	--<10 MHz clk Rising edge synced to falling edge of clk, falling edge sinced to rising edge of clk.
 		sdi_in		:	in	std_logic_vector(15 downto 0); --sequence of sdi bits needed for the current transmission cycle
 		sdo		:	in	std_logic; --Data output from gyroscope
-		--sdi_select	:	in	std_logic_vector(2 downto 0); --spi data controller sends an address when this module is finished
 		
 		sdi		:	out	std_logic;	--the sequence of bits sent to the chip for proper readout
 		spc		:	out	std_logic;	--max 10MHz 

@@ -1,11 +1,11 @@
-C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen_tb.vhd
+C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/main.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none {C:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\main.vhd}
 QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity spc_clk_testbench
--- Compiling architecture structural of spc_clk_testbench
+-- Compiling entity driver
+-- Compiling architecture behaviour of driver
 
 } {} {}} C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/storage.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/storage.vhd
 QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
@@ -16,6 +16,24 @@ QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
 -- Compiling entity spi_rom
 -- Compiling architecture behaviour of spi_rom
 
+} {} {}} C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen_tb.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity spc_clk_testbench
+-- Compiling architecture structural of spc_clk_testbench
+
+} {} {}} {C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/final testbench.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\final testbench.vhd}
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity final_testbench
+-- Compiling architecture structural of final_testbench
+
 } {} {}} C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/main_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\main_tb.vhd}
 QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
 -- Loading package STANDARD
@@ -25,15 +43,6 @@ QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
 -- Compiling entity main_testbench
 -- Compiling architecture structural of main_testbench
 
-} {} {}} C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spi_data_controller.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\spi_data_controller.vhd}
-QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity spi_data_controller
--- Compiling architecture behaviour of spi_data_controller
-
 } {} {}} C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen.vhd
 QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
 -- Loading package STANDARD
@@ -42,5 +51,14 @@ QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
 -- Loading package NUMERIC_STD
 -- Compiling entity spc_clockgen
 -- Compiling architecture behaviour of spc_clockgen
+
+} {} {}} C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spi_data_controller.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\spi_data_controller.vhd}
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity spi_data_controller
+-- Compiling architecture behaviour of spi_data_controller
 
 } {} {}}
