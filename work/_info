@@ -91,7 +91,7 @@ R20
 R12
 R13
 Edriver
-Z21 w1670342020
+Z21 w1670589020
 R2
 R3
 R4
@@ -100,13 +100,13 @@ Z22 8C:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\main.vhd
 Z23 FC:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\main.vhd
 l0
 L5
-VYMQ[`fV24bDV3?cY2;MD13
-!s100 oA^gRAVJOaG_NoTeNRP<k3
+V5CLjAB<S6UGMmLXC;>?4e3
+!s100 IcZBE@4?Emne:LZSC;NX82
 R7
 33
-Z24 !s110 1670342023
+Z24 !s110 1670589089
 !i10b 1
-Z25 !s108 1670342023.000000
+Z25 !s108 1670589089.000000
 Z26 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|C:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\main.vhd|
 Z27 !s107 C:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\main.vhd|
 !i113 0
@@ -116,13 +116,13 @@ Abehaviour
 R2
 R3
 R4
-DEx4 work 6 driver 0 22 YMQ[`fV24bDV3?cY2;MD13
+DEx4 work 6 driver 0 22 5CLjAB<S6UGMmLXC;>?4e3
 33
 R24
-l37
-L27
-VRPG@]UFUm]Yz:O>h8K<kk1
-!s100 ]IJgkm2UT?bfAYaN?1O_D2
+l31
+L24
+VYOD4R>One_2^45WinAY1R0
+!s100 ?hcfFi44S>`g=?NmbPU3?2
 R7
 !i10b 1
 R25
@@ -144,11 +144,11 @@ VY=Gl_ahB[<GNi^o^24bR`3
 !s100 DIfU^M_o1MORPfQm7^hhJ3
 R7
 32
-R24
+Z32 !s110 1670512906
 !i10b 1
-R25
-Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/falling_edge_spc.vhd|
-Z33 !s107 C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/falling_edge_spc.vhd|
+Z33 !s108 1670512906.000000
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/falling_edge_spc.vhd|
+Z35 !s107 C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/falling_edge_spc.vhd|
 !i113 0
 R12
 R13
@@ -156,38 +156,38 @@ Aedgedetector_rtl
 R3
 R4
 DEx4 work 12 edgedetector 0 22 Y=Gl_ahB[<GNi^o^24bR`3
-32
-R24
 l16
 L12
 V;c]KWCMP]O1N:De4P64aA2
 !s100 hkQOl:8BY^XV?R:U`UKTK1
 R7
-!i10b 1
-R25
+32
 R32
+!i10b 1
 R33
+R34
+R35
 !i113 0
 R12
 R13
 Ehigh_edgedetector
-Z34 w1669985654
+Z36 w1669985654
 R3
 R4
 R0
-Z35 8C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/rising_edge_spc.vhd
-Z36 FC:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/rising_edge_spc.vhd
+Z37 8C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/rising_edge_spc.vhd
+Z38 FC:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/rising_edge_spc.vhd
 l0
 L4
 V>_TR<BM1?1DX9l;HkL`EN3
 !s100 58Td^VaKR4TU?4o2]m8<S1
 R7
 32
-R24
+Z39 !s110 1670512907
 !i10b 1
-R25
-Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/rising_edge_spc.vhd|
-Z38 !s107 C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/rising_edge_spc.vhd|
+R33
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/rising_edge_spc.vhd|
+Z41 !s107 C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/rising_edge_spc.vhd|
 !i113 0
 R12
 R13
@@ -195,28 +195,28 @@ Ahigh_edgedetector_rtl
 R3
 R4
 DEx4 work 17 high_edgedetector 0 22 >_TR<BM1?1DX9l;HkL`EN3
-32
-R24
 l16
 L12
 VLYNGT;PKemX48JKX;BXO42
 !s100 kzDnQo2o;[dEEYK35:<ao0
 R7
+32
+R39
 !i10b 1
-R25
-R37
-R38
+R33
+R40
+R41
 !i113 0
 R12
 R13
 Emain_testbench
-Z39 w1670339325
+Z42 w1670589086
 R2
 R3
 R4
 R0
-Z40 8C:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\main_tb.vhd
-Z41 FC:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\main_tb.vhd
+Z43 8C:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\main_tb.vhd
+Z44 FC:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\main_tb.vhd
 l0
 L5
 V3jOXdkjM`c@B5;;<7_92>3
@@ -226,8 +226,8 @@ R7
 R24
 !i10b 1
 R25
-Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\main_tb.vhd|
-Z43 !s107 C:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\main_tb.vhd|
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\main_tb.vhd|
+Z46 !s107 C:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\main_tb.vhd|
 !i113 0
 R12
 R13
@@ -238,37 +238,37 @@ R4
 DEx4 work 14 main_testbench 0 22 3jOXdkjM`c@B5;;<7_92>3
 32
 R24
-l84
+l65
 L8
-Vn@OR^mGh8c48<IgVMSafS3
-!s100 Ml7RSFiA6SGI=I^T1@D?B3
+VT5MA3ZQ<:0ZYi?gz484LI3
+!s100 CUUZCN:[k:<0AL2_PM[jc0
 R7
 !i10b 1
 R25
-R42
-R43
+R45
+R46
 !i113 0
 R12
 R13
 Espc_clk_testbench
-Z44 w1669728598
+Z47 w1669728598
 R2
 R3
 R4
 R0
-Z45 8C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen_tb.vhd
-Z46 FC:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen_tb.vhd
+Z48 8C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen_tb.vhd
+Z49 FC:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen_tb.vhd
 l0
 L5
 V^eZ28JNjJYiS^fZL8NVPT0
 !s100 6l`dd947aTEjLGf3fEhcJ0
 R7
 32
-Z47 !s110 1670342024
+R24
 !i10b 1
 R25
-Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen_tb.vhd|
-Z49 !s107 C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen_tb.vhd|
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen_tb.vhd|
+Z51 !s107 C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen_tb.vhd|
 !i113 0
 R12
 R13
@@ -283,22 +283,22 @@ VCAKklnCDcL:0MDm4:hRR[3
 !s100 KH`R_3BGL0dd5ie_X@ISU0
 R7
 32
-R47
+R24
 !i10b 1
 R25
-R48
-R49
+R50
+R51
 !i113 0
 R12
 R13
 Espc_clockgen
-Z50 w1669994827
+Z52 w1670504810
 R2
 R3
 R4
 R0
-Z51 8C:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\spcgen.vhd
-Z52 FC:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\spcgen.vhd
+Z53 8C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen.vhd
+Z54 FC:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen.vhd
 l0
 L5
 V01<amQ>MdS=iaoBQ6B8?;0
@@ -308,8 +308,8 @@ R7
 R24
 !i10b 1
 R25
-Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\spcgen.vhd|
-Z54 !s107 C:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\spcgen.vhd|
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen.vhd|
+Z56 !s107 C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/spcgen.vhd|
 !i113 0
 R12
 R13
@@ -327,13 +327,13 @@ VL:Ul`e9kK04OGoA6c89k`2
 R7
 !i10b 1
 R25
-R53
-R54
+R55
+R56
 !i113 0
 R12
 R13
 Espi_data_controller
-Z55 w1670338980
+Z57 w1670513403
 R2
 R3
 R4
@@ -346,9 +346,9 @@ VT49i;K6VKekYkj_YoIAGP3
 !s100 l0NSIP>Oi:h4QHlAoaLS[1
 R7
 32
-R47
+R24
 !i10b 1
-Z56 !s108 1670342024.000000
+R25
 R19
 R20
 !i113 0
@@ -360,38 +360,38 @@ R3
 R4
 DEx4 work 19 spi_data_controller 0 22 T49i;K6VKekYkj_YoIAGP3
 32
-R47
+R24
 l24
 L19
 VeVEzWiOS<`EGDf;OWWKd`3
 !s100 ZHn8K6Ejo[[]Ej:iNI]FD3
 R7
 !i10b 1
-R56
+R25
 R19
 R20
 !i113 0
 R12
 R13
 Espi_rom
-Z57 w1670336617
+Z58 w1670336617
 R2
 R3
 R4
 R0
-Z58 8C:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\storage.vhd
-Z59 FC:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\storage.vhd
+Z59 8C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/storage.vhd
+Z60 FC:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/storage.vhd
 l0
 L5
 V^1Y;MXj11n`>;KY3F;Ti_1
 !s100 n8lc:aNI2j@SggU]3YT3W0
 R7
 32
-R47
+R24
 !i10b 1
-R56
-Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\storage.vhd|
-Z61 !s107 C:\Users\tjges\OneDrive\Documents\GitHub\EPO3_group10_2022\storage.vhd|
+R25
+Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/storage.vhd|
+Z62 !s107 C:/Users/tjges/OneDrive/Documents/GitHub/EPO3_group10_2022/storage.vhd|
 !i113 0
 R12
 R13
@@ -401,16 +401,16 @@ R3
 R4
 DEx4 work 7 spi_rom 0 22 ^1Y;MXj11n`>;KY3F;Ti_1
 32
-R47
+R24
 l13
 L12
 VUP?3i;FoiHMlZ2Pk`@dlA0
 !s100 ?MW=ZeVA2=`ddXR@O_dKG3
 R7
 !i10b 1
-R56
-R60
+R25
 R61
+R62
 !i113 0
 R12
 R13

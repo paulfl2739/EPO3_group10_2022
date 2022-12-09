@@ -8,8 +8,6 @@ entity driver is
 		clk		:	in	std_logic;	--25MHz chip clock
 		reset		:	in	std_logic;	--Meant to be pulled high at the beginning
 		spc_clk		:	in	std_logic;	--<10 MHz clk Rising edge synced to falling edge of clk, falling edge sinced to rising edge of clk.
-		edge		:	in	std_logic;	--goes high whenever a falling edge of the spc_clk occurs, not used in this design
-		high_edge	:	in	std_logic;	--inverse operation of above signal
 		sdi_in		:	in	std_logic_vector(15 downto 0); --sequence of sdi bits needed for the current transmission cycle
 		sdo		:	in	std_logic; --Data output from gyroscope
 		--sdi_select	:	in	std_logic_vector(2 downto 0); --spi data controller sends an address when this module is finished
@@ -17,7 +15,6 @@ entity driver is
 		sdi		:	out	std_logic;	--the sequence of bits sent to the chip for proper readout
 		spc		:	out	std_logic;	--max 10MHz 
 		cs		:	out	std_logic;	--when low, data is transmitted
-		cycle		:	out	std_logic_vector(2 downto 0); --this vector will indicate which iteration of register writing is currently happening, it will be used in component register controller to send the right bits to this component.
 		gyro_data	:	out	std_logic_vector(7 downto 0); --neat vector containing angular data
 		data_ready	:	out	std_logic; --pulled high whenever gyro_data is correctly written
 		prev_spc_clk	:	out	std_logic
@@ -30,13 +27,10 @@ type configuration_state is (reset_state, waiting, start_transmission, ms_state,
 
 signal state, new_state:				configuration_state;
 signal count, new_count:				unsigned(2 downto 0 );
---signal prev_spc_clk:					std_logic;
-
-
 
 begin
 
-	process(clk, reset, new_count) --simple 4 bit counter
+	process(clk, reset, new_count) --simple 4 bit counter, not used in this design
 	begin
 		if (reset = '1') then
 			count		<= 	(others => '0');
@@ -47,9 +41,7 @@ begin
 		end if;
 	end process;
 
-	cycle	<=	std_logic_vector(count);
-
-	process(clk, reset, spc_clk) 
+	process(clk, reset, spc_clk)  --updates fsm
 	begin
 		if (reset = '1') then
 			state		<=	reset_state;
@@ -62,6 +54,8 @@ begin
 
 		end if;
 	end process;
+
+
 
 	process(state, enable, spc_clk, count, prev_spc_clk, sdi_in) --we want to take count out so that this fsm only outputs what is sent by the spi data controller.
 	begin
