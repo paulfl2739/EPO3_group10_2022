@@ -2,14 +2,14 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity spi_data_controller is
+entity spi_data_controller is --This module sends the right sdi bits to the driver, when the driver is done transmitting it sends a data_ready signal, which signals this module to send new sdi bits from the rom.
 	port (
 		clk		:	in	std_logic;
 		reset		:	in	std_logic;
-		start_switch	:	in	std_logic;
+		start_switch	:	in	std_logic; --There is a very long (10ms) startup time needed, we do not want to start the spi protocol while the gyro is starting up. 
 		
 		data_ready	:	in	std_logic; --output from spi driver when new data can be sent/read
-		drdy		:	in	std_logic; --output from gyro chip, when chip has calculated new data this pin is pulled high.
+		drdy		:	in	std_logic; --output from gyro chip, when chip has calculated new data, this pin is pulled high.
 
 		enable		:	out	std_logic;	--to turn on/off the drive
 		sdi_select	:	out	std_logic_vector(2 downto 0)
@@ -35,7 +35,7 @@ begin
 		end if;
 	end process;
 
-	process(state, data_ready, drdy)
+	process(state, data_ready, drdy, start_switch)
 	begin
 		case state is
 			when reset_state =>

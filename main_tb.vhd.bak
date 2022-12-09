@@ -13,8 +13,6 @@ component driver is
 		clk		:	in	std_logic;	--25MHz chip clock
 		reset		:	in	std_logic;	--Meant to be pulled high at the beginning
 		spc_clk		:	in	std_logic;	--<10 MHz clk Rising edge synced to falling edge of clk, falling edge sinced to rising edge of clk.
-		edge		:	in	std_logic;	--goes high whenever a falling edge of the spc_clk occurs, not used in this design
-		high_edge	:	in	std_logic;	--inverse operation of above signal
 		sdi_in		:	in	std_logic_vector(15 downto 0); --sequence of sdi bits needed for the current transmission cycle
 		sdo		:	in	std_logic; --Data output from gyroscope
 		--sdi_select	:	in	std_logic_vector(2 downto 0); --spi data controller sends an address when this module is finished
@@ -76,10 +74,10 @@ component spi_data_controller is
 	);
 end component spi_data_controller;
 
-signal enable, clk, reset, spc_clk_out, sdi, spc, cs, edge, high_edge, prev_spc_clk, sdo, data_ready, drdy, start_switch:	std_logic;
-signal cycle, address:														std_logic_vector(2 downto 0);
-signal sdi_in:															std_logic_vector(15 downto 0);
-signal gyro_data:														std_logic_vector(7 downto 0);
+signal enable, clk, reset, spc_clk_out, sdi, spc, cs, prev_spc_clk, sdo, data_ready, drdy, start_switch:	std_logic;
+signal cycle, address:												std_logic_vector(2 downto 0);
+signal sdi_in:													std_logic_vector(15 downto 0);
+signal gyro_data:												std_logic_vector(7 downto 0);
 
 begin
 	clk <=
@@ -100,12 +98,12 @@ begin
 
 	sdo <=		
 			'0' after 0 ns,	
-			'1' after 48100 ns,	
-			'0' after 49700 ns,
-			'1' after 51300 ns,
-			'0' after 52100 ns,
-			'1' after 52900 ns,
-			'0' after 53700 ns;
+			'1' after 48900 ns,	
+			'0' after 50500 ns,
+			'1' after 52100 ns,
+			'0' after 52900 ns,
+			'1' after 53700 ns,
+			'0' after 54500 ns;
 
 
 		
@@ -121,8 +119,6 @@ lb2: driver port map(
 		clk		=>		clk,
 		reset		=>		reset,
 		spc_clk		=>		spc_clk_out,
-		edge		=>		edge,
-		high_edge	=>		high_edge,
 		sdi_in		=>		sdi_in,
 		sdo		=>		sdo,
 		
@@ -133,27 +129,6 @@ lb2: driver port map(
 		gyro_data	=>		gyro_data,
 		data_ready	=>		data_ready,
 		prev_spc_clk	=>		prev_spc_clk
-		);
-
-lb3: edgedetector port map(
-		clk		=>		clk,
-		spc_clk		=>		spc_clk_out,
-		edge		=>		edge
-		); 
-
---lb4: spc_prev_gen port map(
-		--clk		=>		clk,
-		--reset		=>		reset,
-		--spc_clk		=>		spc_clk_out,
-		--high_edge	=>		high_edge,
-
-		--spc_prev_clk	=>		spc_prev_clk_out
-		--);
-
-lb5: high_edgedetector port map(
-		clk		=>		clk,
-		spc_clk		=>		spc_clk_out,
-		high_edge	=>		high_edge
 		);
 
 lb6: spi_rom port map(
