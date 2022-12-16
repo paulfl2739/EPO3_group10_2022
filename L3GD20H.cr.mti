@@ -1,0 +1,194 @@
+{C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/L3GD20H driver.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/L3GD20H driver.vhd}
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity l3gd20h_driver
+-- Compiling architecture structural of l3gd20h_driver
+
+} {} {}} C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spcgen.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spcgen.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity spc_clockgen
+-- Compiling architecture behaviour of spc_clockgen
+
+} {} {}} C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/storage.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/storage.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity spi_rom
+-- Compiling architecture behaviour of spi_rom
+
+} {} {}} C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spcgen_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spcgen_tb.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity spc_clk_testbench
+-- Compiling architecture structural of spc_clk_testbench
+
+} {} {}} C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/falling_edge_spc.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/falling_edge_spc.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity edgedetector
+-- Compiling architecture edgedetector_rtl of edgedetector
+
+} {} {}} C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spi_data_controller.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spi_data_controller.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity spi_data_controller
+-- Compiling architecture behaviour of spi_data_controller
+
+} {} {}} {C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/final testbench.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/final testbench.vhd}
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity final_testbench
+-- Compiling architecture structural of final_testbench
+
+} {} {}} C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main_tb.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity main_testbench
+-- Compiling architecture structural of main_testbench
+
+} {} {}} C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/controller.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/controller.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity controller
+
+} {} {}} C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd {0 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity driver
+-- Compiling architecture behaviour of driver
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(59): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(70): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(85): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(97): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(109): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(121): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(133): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(145): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(157): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(169): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(190): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(202): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(223): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(244): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(265): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(286): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(307): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(328): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(349): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(370): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(391): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(412): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(424): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(445): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(466): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(487): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(516): Cannot read output "prev_spc_clk".
+	VHDL 2008 allows reading outputs.
+	This facility is enabled by compiling with -2008.
+** Error: C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd(525): VHDL Compiler exiting
+
+} {9.0 10.0 12.0 13.0 15.0 16.0 18.0 19.0 21.0 22.0 24.0 25.0 27.0 28.0 30.0 31.0 33.0 34.0 36.0 37.0 39.0 40.0 42.0 43.0 45.0 46.0 48.0 49.0 51.0 52.0 54.0 55.0 57.0 58.0 60.0 61.0 63.0 64.0 66.0 67.0 69.0 70.0 72.0 73.0 75.0 76.0 78.0 79.0 81.0 82.0 84.0 85.0 87.0 88.0 90.0 91.0} {}} C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/rising_edge_spc.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/rising_edge_spc.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity high_edgedetector
+-- Compiling architecture high_edgedetector_rtl of high_edgedetector
+
+} {} {}} C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/10mhzclockgen.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/10mhzclockgen.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity clockgen
+-- Compiling architecture behaviour of clockgen
+
+} {} {}} C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/full_register.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/full_register.vhd
+QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity full_register
+
+} {} {}}
