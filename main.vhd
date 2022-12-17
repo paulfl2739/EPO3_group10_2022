@@ -27,10 +27,19 @@ architecture behaviour of driver is
     signal state, new_state:			configuration_state;
     signal next_gyro_data, this_gyro_data:	std_logic_vector(7 downto 0);
 
+    -- we need the gyro data to be stable for a whole FSM cycle. 
+    signal update_external_output : std_logic;
+
 begin
 
-    gyro_data <= next_gyro_data;
+    process(update_external_output)
+    begin
+        if(update_external_output'event and update_external_output = '1') then
+            gyro_data <= next_gyro_data; 
+        end if;
+    end process;
 
+        
     process(clk, reset, next_gyro_data)  
     begin
         if (reset = '1') then
@@ -73,6 +82,7 @@ begin
                 else
                     new_state <= reset_state;
                 end if;
+                update_external_output <= '0';
 
             when start_transmission =>
                 cs  <= '0';
@@ -85,6 +95,7 @@ begin
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= ms_state;
                 end if;
+                update_external_output <= '0';
 
             when ms_state =>
                 cs  <= '0';
@@ -97,6 +108,7 @@ begin
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= address_5;
                 end if;
+                update_external_output <= '0';
 
             when address_5 =>
                 cs  <= '0';
@@ -109,6 +121,7 @@ begin
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= address_4;
                 end if;
+                update_external_output <= '0';
 
             when address_4 =>
                 cs  <= '0';
@@ -121,6 +134,7 @@ begin
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= address_3;
                 end if;
+                update_external_output <= '0';
 
             when address_3 =>
                 cs  <= '0';
@@ -133,6 +147,7 @@ begin
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= address_2;
                 end if;
+                update_external_output <= '0';
 
             when address_2 =>
                 cs  <= '0';
@@ -145,6 +160,7 @@ begin
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= address_1;
                 end if;
+                update_external_output <= '0';
 
             when address_1 =>
                 cs  <= '0';
@@ -157,6 +173,7 @@ begin
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= address_0;
                 end if;
+                update_external_output <= '0';
 
             when address_0 =>
                 cs  <= '0';
@@ -169,6 +186,7 @@ begin
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= data_7_read;
                 end if;
+                update_external_output <= '0';
 
             when data_7_read =>
                 cs  <= '0';
@@ -190,6 +208,7 @@ begin
                 if (spc_clk = '1' and prev_spc_clk = '0') then
                     new_state <= data_7_exit;
                 end if;
+                update_external_output <= '0';
 
             when data_7_exit =>
                 cs  <= '0';
@@ -211,6 +230,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when data_6_read =>
                 cs  <= '0';
@@ -232,6 +252,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when data_6_exit =>
                 cs  <= '0';
@@ -253,6 +274,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when data_5_read =>
                 cs  <= '0';
@@ -274,6 +296,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when data_5_exit =>
                 cs  <= '0';
@@ -295,6 +318,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when data_4_read =>
                 cs  <= '0';
@@ -316,6 +340,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when data_4_exit =>
                 cs  <= '0';
@@ -337,6 +362,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when data_3_read =>
                 cs  <= '0';
@@ -358,6 +384,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when data_3_exit =>
                 cs  <= '0';
@@ -379,6 +406,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when data_2_read =>
                 cs  <= '0';
@@ -400,6 +428,7 @@ begin
                 next_gyro_data(2) <= sdo;
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when data_2_exit =>
                 cs  <= '0';
@@ -412,6 +441,7 @@ begin
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= data_1_read;
                 end if;
+                update_external_output <= '0';
 
             when data_1_read =>
                 cs  <= '0';
@@ -433,6 +463,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= sdo;
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when data_1_exit =>
                 cs  <= '0';
@@ -454,6 +485,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when data_0_read =>
                 cs  <= '0';
@@ -475,6 +507,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= sdo;
+                update_external_output <= '0';
 
             when data_0_exit =>
                 cs  <= '0';
@@ -496,6 +529,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when waiting =>             --gyro_data must be remebered from previous states, thus it is undefined here
                 cs  <= '1';
@@ -519,6 +553,8 @@ begin
                 else
                     new_state <= waiting;
                 end if;
+
+                update_external_output <= '1';
 
         end case;
     end process;

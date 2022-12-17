@@ -20,7 +20,7 @@ component driver is
 		spc		:	out	std_logic;	--max 10MHz 
 		cs		:	out	std_logic;	--when low, data is transmitted
 		gyro_data	:	out	std_logic_vector(7 downto 0); --neat vector containing angular data
-		data_ready	:	out	std_logic; --pulled high whenever gyro_data is correctly written
+		communicated	:	out	std_logic; --pulled high whenever gyro_data is correctly written
 		prev_spc_clk	:	out	std_logic
 	);
 end component driver;
@@ -48,7 +48,7 @@ component spi_data_controller is
 		reset		:	in	std_logic;
 		start_switch	:	in	std_logic;
 		
-		data_ready	:	in	std_logic; --output from spi driver when new data can be sent/read
+		communicated	:	in	std_logic; --output from spi driver when new data can be sent/read
 		drdy		:	in	std_logic; --output from gyro chip, when chip has calculated new data this pin is pulled high.
 
 		enable		:	out	std_logic;	--to turn on/off the drive
@@ -56,7 +56,7 @@ component spi_data_controller is
 	);
 end component spi_data_controller;
 
-signal enable, clk, reset, spc_clk_out, sdi, spc, cs, prev_spc_clk, sdo, data_ready, drdy, start_switch:	std_logic;
+signal enable, clk, reset, spc_clk_out, sdi, spc, cs, prev_spc_clk, sdo, communicated, drdy, start_switch:	std_logic;
 signal address:													std_logic_vector(2 downto 0);
 signal sdi_in:													std_logic_vector(15 downto 0);
 signal gyro_data:												std_logic_vector(7 downto 0);
@@ -108,7 +108,7 @@ lb2: driver port map(
 		spc		=>		spc,
 		cs		=>		cs,
 		gyro_data	=>		gyro_data,
-		data_ready	=>		data_ready,
+		communicated	=>		communicated,
 		prev_spc_clk	=>		prev_spc_clk
 		);
 
@@ -122,7 +122,7 @@ lb7: spi_data_controller port map(
 			reset		=>		reset,
 			start_switch	=>		start_switch,
 			
-			data_ready	=>		data_ready,
+			communicated	=>		communicated,
 			drdy		=>		drdy,
 
 			enable		=>		enable,

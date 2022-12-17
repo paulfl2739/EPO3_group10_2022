@@ -7,7 +7,7 @@ entity spc_clockgen is
 		clk		:	in	std_logic; -- 25 MHz
 		reset		:	in	std_logic;
 		
-		spc_clk		:	out	std_logic --12.5 MHz
+		spc_clk		:	out	std_logic --1.25 MHz
 	);
 end entity spc_clockgen;
 
