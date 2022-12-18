@@ -1,0 +1,50 @@
+library IEEE;
+use IEEE.std_logic_1164.ALL;
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+-- Entity for the full component runs on the same game clock
+-- The output is a bit that determines whether a platform will be there or not
+
+
+ -- Signal declaration for intermediate values
+architecture behavioral of full_register is
+	signal lfsr : std_logic_vector(29 downto 0) := "0010010001000100011000000100001";
+	signal lfsr_next : std_logic_vector(29 downto 0) := "0010010001000100011000000100000";
+begin
+	lfsr_sequential: process(clk, reset)
+	begin
+		if((reset = '1') or (dead = '1')) then
+			lfsr <= "01001000100010001100000010000010";
+		else
+			if(rising_edge(clk)) then
+				lfsr <= lfsr_next;
+			end if;
+		end if;
+	end process lfsr_sequential;
+	
+
+	-- This process will execute everytime lfsr gets a new value, it will generate a new
+	-- pseudo-random value in the register and this value is evaluated again
+	lfsr_combinational: process(lfsr)
+	begin
+		-- Update the 7 most MSB of next lfsr value to the 7 LSB values of current lfsr
+		lfsr_next(29 downto 1) <= lfsr(28 downto 0);
+		-- The last bit will be a random value, namely the XOR between bit 8 and 6 of current lfsr
+		lfsr_next(0) <= lfsr(20) xor lfsr(5);
+	end process lfsr_combinational;
+	
+	-- This piece of code is used to decide whether a platform will be generated or not
+	-- It can be a random combination of gates or just a specific bit in the lfsr register currently
+	--random <= lfsr(0);
+
+	-- We take 3 bits from the bitvector, that indicate the column number where a platform is generated
+	--column <= lfsr(7 downto 5);
+
+	-- There are 8 possible locations horizontally, each having 10 vertical layers
+	-- It is probably best to have a 24 bit vector, for each row we take 3 bits from this vector
+	-- So, for every horizontal level, we take a different set of 3 bits from the randomized bitvector
+	-- This is done each time a new frame has to be generated
+	
+end behavioral;
