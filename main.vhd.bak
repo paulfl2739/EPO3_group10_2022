@@ -8,19 +8,14 @@ entity driver is
         clk          : in  std_logic;   --25MHz chip clock
         reset        : in  std_logic;   --Meant to be pulled high at the beginning
         spc_clk      : in  std_logic;   --<10 MHz clk Rising edge synced to falling edge of clk, falling edge sinced to rising edge of clk.
-        edge         : in  std_logic;   --goes high whenever a falling edge of the spc_clk occurs, not used in this design
-        high_edge    : in  std_logic;   --inverse operation of above signal
         sdi_in       : in  std_logic_vector(15 downto 0); --sequence of sdi bits needed for the current transmission cycle
         sdo          : in  std_logic;   --Data output from gyroscope
-        --sdi_select	:	in	std_logic_vector(2 downto 0); --spi data controller sends an address when this module is finished
 
         sdi          : out std_logic;   --the sequence of bits sent to the chip for proper readout
         spc          : out std_logic;   --max 10MHz 
         cs           : out std_logic;   --when low, data is transmitted
-        cycle        : out std_logic_vector(2 downto 0); --this vector will indicate which iteration of register writing is currently happening, it will be used in component register controller to send the right bits to this component.
         gyro_data    : out std_logic_vector(7 downto 0); --neat vector containing angular data
-        data_ready   : out std_logic;   --pulled high whenever gyro_data is correctly written
-        prev_spc_clk : out std_logic
+        communicated : out std_logic  --pulled high whenever gyro_data is correctly written
     );
 end entity driver;
 
@@ -28,31 +23,32 @@ architecture behaviour of driver is
 
     type configuration_state is (reset_state, waiting, start_transmission, ms_state, address_0, address_1, address_2, address_3, address_4, address_5, data_7_read, data_7_exit, data_6_read, data_6_exit, data_5_read, data_5_exit, data_4_read, data_4_exit, data_3_read, data_3_exit, data_2_read, data_2_exit, data_1_read, data_1_exit, data_0_read, data_0_exit);
 
-    signal state, new_state : configuration_state;
-    signal count, new_count : unsigned(2 downto 0);
-    --signal prev_spc_clk:					std_logic;
+    signal state, new_state:			configuration_state;
+    signal next_gyro_data, this_gyro_data:	std_logic_vector(7 downto 0);
 
-    signal next_gyro_data   : std_logic_vector(7 downto 0);
-    signal this_gyro_data   : std_logic_vector(7 downto 0);
+    -- we need the gyro data to be stable for a whole FSM cycle. 
+    signal update_external_output, prev_spc_clk : std_logic;
 
 begin
 
-    gyro_data <= next_gyro_data;
+    process(update_external_output, clk)
+    begin
+        if(clk'event and clk = '1' and update_external_output = '1') then
+            gyro_data <= next_gyro_data; 
+        end if;
+    end process;
 
-    process(clk, reset, new_count)      --simple 4 bit counter
+        
+    process(clk, reset, next_gyro_data)  
     begin
         if (reset = '1') then
-            count          <= (others => '0');
             this_gyro_data <= (others => '0');
         else
             if (clk'event and clk = '1') then
-                count          <= new_count;
                 this_gyro_data <= next_gyro_data;
             end if;
         end if;
     end process;
-
-    cycle <= std_logic_vector(count);
 
     process(clk, reset, spc_clk)
     begin
@@ -68,7 +64,7 @@ begin
         end if;
     end process;
 
-    process(state, enable, spc_clk, count, prev_spc_clk, sdi_in) --we want to take count out so that this fsm only outputs what is sent by the spi data controller.
+    process(state, enable, spc_clk, prev_spc_clk, sdi_in)
     begin
         case state is
             when reset_state =>
@@ -77,17 +73,15 @@ begin
 
                 sdi            <= '0';
                 next_gyro_data <= (others => '0');
-                data_ready     <= '1';
-                new_count      <= count;
+                communicated     <= '1';
 
                 if (enable = '1' and (spc_clk = '0' and prev_spc_clk = '1')) then --remember spc clk value, old value 1 new value 0 
 
                     new_state <= start_transmission; --go to start transmission when spc_clk 1 -> 0, 
-                    new_count <= count + 1;
                 else
                     new_state <= reset_state;
-                    new_count <= count;
                 end if;
+                update_external_output <= '0';
 
             when start_transmission =>
                 cs  <= '0';
@@ -95,11 +89,12 @@ begin
 
                 sdi            <= sdi_in(15);
                 next_gyro_data <= (others => '0');
-                data_ready     <= '0';
+                communicated     <= '0';
 
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= ms_state;
                 end if;
+                update_external_output <= '0';
 
             when ms_state =>
                 cs  <= '0';
@@ -107,11 +102,12 @@ begin
 
                 sdi            <= sdi_in(14);
                 next_gyro_data <= (others => '0');
-                data_ready     <= '0';
+                communicated     <= '0';
 
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= address_5;
                 end if;
+                update_external_output <= '0';
 
             when address_5 =>
                 cs  <= '0';
@@ -119,11 +115,12 @@ begin
 
                 sdi            <= sdi_in(13);
                 next_gyro_data <= (others => '0');
-                data_ready     <= '0';
+                communicated     <= '0';
 
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= address_4;
                 end if;
+                update_external_output <= '0';
 
             when address_4 =>
                 cs  <= '0';
@@ -131,11 +128,12 @@ begin
 
                 sdi            <= sdi_in(12);
                 next_gyro_data <= (others => '0');
-                data_ready     <= '0';
+                communicated     <= '0';
 
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= address_3;
                 end if;
+                update_external_output <= '0';
 
             when address_3 =>
                 cs  <= '0';
@@ -143,11 +141,12 @@ begin
 
                 sdi            <= sdi_in(11);
                 next_gyro_data <= (others => '0');
-                data_ready     <= '0';
+                communicated     <= '0';
 
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= address_2;
                 end if;
+                update_external_output <= '0';
 
             when address_2 =>
                 cs  <= '0';
@@ -155,11 +154,12 @@ begin
 
                 sdi            <= sdi_in(10);
                 next_gyro_data <= (others => '0');
-                data_ready     <= '0';
+                communicated     <= '0';
 
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= address_1;
                 end if;
+                update_external_output <= '0';
 
             when address_1 =>
                 cs  <= '0';
@@ -167,11 +167,12 @@ begin
 
                 sdi            <= sdi_in(9);
                 next_gyro_data <= (others => '0');
-                data_ready     <= '0';
+                communicated     <= '0';
 
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= address_0;
                 end if;
+                update_external_output <= '0';
 
             when address_0 =>
                 cs  <= '0';
@@ -179,11 +180,12 @@ begin
 
                 sdi            <= sdi_in(8);
                 next_gyro_data <= (others => '0');
-                data_ready     <= '0';
+                communicated     <= '0';
 
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= data_7_read;
                 end if;
+                update_external_output <= '0';
 
             when data_7_read =>
                 cs  <= '0';
@@ -200,11 +202,12 @@ begin
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
 
-                data_ready <= '0';
+                communicated <= '0';
 
                 if (spc_clk = '1' and prev_spc_clk = '0') then
                     new_state <= data_7_exit;
                 end if;
+                update_external_output <= '0';
 
             when data_7_exit =>
                 cs  <= '0';
@@ -212,7 +215,7 @@ begin
 
                 sdi <= sdi_in(7);
 
-                data_ready <= '0';
+                communicated <= '0';
 
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= data_6_read;
@@ -226,6 +229,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when data_6_read =>
                 cs  <= '0';
@@ -233,7 +237,7 @@ begin
 
                 sdi <= sdi_in(6);
 
-                data_ready <= '0';
+                communicated <= '0';
 
                 if (spc_clk = '1' and prev_spc_clk = '0') then
                     new_state <= data_6_exit;
@@ -247,6 +251,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when data_6_exit =>
                 cs  <= '0';
@@ -254,7 +259,7 @@ begin
 
                 sdi <= sdi_in(6);
 
-                data_ready <= '0';
+                communicated <= '0';
 
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= data_5_read;
@@ -268,6 +273,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when data_5_read =>
                 cs  <= '0';
@@ -275,7 +281,7 @@ begin
 
                 sdi <= sdi_in(5);
 
-                data_ready <= '0';
+                communicated <= '0';
 
                 if (spc_clk = '1' and prev_spc_clk = '0') then
                     new_state <= data_5_exit;
@@ -289,6 +295,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when data_5_exit =>
                 cs  <= '0';
@@ -296,7 +303,7 @@ begin
 
                 sdi <= sdi_in(5);
 
-                data_ready <= '0';
+                communicated <= '0';
 
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= data_4_read;
@@ -310,6 +317,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when data_4_read =>
                 cs  <= '0';
@@ -317,7 +325,7 @@ begin
 
                 sdi <= sdi_in(4);
 
-                data_ready <= '0';
+                communicated <= '0';
 
                 if (spc_clk = '1' and prev_spc_clk = '0') then
                     new_state <= data_4_exit;
@@ -331,6 +339,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when data_4_exit =>
                 cs  <= '0';
@@ -338,7 +347,7 @@ begin
 
                 sdi <= sdi_in(4);
 
-                data_ready <= '0';
+                communicated <= '0';
 
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= data_3_read;
@@ -352,6 +361,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when data_3_read =>
                 cs  <= '0';
@@ -359,7 +369,7 @@ begin
 
                 sdi <= sdi_in(3);
 
-                data_ready <= '0';
+                communicated <= '0';
 
                 if (spc_clk = '1' and prev_spc_clk = '0') then
                     new_state <= data_3_exit;
@@ -373,6 +383,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when data_3_exit =>
                 cs  <= '0';
@@ -380,7 +391,7 @@ begin
 
                 sdi <= sdi_in(3);
 
-                data_ready <= '0';
+                communicated <= '0';
 
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= data_2_read;
@@ -394,6 +405,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when data_2_read =>
                 cs  <= '0';
@@ -401,7 +413,7 @@ begin
 
                 sdi <= sdi_in(2);
 
-                data_ready <= '0';
+                communicated <= '0';
 
                 if (spc_clk = '1' and prev_spc_clk = '0') then
                     new_state <= data_2_exit;
@@ -415,6 +427,7 @@ begin
                 next_gyro_data(2) <= sdo;
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when data_2_exit =>
                 cs  <= '0';
@@ -422,11 +435,12 @@ begin
 
                 sdi <= sdi_in(2);
 
-                data_ready <= '0';
+                communicated <= '0';
 
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= data_1_read;
                 end if;
+                update_external_output <= '0';
 
             when data_1_read =>
                 cs  <= '0';
@@ -434,7 +448,7 @@ begin
 
                 sdi <= sdi_in(1);
 
-                data_ready <= '0';
+                communicated <= '0';
 
                 if (spc_clk = '1' and prev_spc_clk = '0') then
                     new_state <= data_1_exit;
@@ -448,6 +462,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= sdo;
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when data_1_exit =>
                 cs  <= '0';
@@ -455,7 +470,7 @@ begin
 
                 sdi <= sdi_in(1);
 
-                data_ready <= '0';
+                communicated <= '0';
 
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= data_0_read;
@@ -469,6 +484,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when data_0_read =>
                 cs  <= '0';
@@ -476,7 +492,7 @@ begin
 
                 sdi <= sdi_in(0);
 
-                data_ready <= '0';
+                communicated <= '0';
 
                 if (spc_clk = '1' and prev_spc_clk = '0') then
                     new_state <= data_0_exit;
@@ -490,6 +506,7 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= sdo;
+                update_external_output <= '0';
 
             when data_0_exit =>
                 cs  <= '0';
@@ -497,7 +514,7 @@ begin
 
                 sdi <= sdi_in(0);
 
-                data_ready <= '0';
+                communicated <= '0';
 
                 if (spc_clk = '0' and prev_spc_clk = '1') then
                     new_state <= waiting;
@@ -511,14 +528,14 @@ begin
                 next_gyro_data(2) <= this_gyro_data(2);
                 next_gyro_data(1) <= this_gyro_data(1);
                 next_gyro_data(0) <= this_gyro_data(0);
+                update_external_output <= '0';
 
             when waiting =>             --gyro_data must be remebered from previous states, thus it is undefined here
                 cs  <= '1';
                 spc <= '1';
 
                 sdi        <= '0';
-                data_ready <= '1';
-                new_count  <= count;
+                communicated <= '1';
 
                 next_gyro_data(7) <= this_gyro_data(7);
                 next_gyro_data(6) <= this_gyro_data(6);
@@ -532,11 +549,11 @@ begin
                 if (enable = '1' and (spc_clk = '0' and prev_spc_clk = '1')) then --remember spc clk value, old value 1 new value 0 
 
                     new_state <= start_transmission;
-                    new_count <= count + 1;
                 else
                     new_state <= waiting;
-                    new_count <= count;
                 end if;
+
+                update_external_output <= '1';
 
         end case;
     end process;

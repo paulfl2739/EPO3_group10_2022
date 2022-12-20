@@ -35,8 +35,7 @@ component driver is
 		spc		:	out	std_logic;	--max 10MHz 
 		cs		:	out	std_logic;	--when low, data is transmitted
 		gyro_data	:	out	std_logic_vector(7 downto 0); --neat vector containing angular data
-		communicated	:	out	std_logic; --pulled high whenever gyro_data is correctly written
-		prev_spc_clk	:	out	std_logic
+		communicated	:	out	std_logic --pulled high whenever gyro_data is correctly written
 	);
 end component driver;
 
@@ -71,7 +70,7 @@ component spi_data_controller is
 	);
 end component spi_data_controller;
 
-signal enable, spc_clk_out, prev_spc_clk, communicated_intern:							std_logic;
+signal enable, spc_clk_out, communicated_intern:								std_logic;
 signal address:													std_logic_vector(2 downto 0);
 signal sdi_in:													std_logic_vector(15 downto 0);
 
@@ -97,8 +96,7 @@ lb2: driver port map(
 		spc		=>		spc,
 		cs		=>		cs,
 		gyro_data	=>		gyro_data,
-		communicated	=>		communicated_intern,
-		prev_spc_clk	=>		prev_spc_clk
+		communicated	=>		communicated_intern
 		);
 
 lb6: spi_rom port map(

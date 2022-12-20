@@ -15,8 +15,7 @@ entity driver is
         spc          : out std_logic;   --max 10MHz 
         cs           : out std_logic;   --when low, data is transmitted
         gyro_data    : out std_logic_vector(7 downto 0); --neat vector containing angular data
-        communicated   : out std_logic;   --pulled high whenever gyro_data is correctly written
-        prev_spc_clk : out std_logic
+        communicated : out std_logic  --pulled high whenever gyro_data is correctly written
     );
 end entity driver;
 
@@ -28,15 +27,19 @@ architecture behaviour of driver is
     signal next_gyro_data, this_gyro_data:	std_logic_vector(7 downto 0);
 
     -- we need the gyro data to be stable for a whole FSM cycle. 
-    signal update_external_output : std_logic;
+    signal update_external_output, prev_spc_clk : std_logic;
 
 begin
 
-    process(update_external_output)
+    process(update_external_output, clk, next_gyro_data, reset)
     begin
-        if(update_external_output'event and update_external_output = '1') then
-            gyro_data <= next_gyro_data; 
-        end if;
+	if(reset = '1') then
+		gyro_data	<=	(others=>'0');
+	else
+        	if(clk'event and clk = '1' and update_external_output = '1') then
+           	 gyro_data <= next_gyro_data; 
+        	end if;
+	end if;
     end process;
 
         
