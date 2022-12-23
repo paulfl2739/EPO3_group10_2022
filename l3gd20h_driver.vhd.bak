@@ -70,7 +70,7 @@ component spi_data_ctrl is
 	);
 end component spi_data_ctrl;
 
-signal enable, spc_clk_out, communicated_intern:								std_logic;
+signal enable, spc_clk_out, prev_spc_clk, communicated_intern:							std_logic;
 signal address:													std_logic_vector(2 downto 0);
 signal sdi_in:													std_logic_vector(15 downto 0);
 

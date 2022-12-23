@@ -34,10 +34,10 @@ begin
     process(update_external_output, clk, next_gyro_data, reset)
     begin
 	if(reset = '1') then
-		gyro_data	<=	(others=>'0');
+		gyro_data <= (others=>'0');
 	else
         	if(clk'event and clk = '1' and update_external_output = '1') then
-           	 gyro_data <= next_gyro_data; 
+           	 	gyro_data <= next_gyro_data; 
         	end if;
 	end if;
     end process;

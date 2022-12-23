@@ -568,7 +568,7 @@ begin
 
             when data_0_exit =>
                 cs  <= '0';
-                spc <= '1';
+                spc <= spc_clk;
 
                 sdi <= sdi_in(0);
 

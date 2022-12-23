@@ -44,7 +44,9 @@ begin
 	drdy <=
 			'0' after 0 ns,
 			'1' after 42000 ns,
-			'0' after 48000 ns;
+			'0' after 48000 ns,
+			'1' after 74000 ns,
+			'0' after 80000 ns;
 
 	sdo <=		
 			'0' after 0 ns,	
@@ -53,7 +55,14 @@ begin
 			'1' after 52100 ns,
 			'0' after 52900 ns,
 			'1' after 53700 ns,
-			'0' after 54500 ns;
+			'0' after 54500 ns,
+
+			'1' after 80900 ns,
+			'1' after 82500 ns,
+			'0' after 84100 ns,
+			'1' after 84900 ns,
+			'0' after 85700 ns,
+			'1' after 86500 ns;
 
 lb1: l3gd20h_driver port map(
 				clk		=>		clk,
