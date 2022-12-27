@@ -1,0 +1,178 @@
+library IEEE;
+use IEEE.std_logic_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+
+architecture behaviour of vga_platforms is
+
+signal vpos: INTEGER RANGE 0 TO  800:= 0; 	-- vpos is the y position when monitor is as portret
+signal hpos: INTEGER range 0 to  525:= 0; 	-- hpos is the x position when monitor is as portret
+
+
+signal x : integer range 0 to 480 := 0; -- only test, gone whene coupled with game logic, then we get it as input in the entity 
+signal y : integer range 0 to 640 := 0; -- only test, gone whene coupled with game logic, then we get it as input in the entity
+
+
+
+signal lfsr : std_logic_vector(255 downto 0) := "0011010010001000010000100001000010001001001000100100100001001000100010010010001000001000010001000010001000100100010001001000010000100000100010010001000010010001000100001000100010001001000100010000100001001000010010010001010001001001000001000100010001010010"; -- only test, gone whene coupled with game logic, then we get it as input in the entity
+
+
+--counters for the platforms
+signal countx : integer range 0 to 7 := 0; 
+signal county : integer range 0 to 31 := 0; 
+signal countxpixel : integer range 0 to 60 := 0;
+signal countypixel : integer range 0 to 20 := 0;
+signal syncx : std_logic;
+signal syncy : std_logic;
+
+
+
+
+begin
+
+-- vsync and hsync 
+process (clk)
+begin 
+
+if(reset = '1') then
+  hpos <= 0;
+  vpos <= 0;
+ELSIF(CLK'EVENT and CLK='1')then
+     if(vpos<800)then
+	  vpos<= vpos+1;
+     else
+	  vpos<=0;
+	  if(hpos<525)then
+	    hpos<= hpos+1;
+	  else
+	    hpos<= 0;
+	  end if;
+     end if;
+     if(vpos> 640+16 and vpos< 640+112) then
+	HSync<='0';
+     ELSE
+	HSync<='1';
+     end if;
+	if(vpos> 639 and vpos < 800)	then	
+	 syncy <= '0';
+	else 
+	syncy <= '1';
+	end if;
+	if(hpos>490 and hpos<492) then 
+	  VSync<= '0';	
+	else
+	  VSync<='1'; 
+	end if;
+	if(hpos > 479 and hpos < 525 )	then	
+	 syncx <= '0';
+	else 
+	  syncx <= '1';
+	end if;
+end if;
+end process;
+
+
+--new 
+
+process(clk)
+
+begin
+
+
+-- don't color in blanking area
+if hpos >= 480 and hpos < 0 and vpos >= 640 and vpos < 0 then
+		R<=(Others=> '0');
+		G<=(Others=> '0');
+		B<=(Others=> '0');
+end if;
+
+-- standard values (could be implemented into entity directly)
+
+		R<=(Others=> '0');
+		G<=(Others=> '0');	
+		B<=(Others=> '0');	
+
+-- counters for the platform positions
+
+if (CLK'EVENT and CLK='1' and  hpos >= 0 and Hpos < 479 and Vpos >= 0 and Vpos < 639)  then
+	
+
+	countypixel <= countypixel + 1;
+	if countypixel = 19 then
+		countypixel <= 0;
+		if county < 31 then
+			county <= county + 1;
+		else
+			county <= 0;
+		end if;
+	end if;
+	
+	countxpixel <= countxpixel;
+	if vpos = 0 then
+		county <= 0;
+		countypixel <= 0;
+		countxpixel <= countxpixel + 1;
+		if countxpixel = 59 then
+			countxpixel <= 0;
+			if countx < 7 then
+				countx <= countx + 1;
+			else 
+				countx <= 0; 
+			end if;
+		end if;
+	end if;
+
+	if vpos = 0 and hpos = 0 then
+		
+	county <= 0;
+	countx <= 0;
+	countypixel <= 0;
+	countxpixel <= 0;
+	end if;
+
+
+end if;
+
+-- color a platform green in the places where a plafrom should be 
+if (lfsr(32*countx + county) = '1'  and  hpos >= 0 and Hpos < 479 and Vpos >= 0 and Vpos < 639) then 
+	--if(((hpos>(countx*60) and hpos<(60*(countx+1))) and (vpos>(20*county) and vpos<(20*(1+county))))) then
+		R<=(Others=> '0');
+		G<=(Others=> '1');
+		B<=(Others=> '0');
+	--end if;
+end if;
+
+
+
+
+
+--character in red
+
+x <= 100;
+y <= 400;
+
+
+if ((x < hpos and hpos < (x+20)) and (y < vpos and vpos < (y+20))) then
+			R<=(Others=> '1');
+			G<=(Others=> '0');
+			B<=(Others=> '0');
+end if;
+
+
+
+
+end process; 
+
+
+--60 Hz clock for game module that they can use 
+--process(clk)
+--begin
+--if (vsync'EVENT and vsync='0') then -- create signal
+--	vsyncclk <= '1';
+--end if; 
+
+--end process;
+
+
+
+end behaviour;
