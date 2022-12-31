@@ -59,12 +59,12 @@ begin
 			x <= x_out; 		
 			y <= y_out;		
 			platform_grid <= platform_grid_out; 
-        		if (death_in = '1') then
+        		if (y = '0') then
 				new_state <= death_state;
 			end if;
 		
 		 when death_state =>
-			death = '1';
+			death <= '1';
 			if (start = '1') then
 				new_state <= home_state;
 			else
