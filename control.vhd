@@ -5,14 +5,15 @@ entity control is
    port(start         : in  std_logic;
         clk           : in  std_logic;
         reset         : in  std_logic;
-        v_sync        : in  std_logic;
+        v_sync_clk    : in  std_logic;
         x             : in integer;
         y             : in integer;
+	platform_grid : in  std_logic_vector(255 downto 0);
+	death_in	: in std_logic;			
 	x_out		: out integer;
 	y_out		: out integer;
-        platform_grid : in  std_logic_vector(255 downto 0);
 	platform_grid_out : out std_logic_vector(255 downto 0);
-        v_sync_out    : out std_logic;
+        v_sync_clk_out    : out std_logic;
 	death		: out std_logic); 
 end control;
 
