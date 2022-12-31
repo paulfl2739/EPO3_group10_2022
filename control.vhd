@@ -8,8 +8,7 @@ entity control is
         v_sync_clk    : in  std_logic;
         x             : in integer;
         y             : in integer;
-	platform_grid : in  std_logic_vector(255 downto 0);
-	death_in	: in std_logic;			
+	platform_grid : in  std_logic_vector(255 downto 0);		
 	x_out		: out integer;
 	y_out		: out integer;
 	platform_grid_out : out std_logic_vector(255 downto 0);
