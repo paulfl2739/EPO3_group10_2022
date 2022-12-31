@@ -25,13 +25,39 @@ process ( state , reset)
 begin
 	case state is
 		when home_state => 
-		death <= '1';
-		when send_data_state => 
-		x_out <= x;
-		y_out <= y;
-		platform_grid_out <= platform_grid;
-		vsync_out <= vsync;
+			death <= '1';
+			if (start = '1') then
+					new_state <= send_data_state;
+			else
+				new_state <= home_state;
+			end if;	
 		
+		when send_data_state => 
+			x_out <= x;
+			y_out <= y;
+			platform_grid_out <= platform_grid;
+			if (v_sync_clk = '0') then
+				new_state <= calculation_state;
+			else
+				new_state <= send_data_state;
+			end if;
+		
+		when calculation_state =>
 			
-end behaviour;
+			????
+			
+			if (v_sync_clk = '1' and death) then
+				new_state <= send_data_state;
+			elsif (death = '1') then
+				new_state <= death_state;
+			else
+				new_state <= calculation_state;
+			end if;
+		
+		when death_state =>
+					
+			
+			
+			
+end behaviour; 
 
