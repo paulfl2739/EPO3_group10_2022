@@ -4,14 +4,14 @@ use IEEE.numeric_std.ALL;
 
 architecture behaviour of char_location is
 
-component char_location is
-   port(clk   : in  std_logic;
-        start : in  std_logic;
-	velocity_x	: in	signed(7 downto 0);
-	vsync	: in std_logic;
-	x	: out integer;
-	y	: out integer);
-end component char_location;
+--component char_location is
+  -- port(clk   : in  std_logic;
+    --    start : in  std_logic;
+--	velocity_x	: in	signed(7 downto 0);
+--	vsync	: in std_logic;
+--	x	: out integer;
+--	y	: out integer);
+--end component char_location;
 
 
 signal x_new : integer;
@@ -54,12 +54,12 @@ else
 end if;
 end process;
 
-a1: char_location port map( x_pos => x,
-	 y_pos => y,
-	clk => clk,
-	start => start,
-	velocity_x => velocity_x,
-	vsync => vsync);
+--a1: char_location port map( x_pos => x,
+--	 y_pos => y,
+--	clk => clk,
+--	start => start,
+--	velocity_x => velocity_x,
+--	vsync => vsync);
 
 end behaviour;
 
