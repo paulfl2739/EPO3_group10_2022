@@ -22,8 +22,12 @@ signal V_y_1000: integer := 16000;
 signal V_y : integer;
 
 constant start_x : integer := 240;
-constant	start_y : integer := 100;
+constant start_y : integer := 100;
 constant gravity : integer := 375;
+
+-- Logic for when character goes all the way to right or left of the screen
+-- Character reaches top of the screen
+
 
 begin
 process(clk)
@@ -35,6 +39,7 @@ if (rising_edge(clk)) then
 	elsif (vsync = '1') then
 		x_pos <= x_new;
 		y_pos <= y_new;
+
 	end if;
 end if;
 end process;
@@ -42,10 +47,27 @@ end process;
 
 process(vsync)
 begin
-if(rising_edge(vsync)) then
+if(rising_edge(vsync)) then  -- Signal from VGA that denotes whether a frame has been successfully rendered
+	
+	-- If character hits a platform, then we need to start from a higher y_velocity. We need to make it 160000 everytime it jumps.
 	V_y_1000 <= V_y_1000 - gravity;
 	V_y <= V_y_1000/1000;
-	x_new <= x_new + to_integer(velocity_x);
+	
+	if (x_pos > '319') then
+		-- Velocity x is in the right direction
+		if (velocity_x(7) = '0') then
+			x_new <= x_new + to_integer(velocity_x) - 320;
+		else
+			x_new <= x_new + to_integer(velocity_x);
+	elsif (x_pos < '1') then
+		-- Velocity x is in the left direction
+		if (velocity_x(7) = '1') then
+			x_new <= x_new + to_integer(velocity_x) + 320;
+		else
+			x_new <= x_new + to_integer(velocity_x);
+	else
+		x_new <= x_new + to_integer(velocity_x);
+	end if;
 	y_new <= y_new + V_y;
 	
 else
