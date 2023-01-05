@@ -70,7 +70,10 @@ begin
 			else
 				new_state <= death_state;
 			end if;
+				
+		end case;
+	end process;
 			
 			
-end behaviour; 
+end architecture behaviour; 
 
