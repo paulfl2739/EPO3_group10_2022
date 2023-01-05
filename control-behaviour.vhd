@@ -56,9 +56,9 @@ begin
 				
 		when play_state =>
 			death <= '0';
-			x <= x_out; 		
-			y <= y_out;		
-			platform_grid <= platform_grid_out; 
+			x_out <= x; 		
+			y_out <= y;		
+			platform_grid_out <= platform_grid; 
         		if (y = '0') then
 				new_state <= death_state;
 			end if;
