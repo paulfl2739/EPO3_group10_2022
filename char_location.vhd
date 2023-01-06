@@ -8,6 +8,7 @@ entity char_location is
 	velocity_x	: in	signed(7 downto 0);
 	vsync	: in std_logic;
 	platform_vector: in std_logic_vector (255 downto 0);
+	death	: out std_logic;
 	x	: out integer;
 	y	: out integer);
 end char_location;
