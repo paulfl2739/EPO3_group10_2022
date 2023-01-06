@@ -7,7 +7,7 @@ entity timebase is
 	port (	clk		: in	std_logic;
 		reset		: in	std_logic;
 
-		count_out	: out	std_logic_vector (19 downto 0)
+		count_out	: out	std_logic_vector (24 downto 0)
 	);
 end entity timebase;
 
