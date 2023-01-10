@@ -6,6 +6,7 @@ architecture behaviour of full_register is
 	signal lfsr_next : std_logic_vector(255 downto 0) := "0011001101001010110001011001010101111110100111100001111100100101100110000010001100011100001101110100010000111010110011001111001101100110000010110100010100100000100011000011001111010101010101010001101101001000001001000011110001111001011010100011000001101101";
 	signal next_game_vector : std_logic_vector(255 downto 0);
 	signal start_counting : std_logic := '1';
+	signal next_player_score : integer;
 
 begin
 	lfsr_sequential: process(clk, reset)
@@ -17,7 +18,7 @@ begin
 		else
 			if(rising_edge(clk)) then
 				lfsr <= lfsr_next;
-			
+				player_score <= next_player_score;
 				if (start = '1') then -- Game starts, save current lfsr value (for next game) and stop counting
 					next_game_vector <= lfsr;
 					start_counting <= '0';
@@ -32,7 +33,7 @@ begin
 	begin
 		-- We shift the contents of the grid (and thus the vector) only when the signal 'counter' = 1
 		if (counter = '1') then
-			player_score <= player_score + 1;
+			next_player_score <= player_score + 1;
 			-- Shift the contents of each column one to the left
 			lfsr_next(255 downto 224) <= lfsr(254 downto 223);
 			lfsr_next(223 downto 192) <= lfsr(222 downto 191);
