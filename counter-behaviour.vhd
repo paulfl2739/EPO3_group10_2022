@@ -3,6 +3,7 @@ use IEEE.std_logic_1164.ALL;
 
 architecture behaviour of counter is
 signal count, new_count: unsigned(18 downto 0);
+signal pixel_count, new_pixel_count: integer;
 
 begin
 
@@ -13,6 +14,7 @@ begin
 			count <= (others => '0');
 		else
 			count <= new_count;
+	    		pixel_count_out <= 
 		end if;
 	end if;
 end process;
