@@ -12,6 +12,7 @@ begin
 	if (rising_edge(clk) then
 		if (reset = '1')
 			count <= (others => '0');
+	    		pixel_count <= 0;
 		else
 			count <= new_count;
 	    		pixel_count <= new_pixel_count; 
