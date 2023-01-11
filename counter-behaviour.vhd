@@ -32,7 +32,7 @@ begin
 end process;
 
 count_out <= std_logic_vector(count);
-pixel_count_out <= pixel_count;
+pixel_count_out <= to_unsigned(pixel_count, 5);
 
 end behaviour;
 
