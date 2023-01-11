@@ -14,7 +14,7 @@ begin
 			count <= (others => '0');
 		else
 			count <= new_count;
-	    		pixel_count_out <= 
+	    		pixel_count <= new_pixel_count; 
 		end if;
 	end if;
 end process;
@@ -22,9 +22,16 @@ end process;
 process(count)
 begin
 	new_count <= count + 1;
+	if (pixel_count < 1250000)
+		new_pixel_count <= pixel_count + 1;
+	else
+	    pixel_count <= 0;
+	end if;
+	    
 end process;
 
 count_out <= std_logic_vector(count);
+pixel_count_out <= pixel_count;
 
 end behaviour;
 
