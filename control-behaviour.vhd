@@ -1,13 +1,13 @@
 library IEEE;
 use IEEE.std_logic_1164.ALL;
 
-architecture behaviour of control is
+architecture structural of control is
 	
 	component char_location
   		port(	clk   : in  std_logic;
         		start : in  std_logic;
 			velocity_x	: in	signed(7 downto 0);
-			vsync	: in std_logic;
+			v_sync_clk	: in std_logic;
 			platform_vector: in std_logic_vector (255 downto 0);
 			death	: out std_logic;
 			x	: out integer;
@@ -39,6 +39,7 @@ architecture behaviour of control is
 	--signal state, new_state: game_state;
 	signal intermediate_count: unsigned(4 downto 0);
 	signal intermediate_death: std_logic;
+	signal intermediate_lfsr: std_logic_vector(255 downto 0);
 --begin 
 --	process (clk)
 --	begin 
@@ -113,13 +114,17 @@ platform port map(clk => clk,
 		  reset => reset,
 		  counter => intermediate_count,
 		  player_score => player_score,
-		  lfsr => platform_grid);
+		  lfsr => platform_grid,
+		  lfsr => intermediate_lfsr);
 	
 char_location port map(clk => clk,
 		       start => start,
-		       reset => reset,
-		       velocity_x => velocity_x)
+		       velocity_x => velocity_x,
+		       v_sync_clk => v_sync_clk,
+		       platform_vector => intermediate_lfsr,
+		       death => death,
+		       x => x,
+		       y => y);
 	
-	
-end architecture behaviour; 
+end architecture structural; 
 
