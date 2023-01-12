@@ -6,6 +6,7 @@ entity control is
         clk           : in  std_logic;
         reset         : in  std_logic;
         v_sync_clk    : in  std_logic;
+	velocity_x    : in std_logic_vector(7 downto 0);
         x             : out integer;
         y             : out integer;		
 	platform_grid : out std_logic_vector(255 downto 0);
