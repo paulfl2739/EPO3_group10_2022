@@ -101,6 +101,13 @@ begin
 				
 		end case;
 	end process;
+
+port map( => Clock,
+          => ,
+          => ,
+          => ,
+          => ,
+          => );
 			
 			
 end architecture behaviour; 
