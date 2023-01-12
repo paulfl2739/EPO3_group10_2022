@@ -9,7 +9,7 @@ begin
 
 process(clk)
 begin
-	if (rising_edge(clk) then
+	if (rising_edge(clk) and death = '0') then
 		if (reset = '1')
 			count <= (others => '0');
 	    		pixel_count <= 0;
