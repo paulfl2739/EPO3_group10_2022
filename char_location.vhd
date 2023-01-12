@@ -6,7 +6,7 @@ entity char_location is
    port(clk   : in  std_logic;
         start : in  std_logic;
 	velocity_x	: in	signed(7 downto 0);
-	vsync	: in std_logic;
+	v_sync_clk	: in std_logic;
 	platform_vector: in std_logic_vector (255 downto 0);
 	death	: out std_logic;
 	x	: out integer;
