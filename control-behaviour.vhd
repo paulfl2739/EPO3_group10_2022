@@ -2,7 +2,35 @@ library IEEE;
 use IEEE.std_logic_1164.ALL;
 
 architecture behaviour of control is
-	type	game_state is(		home_state,
+	
+	component char_location
+  		port(	clk   : in  std_logic;
+        		start : in  std_logic;
+			velocity_x	: in	signed(7 downto 0);
+			vsync	: in std_logic;
+			platform_vector: in std_logic_vector (255 downto 0);
+			death	: out std_logic;
+			x	: out integer;
+			y	: out integer);
+		end component;
+	
+	component platform
+		port(clk    : in  std_logic;
+        	     reset  : in  std_logic;
+	--inputt : in std_logic_vector(255 downto 0);
+        	     start   : in  std_logic;
+		     counter : in std_logic;
+		     player_score : out integer;
+        	     lfsr : out std_logic_vector(255 downto 0));
+	end component;
+	
+	component counter
+		port(	clk       : in  std_logic;
+        		reset     : in  std_logic;
+        		count_out : out std_logic_vector(18 downto 0);
+        		pixel_count_out : out std_logic_vector(4 downto 0));
+	
+	type	game_state is(	home_state,
 				--send_data_state,
 				--calculation_state,
 			      	play_state,
