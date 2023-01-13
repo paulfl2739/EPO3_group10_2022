@@ -6,26 +6,24 @@ entity final_testbench is
 end entity final_testbench;
 
 architecture structural of final_testbench is
-
-component l3gd20h_driver is
+component reset_wrapper is
 	port(
-		clk:		in	std_logic; --25MHz main clock
+		clk:		in	std_logic; --25mhz main clock
 		reset:		in	std_logic;
 		start_switch:	in	std_logic; --used to keep sdi protocol off during 10ms gyro startup time
 		drdy:		in	std_logic; --output from gyro when new data is ready to be read off
 		sdo:		in	std_logic;
+		clk60hz:	in	std_logic;
 
 		cs:		out	std_logic;
 		spc:		out	std_logic;
 		sdi:		out	std_logic;
 		data_ready:	out	std_logic;
 		gyro_data:	out	std_logic_vector(7 downto 0)
-		);
-		
+		);			
+end component reset_wrapper;
 
-end component l3gd20h_driver;
-
-signal clk, reset, start_switch, drdy, sdo, sdi, spc, cs,  data_ready:						std_logic;
+signal clk, reset, clk60hz, start_switch, drdy, sdo, sdi, spc, cs,  data_ready:						std_logic;
 signal gyro_data:												std_logic_vector(7 downto 0);
 
 begin
@@ -33,6 +31,10 @@ begin
 	clk <=
 		'1' after 0 ns,
 		'0' after 20 ns when clk /= '0' else '1' after 20 ns;
+
+	clk60hz <=
+			'1' after 0 ns,
+			'0' after 8333333 ns when clk60hz /= '0' else '1' after 8333333 ns;
 	reset <=
 		'1' after 0 ns,
 		'0' after 100 ns;
@@ -46,7 +48,7 @@ begin
 			'1' after 42000 ns,
 			'0' after 48000 ns,
 			'1' after 74000 ns,
-			'0' after 80000 ns,
+			'0' after 80000 ns;
 
 	sdo <=		
 			'0' after 0 ns,	
