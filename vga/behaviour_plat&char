@@ -165,13 +165,13 @@ end process;
 
 
 --60 Hz clock for game module that they can use 
-process(clk)
-begin
-if (vsync'EVENT and vsync='0') then -- create signal
-	vsyncclk <= '1';
-end if; 
+--process(clk)
+--begin
+--if (vsync'EVENT and vsync='0') then -- create signal
+--	vsyncclk <= '1';
+--end if; 
 
-end process;
+--end process;
 
 
 
