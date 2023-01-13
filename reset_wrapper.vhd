@@ -9,7 +9,6 @@ entity reset_wrapper is
 		start_switch:	in	std_logic; --used to keep sdi protocol off during 10ms gyro startup time
 		drdy:		in	std_logic; --output from gyro when new data is ready to be read off
 		sdo:		in	std_logic;
-		clk60hz:	in	std_logic;
 
 		cs:		out	std_logic;
 		spc:		out	std_logic;
@@ -20,7 +19,8 @@ entity reset_wrapper is
 end entity reset_wrapper;
 
 architecture structural of reset_wrapper is
-signal internal_reset:	std_logic;
+
+signal internal_reset, clk60hz_intern:		std_logic;
 
 component l3gd20h_driver is
 	port(
@@ -48,6 +48,16 @@ component reset_module is
 );
 
 end component reset_module;
+
+component clk60hz_gen is
+	port (
+		clk		:	in	std_logic; -- 25 MHz
+		reset		:	in	std_logic;
+		
+		clk60hz		:	out	std_logic 
+	);
+end component clk60hz_gen;
+
 begin
 
 lb0: l3gd20h_driver port map(
@@ -67,8 +77,16 @@ lb0: l3gd20h_driver port map(
 lb1: reset_module port map(
 				clk		=>		clk,
 				reset		=>		reset,
-				clk60hz		=>		clk60hz,
+				clk60hz		=>		clk60hz_intern,
+
 				internal_reset	=>		internal_reset 
+			);
+
+lb2: clk60hz_gen port map(
+				clk		=>		clk,
+				reset		=>		reset,
+
+				clk60hz		=>		clk60hz_intern
 			);
 end architecture;
 

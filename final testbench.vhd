@@ -13,7 +13,6 @@ component reset_wrapper is
 		start_switch:	in	std_logic; --used to keep sdi protocol off during 10ms gyro startup time
 		drdy:		in	std_logic; --output from gyro when new data is ready to be read off
 		sdo:		in	std_logic;
-		clk60hz:	in	std_logic;
 
 		cs:		out	std_logic;
 		spc:		out	std_logic;
@@ -23,7 +22,7 @@ component reset_wrapper is
 		);			
 end component reset_wrapper;
 
-signal clk, reset, clk60hz, start_switch, drdy, sdo, sdi, spc, cs,  data_ready:						std_logic;
+signal clk, reset, start_switch, drdy, sdo, sdi, spc, cs,  data_ready:						std_logic;
 signal gyro_data:												std_logic_vector(7 downto 0);
 
 begin
@@ -32,9 +31,6 @@ begin
 		'1' after 0 ns,
 		'0' after 20 ns when clk /= '0' else '1' after 20 ns;
 
-	clk60hz <=
-			'1' after 0 ns,
-			'0' after 8333333 ns when clk60hz /= '0' else '1' after 8333333 ns;
 	reset <=
 		'1' after 0 ns,
 		'0' after 100 ns;
@@ -72,7 +68,6 @@ lb1: reset_wrapper port map(
 				start_switch	=>		start_switch,
 				drdy		=>		drdy,
 				sdo		=>		sdo,
-				clk60hz		=>		clk60hz,
 
 				cs		=>		cs,
 				spc		=>		spc,
