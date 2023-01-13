@@ -1,0 +1,29 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity offset_count is
+  Port ( clk : in STD_LOGIC;
+         death : in STD_LOGIC;
+         count : out STD_LOGIC_VECTOR (4 downto 0));
+end incrementer;
+
+architecture Behavioral of incrementer is
+  signal count_temp : STD_LOGIC_VECTOR (4 downto 0) := "00000";
+  signal counter : integer range 0 to 1250000 := 0;
+begin
+  process(clk)
+  begin
+    if rising_edge(clk) then
+      if counter = 1250000-1 then
+        count_temp <= count_temp + 1;
+        if count_temp > "10100" then
+          count_temp <= "00000";
+        end if;
+        counter <= 0;
+      else
+        counter <= counter + 1;
+      end if;
+    end if;
+  end process;
+  count <= count_temp;
+end Behavioral;
