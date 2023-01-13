@@ -1,0 +1,23 @@
+entity rising_edge_counter is
+    port(
+        clk : in std_logic;
+        signal_out : out std_logic
+    );
+end rising_edge_counter;
+
+architecture behavioral of rising_edge_counter is
+    signal counter : unsigned(24 downto 0) := (others => '0');
+begin
+    process(clk)
+    begin
+        if (clk'event and clk = '1') then
+            if (counter = 24_999_999) then
+                signal_out <= '1';
+                counter <= (others => '0');
+            else
+                signal_out <= '0';
+                counter <= counter + 1;
+            end if;
+        end if;
+    end process;
+end behavioral;
