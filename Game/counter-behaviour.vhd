@@ -11,7 +11,7 @@ begin
     begin
         if (clk'event and clk = '1') then
 		if death = '0' then
-            			if (counter = 24_999) then
+            			if (counter = 24_999_999) then
                 				update <= '1';
                 				counter <= (others => '0');
             			else
