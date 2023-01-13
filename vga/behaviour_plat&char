@@ -25,6 +25,8 @@ signal countypixel : integer range 0 to 20 := 0;
 signal syncx : std_logic;
 signal syncy : std_logic;
 
+signal sixtyHz : std_logic;
+
 
 
 
@@ -164,14 +166,15 @@ end if;
 end process; 
 
 
---60 Hz clock for game module that they can use 
---process(clk)
---begin
---if (vsync'EVENT and vsync='0') then -- create signal
---	vsyncclk <= '1';
---end if; 
-
---end process;
+--60 Hz clock for external modules that they can use 
+process(hpos, vpos)
+begin
+	if(hpos < 262 and vpos < 400) then 
+		sixtyHz <= '1';
+	else
+		sixtyHz <= '0';
+	end if;
+end process;
 
 
 
