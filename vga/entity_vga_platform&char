@@ -1,19 +1,23 @@
-library IEEE;
-use IEEE.std_logic_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
 entity vga_platforms is
-   port(clk 	 : in  std_logic;
---	countx : out integer range 0 to 7:= 0; -- only in entity if we model the siganls
---	county : out integer range 0 to 31 := 0; -- only in entity if we model the siganls
---	countxpixel : out integer range 0 to 60 := 0; -- only in entity if we model the siganls
---	countypixel : out integer range 0 to 20 := 0; -- only in entity if we model the siganls
- 	r     : out std_logic_vector(3 downto 0);
-	g     : out std_logic_vector(3 downto 0);
-	b     : out std_logic_vector(3 downto 0);
-	reset : in std_logic;
-  hsync : out std_logic;
-	vsync : out std_logic);
---	lfsr : in std_logic_vector(255 downto 0) := "0011010010001000010000100001000010001001001000100100100001001000100010010010001000001000010001000010001000100100010001001000010000100000100010010001000010010001000100001000100010001001000100010000100001001000010010010001010001001001000001000100010001010010"); -- input form game logic for all the places where a platform is 
---	x : in integer range 0 to 480 := 0; -- input from game logic for x position of character
---	y : in integer range 0 to 640 := 0; -- input from game logic for y position of character
+   port(clk      : in  std_logic;
+--    countx : out integer range 0 to 7:= 0; -- only in entity if we model the siganls
+--    county : out integer range 0 to 31 := 0; -- only in entity if we model the siganls
+--    countxpixel : out integer range 0 to 60 := 0; -- only in entity if we model the siganls
+--    countypixel : out integer range 0 to 20 := 0; -- only in entity if we model the siganls
+    r     : out std_logic_vector(3 downto 0);
+    g     : out std_logic_vector(3 downto 0);
+    b     : out std_logic_vector(3 downto 0);
+--    click : in std_logic;-- away when implemented
+    reset : in std_logic;
+    collision : out std_logic; 
+        hsync : out std_logic;
+    vsync : out std_logic;
+    start : in std_logic;
+    offset_logic : in std_logic_vector (4 downto 0);
+    lfsr : in std_logic_vector(255 downto 0); -- input form game logic for all the places where a platform is 
+    x_logic : in std_logic_vector (8 downto 0); -- input from game logic for x position of character
+    y_logic : in std_logic_vector (9 downto 0)); -- input from game logic for y position of character 
 end vga_platforms;
