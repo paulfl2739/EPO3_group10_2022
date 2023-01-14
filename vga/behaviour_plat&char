@@ -139,8 +139,9 @@ end process;
 
 process (clk, reset, hpos, vpos)
 begin 
-if (clk'event and clk='1' and  hpos >= 0 and hpos < 479 and vpos >= 0 and vpos < 639)  then
-    
+if (clk'event and clk='1') then
+   if (hpos >= 0 and hpos < 479 and vpos >= 0 and vpos < 639)  then
+   
     countypixel <= countypixel + 1;
     if countypixel = 19 then
         countypixel <= 0;
@@ -173,7 +174,7 @@ if (clk'event and clk='1' and  hpos >= 0 and hpos < 479 and vpos >= 0 and vpos <
     countxpixel <= 0;
     end if;
 
-
+  end if;
 end if;
 end process;
 
