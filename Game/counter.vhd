@@ -5,5 +5,6 @@ entity counter is
    port(clk       : in  std_logic;
         death     : in std_logic;
         update : out std_logic);
+        --new_frame : out std_logic);
 end counter;
 
