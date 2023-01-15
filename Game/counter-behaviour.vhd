@@ -20,14 +20,17 @@ begin
 							--frame_counter <= (others => '0');
 						--else
 							--new_frame <= '0';
-							--frame_counter <=
+							--frame_counter <= frame_counter + 1;
+						--end if;
             			else
                 				update <= '0';
                 				counter <= counter + 1;
             			end if;	
 		else
 			update <= '0';
-                			counter <= (others => '0');
+                	counter <= (others => '0');
+			--new_frame <= '0';
+	    		--frame_counter <= (others => '0');
 		end if;
 	 
         end if;
