@@ -1,0 +1,74 @@
+library IEEE;
+use IEEE.std_logic_1164.ALL;
+use IEEE.numeric_std.ALL;
+
+architecture behaviour of char_location is
+
+constant gravity : INTEGER := 375;
+
+signal y_position : INTEGER:= 340;
+signal y_velocity : INTEGER := 16000;
+signal x_decimal : integer;
+signal x_between : integer := 0;
+signal y_between : integer := 0;
+
+begin
+    process(clk, reset)
+    
+    begin
+        if rising_edge(clk) then
+		x <= x_between;
+    		y <= y_between;
+
+            		if reset = '1' then
+              			x <= 240;
+                			y <= 275;
+                			death <= '0';
+		end if;
+        end if;
+    end process;
+    
+
+    process(frame_passed)
+	variable x_position : INTEGER := 240;
+    begin
+	if(frame_passed = '1') then
+		
+		if (collision = '1') then
+		    y_velocity <= 16000;
+		else
+		    y_velocity <= y_velocity - gravity;
+		end if;
+			
+		x_decimal <= to_integer(signed(velocity_x));
+		if(start = '1') then
+			x_position := 240;
+			y_position <= 300;
+		else
+			if (velocity_x(7) = '1') then
+				if (x_position >= 475) then
+                    					x_position := x_decimal;
+				else
+					x_position := x_position + x_decimal;
+				end if;
+                			elsif (velocity_x(7) = '0') then
+				if(x_position <= 5) then
+                    					x_position := 480 - x_decimal;
+				elsif (x_position < x_decimal) then
+					x_position := 0;
+				else
+					x_position := x_position - x_decimal;
+				end if;
+                			end if;
+		end if;
+
+                if y_position = 0 then
+                    death <= '1';
+                end if;
+		
+		y_position <= (1000*y_position + y_velocity) / 1000;
+	end if;
+	x_between <= x_position;
+	y_between <= y_position;
+    end process;
+end behaviour;
