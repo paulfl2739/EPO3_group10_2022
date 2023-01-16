@@ -25,7 +25,7 @@ internal_reset <= temp_reset or reset;
 process(clk, reset, new_count, count, clk60hz) --asynchronous counter, synced to clk
 begin
 	if (reset = '1') then
-		count <= "000000";
+		count 	 <= "000000";
 	else
 		if (clk'event and clk = '1') then
 			count <= new_count;
@@ -40,11 +40,11 @@ begin
 	if (clk60hz_prev = '0' and clk60hz = '1') then
 		new_count <= count + 1;
 	else
-		new_count <= new_count;
+		new_count <= count;
 	end if;
 end process;
 
-process(clk, reset, clk60hz) --rembering the old value of clk60hz, so we can detect a rising edge of clk60hz, used above
+process(clk, reset, clk60hz, clk60hz_prev) --rembering the old value of clk60hz, so we can detect a rising edge of clk60hz, used above
 begin
         if (reset = '1') then
             clk60hz_prev <= '0';
