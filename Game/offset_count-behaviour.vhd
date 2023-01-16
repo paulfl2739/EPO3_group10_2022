@@ -13,7 +13,7 @@ begin
 	if death = '0' then
       		if counter = 1250000-1 then
         			offset <= unsigned(offset) + '1';
-        			if offset > "10011" then
+        			if offset > "10010" then
           				offset <= "00000";
         			end if;
         		counter <= 0;
@@ -30,3 +30,4 @@ begin
   end process;
   count <= std_logic_vector(offset);
 end Behavioral;
+
