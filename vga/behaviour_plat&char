@@ -120,13 +120,15 @@ end if;
 --y <= 400;
 
 
-if ((x < hpos and hpos < (x+20)) and (y < vpos and vpos < (y+20))) then
+if (((x-10) < hpos and hpos < (x+10)) and (y < vpos and vpos < (y+20))) then
+  if ((hpos >= 0 and hpos < 479) and (vpos >= 0 and vpos < 619)) then 
             r<=(Others=> '1');
             g<=(Others=> '0');
             b<=(Others=> '0');
         if (groen_getekend = '1') then
             new_collision_reg <= '1';
         end if;
+  end if;
 end if;
 
 if vpos = 0 and hpos = 0 then
