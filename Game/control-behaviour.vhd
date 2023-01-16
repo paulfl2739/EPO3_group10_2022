@@ -9,8 +9,8 @@ architecture structural of control is
         			start : in  std_logic;
 			collision : in std_logic;
 			velocity_x	: in std_logic_vector(7 downto 0);
-			x	: out integer;
-			y	: out integer;
+			x	: out std_logic_vector(7 downto 0);
+			y	: out std_logic_vector(7 downto 0);
 			death	: out std_logic);
 		end component;
 	
