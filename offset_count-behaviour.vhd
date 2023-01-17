@@ -12,7 +12,7 @@ begin
     if (rising_edge(clk)) then
 	if death = '0' then
       		if counter = 1250000-1 then
-        			offset <= unsigned(offset) + 1;
+        			offset <= unsigned(offset) + '1';
         			if offset > "10010" then
           				offset <= "00000";
         			end if;

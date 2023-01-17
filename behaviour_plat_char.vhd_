@@ -81,7 +81,7 @@ end process;
         
 
 
-process(clk, death, collision_reg, hpos, vpos, lfsr, countx, county, x, y)-- click gone if all implemented
+process(clk, start, collision_reg, hpos, vpos, lfsr, countx, county, x, y)-- click gone if all implemented
 variable groen_getekend : std_logic; 
 begin
 groen_getekend  := '0'; 

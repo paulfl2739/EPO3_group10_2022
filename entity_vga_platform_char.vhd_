@@ -15,7 +15,7 @@ entity vga_platforms is
     collision : out std_logic; 
         hsync : out std_logic;
     vsync : out std_logic;
-    death : in std_logic;
+    start : in std_logic;
     offset_logic : in std_logic_vector (4 downto 0);
     frame_count : out std_logic;
     lfsr : in std_logic_vector(255 downto 0); -- input form game logic for all the places where a platform is 

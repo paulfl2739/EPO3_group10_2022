@@ -7,9 +7,10 @@ entity top_vga_entity is
         lfsr  : in  std_logic_vector(255 downto 0);
         x_logic : in  std_logic_vector (8 downto 0);
         y_logic : in  std_logic_vector (9 downto 0);
-    start : in std_logic;
+    death : in std_logic;
     offset_logic : in std_logic_vector (4 downto 0); 
     collision : out std_logic;
+	frame_count : out std_logic;
         r     : out std_logic_vector (3 downto 0);
         g     : out std_logic_vector (3 downto 0);
         b     : out std_logic_vector (3 downto 0);

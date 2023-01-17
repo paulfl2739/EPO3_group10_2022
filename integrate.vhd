@@ -1,0 +1,21 @@
+library IEEE;
+use IEEE.std_logic_1164.ALL;
+
+entity integrate is
+	port(clk 	: in std_logic;
+	reset 	: in std_logic;
+	start 	: in std_logic;
+	
+	sdo	: in std_logic; --gyroscope chip
+	drdy 	: in std_logic;
+	cs	: out std_logic;
+	spc	: out std_logic;
+	sdi	: out std_logic;
+
+	r	: out std_logic_vector(3 downto 0); --vga
+	g	: out std_logic_vector(3 downto 0);
+	b	: out std_logic_vector(3 downto 0);
+	hsync	: out std_logic;
+	vsync 	: out std_logic);
+end integrate;
+

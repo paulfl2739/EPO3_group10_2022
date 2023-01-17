@@ -1,0 +1,118 @@
+library IEEE;
+use IEEE.std_logic_1164.ALL;
+
+architecture structural of integrate is
+
+
+
+   component control -- top game entity
+      port(start         : in  std_logic;
+           clk           : in  std_logic;
+           reset         : in  std_logic;
+           frame_passed    : in  std_logic;
+   	velocity_x    : in std_logic_vector(7 downto 0);
+   	collision	    : in std_logic;
+           x             : out std_logic_vector(8 downto 0);
+           y             : out std_logic_vector(9 downto 0);		
+   	platform_grid : out std_logic_vector(255 downto 0);
+   	death	      : out std_logic;
+   	pixel_count_out : out std_logic_vector(4 downto 0));
+   end component;
+
+   component reset_wrapper -- top gyro entity
+   	port(
+   		clk: 		in	std_logic; --25mhz main clock
+   		reset: 		in	std_logic;
+   		start_switch: 	in	std_logic; --used to keep sdi protocol off during 10ms gyro startup time
+   		drdy: 		in	std_logic; --output from gyro when new data is ready to be read off
+   		sdo: 		in	std_logic;
+   
+   		cs: 		out	std_logic;
+   		spc: 		out	std_logic;
+   		sdi: 		out	std_logic;
+   		data_ready: 	out	std_logic;
+   		gyro_data: 	out	std_logic_vector(7 downto 0)
+   		);			
+   end component;
+
+   component top_vga_entity
+      port(clk   : in  std_logic;
+           reset : in  std_logic;
+           lfsr  : in  std_logic_vector(255 downto 0);
+           x_logic : in  std_logic_vector (8 downto 0);
+           y_logic : in  std_logic_vector (9 downto 0);
+       death : in std_logic;
+       offset_logic : in std_logic_vector (4 downto 0); 
+	frame_count : out std_logic;
+       collision : out std_logic;
+           r     : out std_logic_vector (3 downto 0);
+           g     : out std_logic_vector (3 downto 0);
+           b     : out std_logic_vector (3 downto 0);
+           hsync : out std_logic;
+           vsync : out std_logic);
+   end component;
+
+	--VGA signals
+	signal sig_death, sig_collision: std_logic;
+	signal sig_grid : std_logic_vector(255 downto 0);
+	signal sig_x : std_logic_vector(8 downto 0);
+	signal sig_y : std_logic_vector(9 downto 0);
+
+	--Game signals
+	signal sig_frame: std_logic;
+	signal sig_velocity_x : std_logic_vector(7 downto 0);
+	signal sig_offset : std_logic_vector(4 downto 0);
+
+	--Gyro signals
+	signal sig_data_ready : std_logic;
+	
+	
+begin
+
+lbltop_vga: top_vga_entity port map(
+	clk => clk,
+	reset => reset,
+	lfsr => sig_grid,
+	x_logic => sig_x,
+	y_logic => sig_y,
+	death => sig_death,
+	offset_logic => sig_offset,
+	frame_count => sig_frame,
+	collision => sig_collision,
+	r => r,
+	g => g,
+	b => b,
+	hsync => hsync,
+	vsync => vsync);
+
+
+lblreset_wrapper: reset_wrapper port map(
+	clk => clk,
+	reset => reset,
+	start_switch => start,
+	drdy => drdy,
+	sdo => sdo,
+	cs => cs,
+	spc => spc,
+	sdi => sdi,
+	data_ready => sig_data_ready,
+	gyro_data => sig_velocity_x);
+	
+lblcontrol: control port map(
+	start => start,
+	clk => clk,
+	reset => reset,
+	frame_passed => sig_frame,
+	velocity_x => sig_velocity_x,
+	collision => sig_collision,
+	x => sig_x,
+	y => sig_y,
+	platform_grid => sig_grid,
+	death => sig_death,
+	pixel_count_out => sig_offset);
+
+
+
+	
+end structural;
+
