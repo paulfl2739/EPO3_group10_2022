@@ -35,7 +35,7 @@ begin
 	end if;
 end process;
 
-process(clk60hz,clk60hz_prev, count) --every time the 60hz clk rises, we increment count
+process(clk60hz,clk60hz_prev, count, new_count) --every time the 60hz clk rises, we increment count
 begin
 	if (clk60hz_prev = '0' and clk60hz = '1') then
 		new_count <= count + 1;
