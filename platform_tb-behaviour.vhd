@@ -1,23 +1,21 @@
 library IEEE;
 use IEEE.std_logic_1164.ALL;
 
-architecture behaviour of test_plat_tb is
-   component test_plat
+architecture behaviour of platform_tb is
+   component platform
       port(clk    : in  std_logic;
            reset  : in  std_logic;
 	   shift  : in  std_logic;
 	   start  : in  std_logic;
-	   death  : in  std_logic;
-           output : out std_logic_vector(255 downto 0));
+           grid : out std_logic_vector(255 downto 0));
    end component;
    signal clk    : std_logic;
    signal reset  : std_logic;
    signal shift  : std_logic;
    signal start  : std_logic;
-   signal death  : std_logic;
-   signal output : std_logic_vector(255 downto 0);
+   signal grid : std_logic_vector(255 downto 0);
 begin
-   test: test_plat port map (clk, reset, shift, start, death, output);
+   test: platform port map (clk, reset, shift, start, grid);
    clk <= '0' after 0 ns,
           '1' after 20 ns when clk /= '1' else '0' after 20 ns;
    reset <= '1' after 0 ns,
@@ -36,6 +34,6 @@ begin
 	    '0' after 1070 ns;
    start <= '1' after 0 ns,
 	    '0' after 10 ns;
-   death <= '0' after 0 ns;
 end behaviour;
+
 

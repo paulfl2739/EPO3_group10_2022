@@ -33,6 +33,17 @@ x <= to_integer(unsigned(x_logic));
 y <= to_integer(unsigned(y_logic));
 collision <= collision_reg;
 
+process(clk)
+begin
+if(clk'event and clk = '1') then
+	if (hpos = 0 and vpos = 0) then
+		frame_count <= '1';
+	else
+		frame_count <= '0';
+	end if;
+end if;
+end process;
+
 
 -- vsync and hsync 
 process (clk, reset)
@@ -40,7 +51,7 @@ begin
 
 if(reset = '1') then
   collision_reg <= '0';
-  new_collision_reg <= '0';
+  --new_collision_reg <= '0';
   hpos <= 0;
   vpos <= 0;
 elsif(clk'event and clk='1')then
@@ -87,9 +98,9 @@ end if;
 
 -- standard values (could be implemented into entity directly)
 
-        r<=(Others=> '0');
-        g<=(Others=> '0');    
-        b<=(Others=> '0');    
+        r<=(others=> '0');
+        g<=(others=> '0');    
+        b<=(others=> '0');    
 
 -- counters for the platform positions
 
@@ -136,54 +147,9 @@ if vpos = 0 and hpos = 0 then
 end if;
 
 end if; -- end game code 
-end process; 
 
+-- startscreen code 
 
-process (clk, reset, hpos, vpos)
-begin 
-if (clk'event and clk='1') then
-   if (hpos >= 0 and hpos < 479 and vpos >= 0 and vpos < 639)  then
-   
-    countypixel <= countypixel + 1;
-    if countypixel = 19 then
-        countypixel <= 0;
-        if county < 31 then
-            county <= county + 1;
-        else
-            county <= 0;
-        end if;
-    end if;
-    
-    countxpixel <= countxpixel;
-    if vpos = 19 - offset then
-        county <= 0;
-        countypixel <= 0;
-        countxpixel <= countxpixel + 1;
-        if countxpixel = 59 then
-            countxpixel <= 0;
-            if countx < 7 then
-                countx <= countx + 1;
-            else 
-                countx <= 0; 
-            end if;
-        end if;
-    end if;
-
-    if vpos = 0 and hpos = 0 then
-    county <= 0;
-    countx <= 0;
-    countypixel <= 0;
-    countxpixel <= 0;
-    end if;
-
-  end if;
-end if;
-end process;
-
-
--- startscreen
-process(clk,hpos,vpos, start)
-begin
 
 if start = '1' then 
 
@@ -525,6 +491,62 @@ end if;
 
 end if; -- end startscreen code
 
+
+
+
+
+
+-- end startscreen code
+end process; 
+
+
+process (clk, reset, hpos, vpos)
+begin 
+if (clk'event and clk='1') then
+   if (hpos >= 0 and hpos < 479 and vpos >= 0 and vpos < 639)  then
+   
+    countypixel <= countypixel + 1;
+    if countypixel = 19 then
+        countypixel <= 0;
+        if county < 31 then
+            county <= county + 1;
+        else
+            county <= 0;
+        end if;
+    end if;
+    
+    countxpixel <= countxpixel;
+    if vpos = 19 - offset then
+        county <= 0;
+        countypixel <= 0;
+        countxpixel <= countxpixel + 1;
+        if countxpixel = 59 then
+            countxpixel <= 0;
+            if countx < 7 then
+                countx <= countx + 1;
+            else 
+                countx <= 0; 
+            end if;
+        end if;
+    end if;
+
+    if vpos = 0 and hpos = 0 then
+    county <= 0;
+    countx <= 0;
+    countypixel <= 0;
+    countxpixel <= 0;
+    end if;
+
+  end if;
+end if;
 end process;
+
+
+-- startscreen
+--process(clk,hpos,vpos, start)
+--begin
+
+
+--end process;
 
 end behaviour;

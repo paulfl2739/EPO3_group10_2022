@@ -16,6 +16,7 @@ entity vga_platforms is
         hsync : out std_logic;
     vsync : out std_logic;
     start : in std_logic;
+	 frame_count : out std_logic;
     offset_logic : in std_logic_vector (4 downto 0);
     lfsr : in std_logic_vector(255 downto 0); -- input form game logic for all the places where a platform is 
     x_logic : in std_logic_vector (8 downto 0); -- input from game logic for x position of character

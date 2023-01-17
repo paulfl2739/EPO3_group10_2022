@@ -1,38 +1,29 @@
 library IEEE;
 use IEEE.std_logic_1164.ALL;
+use IEEE.numeric_std.ALL;
 
-architecture behaviour of counter is
-signal count, new_count: unsigned(18 downto 0);
-signal pixel_count, new_pixel_count: integer;
 
+
+architecture behavioral of counter is
+    signal counter : unsigned(24 downto 0) := (others => '0');
 begin
-
-process(clk)
-begin
-	if (rising_edge(clk) and death = '0') then
-		if (reset = '1')
-			count <= (others => '0');
-	    		pixel_count <= 0;
+    process(clk)
+    begin
+        if (clk'event and clk = '1') then
+		if death = '0' then
+            			if (counter = 24_999_999) then
+                				update <= '1';
+                				counter <= (others => '0');
+            			else
+                				update <= '0';
+                				counter <= counter + 1;
+            			end if;	
 		else
-			count <= new_count;
-	    		pixel_count <= new_pixel_count; 
+			update <= '0';
+                			counter <= (others => '0');
 		end if;
-	end if;
-end process;
-
-process(count)
-begin
-	new_count <= count + 1;
-	if (pixel_count < 1250000)
-		new_pixel_count <= pixel_count + 1;
-	else
-	    pixel_count <= 0;
-	end if;
-	    
-end process;
-
-count_out <= std_logic_vector(count);
-pixel_count_out <= to_unsigned(pixel_count, 5);
-
-end behaviour;
+	 
+        end if;
+    end process;
+end behavioral;
 

@@ -1,6 +1,6 @@
 library IEEE;
 use IEEE.std_logic_1164.ALL;
 
-entity testing_tb is
-end testing_tb;
+entity platform_tb is
+end platform_tb;
 

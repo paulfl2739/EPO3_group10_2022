@@ -1,130 +1,65 @@
 library IEEE;
 use IEEE.std_logic_1164.ALL;
-
+use ieee.numeric_std.all;
 architecture structural of control is
-	
 	component char_location
   		port(	clk   : in  std_logic;
-        		start : in  std_logic;
-			velocity_x	: in	signed(7 downto 0);
-			v_sync_clk	: in std_logic;
-			platform_vector: in std_logic_vector (255 downto 0);
-			death	: out std_logic;
-			x	: out integer;
-			y	: out integer);
+			reset : in std_logic;
+			frame_passed : in std_logic;
+        			start : in  std_logic;
+			collision : in std_logic;
+			velocity_x	: in std_logic_vector(7 downto 0);
+			x	: out std_logic_vector(8 downto 0);
+			y	: out std_logic_vector(9 downto 0);
+			death	: out std_logic);
 		end component;
 	
 	component platform
-		port(clk    : in  std_logic;
-        	     reset  : in  std_logic;
-        	     start   : in  std_logic;
-		     counter : in std_logic;
-		     player_score : out integer;
-        	     lfsr : out std_logic_vector(255 downto 0));
+		port(	clk    : in  std_logic;
+        	     		reset  : in  std_logic;
+        	     		shift   : in  std_logic;
+		     	start : in std_logic;
+        	     		grid : out std_logic_vector(255 downto 0));
 	end component;
 	
 	component counter
 		port(	clk       : in  std_logic;
-        		reset     : in  std_logic;
-		     	death	  : in std_logic;
-        		count_out : out std_logic_vector(18 downto 0);
-        		pixel_count_out : out std_logic_vector(4 downto 0));
-	
-	--type	game_state is(	home_state,
-				--send_data_state,
-				--calculation_state,
-			      	--play_state,
-				--death_state
-				--);
-	--signal state, new_state: game_state;
-	signal intermediate_count: unsigned(4 downto 0);
+        		     	death	: in std_logic;
+			update  : out std_logic);
+	end component;
+
+	component offset_count
+		port( clk	: in std_logic;
+			death : in std_logic;
+			count	: out std_logic_vector( 4 downto 0));
+	end component;
+	signal intermediate_update: std_logic;
 	signal intermediate_death: std_logic;
-	signal intermediate_lfsr: std_logic_vector(255 downto 0);
---begin 
---	process (clk)
---	begin 
---	if (rising_edge(clk)) then
---		if (reset = '1') then
---		state <= home_state;
---		else 
---		state <= new_state;
---		end if;
---	end if;
---end process;
+BEGIN
+a1: counter port map(clk => clk,
+         	 death => intermediate_death,
+	   update => intermediate_update);
 
---process ( state , reset)
---begin
---	case state is
---		when home_state => 
---			death <= '1';
---			if (start = '1') then
--- 					new_state <= play_state; --send_data_state;
---			else
---				new_state <= home_state;
---			end if;	
-		
-		-- when send_data_state => 
-		--	x_out <= x;
-		--	y_out <= y;
-		--	death <= '0';
-		--	platform_grid_out <= platform_grid;
-		--	if (v_sync_clk = '0') then
-		--		new_state <= calculation_state;
-		--	else
-		--		new_state <= send_data_state;
-		--	end if; 
-		
-		-- when calculation_state =>
-		--	death = '0';
-		--	if (v_sync_clk = '1' and death ) then
-		--		new_state <= send_data_state;
-		--	elsif (death = '1') then
-		--		new_state <= death_state;
-		--	else
-		--		new_state <= calculation_state;
-		--	end if;
+a2: offset_count port map( clk => clk,
+			 death => intermediate_death,
+			 count => pixel_count_out);
 				
---		when play_state =>
---			death <= '0';
---			x_out <= x; 		
---			y_out <= y;		
---			platform_grid_out <= platform_grid; 
---        		if (y = '0') then
---				new_state <= death_state;
---			end if;
-		
---		 when death_state =>
---			death <= '1';
---			if (start = '1') then
---				new_state <= home_state;
---			else
---				new_state <= death_state;
---			end if;
---				
---		end case;
---	end process;
-
-counter port map(clk => clk,
-         	 reset => reset,
-         	 pixel_count_out => pixel_count_out,
-         	 count_out => intermediate_count);
-				
-platform port map(clk => clk,
-		  start => start,
+a3: platform port map(clk => clk,
 		  reset => reset,
-		  counter => intermediate_count,
-		  player_score => player_score,
-		  lfsr => platform_grid,
-		  lfsr => intermediate_lfsr);
+		  shift => intermediate_update,
+		  start => start,
+		  grid =>  platform_grid);
 	
-char_location port map(clk => clk,
-		       start => start,
+a4: char_location port map(clk => clk,
+			   reset => reset,
+			   frame_passed => frame_passed,
+		      	   start => start,
+			collision => collision,
 		       velocity_x => velocity_x,
-		       v_sync_clk => v_sync_clk,
-		       platform_vector => intermediate_lfsr,
-		       death => death,
+		       death => intermediate_death,
 		       x => x,
 		       y => y);
-	
-end architecture structural; 
+-- Here we find the output signals of the control top level entity
+death <= intermediate_death;
+end architecture structural;
 

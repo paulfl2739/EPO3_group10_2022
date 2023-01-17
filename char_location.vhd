@@ -1,15 +1,16 @@
 library IEEE;
-use IEEE.numeric_std.ALL;
 use IEEE.std_logic_1164.ALL;
 
 entity char_location is
-   port(clk   : in  std_logic;
-        start : in  std_logic;
-	velocity_x	: in	signed(7 downto 0);
-	v_sync_clk	: in std_logic;
-	platform_vector: in std_logic_vector (255 downto 0);
-	death	: out std_logic;
-	x	: out integer;
-	y	: out integer);
+   port(clk : in  STD_LOGIC;
+           reset : in  STD_LOGIC;
+           frame_passed : in  STD_LOGIC;
+           start : in  STD_LOGIC;
+	   collision : in STD_LOGIC;
+           velocity_x : in  std_logic_vector(7 downto 0);
+           x : out  std_logic_vector(8 downto 0);
+           y : out  std_logic_vector(9 downto 0);
+           death : out  STD_LOGIC := '1');
 end char_location;
+
 
