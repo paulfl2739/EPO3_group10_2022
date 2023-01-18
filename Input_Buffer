@@ -1,0 +1,25 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity buffer is
+    Port ( clk : in  STD_LOGIC;
+           reset : in  STD_LOGIC;
+           start : in  STD_LOGIC;
+           buffered_start : out  STD_LOGIC);
+end buffer;
+
+architecture behaviour of buffer is
+    signal ff1, ff2 : std_logic;
+begin
+    process(clk, reset)
+    begin
+        if reset = '1' then
+            ff1 <= '0';
+            ff2 <= '0';
+        elsif rising_edge(clk) then
+            ff1 <= start;
+            ff2 <= ff1;
+        end if;
+    end process;
+    buffered_start <= ff2;
+end architecture behaviour;
