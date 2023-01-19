@@ -3,7 +3,7 @@ use IEEE.std_logic_1164.ALL;
 use IEEE.numeric_std.ALL;
 
 architecture behaviour of platform_count is
-signal count : unsigned(2 downto 0) := "000";
+signal count, new_count : unsigned(2 downto 0) := "000";
 begin
 process(clk)
 begin
@@ -11,10 +11,18 @@ begin
 		if(reset = '1' or count = "111") then
 			count <= "000";
 		else
-			count <= count + '1';
+			count <= new_count;
 		end if;
-		column <= std_logic_vector(count);
+		
 	end if;
 end process;
+
+comb : process(count)
+begin
+	new_count <= count + '1';
+end process;
+
+column <= std_logic_vector(count);
+
 end behaviour;
 
