@@ -18,8 +18,35 @@ end entity determine_position;
 architecture behavioral of determine_position is
 
     signal next_x, current_x : std_logic_vector(8 downto 0);
+    signal nxt_y_pos, y_pos, integer;
+    signal nxt_y_velo, y_velo : integer;
+
 
     begin
+process(clk, collision)
+    if rising_edge(clk) then
+        if reset then
+        y_pos <= 40;
+        nxt_ypos <= 40;
+        y_velo <= 0;
+        nxt_y_velo <= 0;
+        else
+        ypos <= nxt_y_pos;
+        y_velo <= nxt_y_velo;
+        end if;
+    end if;
+end procces;
+
+process(clk, collision)
+nxt_y_pos <= y_pos - y_velo;
+
+if collision = '1' then
+nxt_y_velo <= 1500;
+else
+nxt_y_velo <= y_velo - gravity;
+end if;
+end procces;
+
 
 process(clk)
 begin 
