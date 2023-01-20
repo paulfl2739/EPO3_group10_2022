@@ -1,7 +1,12 @@
+
+
+        r <= (others => '0');
+	g <= (others => '0');
+	b <= (others => '0');
+
 --note to self: niet vergeten de others aan te passen in code van startscherm, daar staan er nog een aantal met hoofdletter, input buffer checken, start systeem, randomness platform, initial values niet in signals en entity, knopje, als te veel ruimte dan mogelijk tekst 'electro jump' eruit
 
-signal score_count : integer range 0 to 120;
-signal score_first, score_second, score_third : integer range 0 to 9;
+
 
 
 --to do: intial value 0 somewhere (als death weer van 1 naar 0 gaat, dus game begint weer, kan op start knop dus)
@@ -9,11 +14,11 @@ signal score_first, score_second, score_third : integer range 0 to 9;
 --in process van rgb (behaviour_plat_char)
 --in death is 0, zodat nieuw score update
 
-if  (clk’event and clk = ‘1’)  then
+if  (clk'event and clk = '1')  then
 	if (hpos = 0 and vpos = 0) then
-		if (score_count < 120) then
+		if (score_count < 60) then
 			score_count <= score_count  + 1;
-		elsif (score_count  = 120) then
+		elsif (score_count  = 60) then
 			score_count <= 0;
 			if (score_first < 9) then
 				score_first <= score_first + 1;
@@ -61,112 +66,112 @@ end if;
 
 --score displayed as 888 (score_third, score_second, score_first)
 --score_first seven segement 
-if ((635 < vpos and vpos < 640) and (261 < hpos and hpos < 274))  and (score_first <= 0 or score_first <=2 or score_first <=3 or score_first <=5 or score_first <=6 or score_first <=7 or score_first <=8 or score_first <=9)  then --uppermid
-	r <= (others => ‘1’);
-	g <= (others => ‘1’);
-	b <= (others => ‘1’);
+if ((635 < vpos and vpos < 640) and (261 < hpos and hpos < 274))  and (score_first = 0 or score_first = 2 or score_first = 3 or score_first = 5 or score_first = 6 or score_first = 7 or score_first = 8 or score_first = 9)  then --uppermid
+	r <= (others => '1');
+	g <= (others => '1');
+	b <= (others => '1');
 end if;
-if ((623 < vpos and vpos < 636) and (257 < hpos and hpos < 262))  and (score_first <= 0 or score_first <=4 or score_first <=5 or score_first <=6 or score_first <= 8 or score_first <=9)  then --upperleft
-	r <= (others => ‘1’);
-	g <= (others => ‘1’);
-	b <= (others => ‘1’);
+if ((623 < vpos and vpos < 636) and (257 < hpos and hpos < 262))  and (score_first = 0 or score_first = 4 or score_first = 5 or score_first = 6 or score_first = 8 or score_first = 9)  then --upperleft
+	r <= (others => '1');
+	g <= (others => '1');
+	b <= (others => '1');
 end if;
-if ((623 < vpos and vpos < 636) and (273 < hpos and hpos < 278))  and (score_first <=0 or score_first <=1 or score_first <=2 or score_first <=3 or score_first <=4 or score_first <=7 or score_first <= 8 or score_first <=9)  then  --upperright
-	r <= (others => ‘1’);
-	g <= (others => ‘1’);
-	b <= (others => ‘1’);
+if ((623 < vpos and vpos < 636) and (273 < hpos and hpos < 278))  and (score_first = 0 or score_first = 1 or score_first = 2 or score_first = 3 or score_first = 4 or score_first = 7 or score_first = 8 or score_first = 9)  then  --upperright
+	r <= (others => '1');
+	g <= (others => '1');
+	b <= (others => '1');
 end if;
-if ((619 < vpos and vpos < 624) and (261 < hpos and hpos < 274))  and (score_first <= 2 or score_first <=3 or score_first <=4 or score_first <=5 or score_first <=6 or score_first <=8 or score_first <=9)  then --mid
-	r <= (others => ‘1’);
-	g <= (others => ‘1’);
-	b <= (others => ‘1’);
+if ((619 < vpos and vpos < 624) and (261 < hpos and hpos < 274))  and (score_first = 2 or score_first = 3 or score_first = 4 or score_first = 5 or score_first = 6 or score_first = 8 or score_first = 9)  then --mid
+	r <= (others => '1'); 
+	g <= (others => '1');
+	b <= (others => '1');
 end if;
-if ((607 < vpos and vpos < 620) and (257 < hpos and hpos < 262))  and (score_first <= 0 or score_first <=2 or score_first <=6 or score_first <=8)  then --lowerleft
-	r <= (others => ‘1’);
-	g <= (others => ‘1’);
-	b <= (others => ‘1’);
+if ((607 < vpos and vpos < 620) and (257 < hpos and hpos < 262))  and (score_first = 0 or score_first = 2 or score_first = 6 or score_first = 8)  then --lowerleft
+	r <= (others => '1');
+	g <= (others => '1');
+	b <= (others => '1');
 end if;
-if ((607 < vpos and vpos < 620) and (273 < hpos and hpos < 278))  and (score_first <= 0 or score_first <=1 or score_first <=3 or score_first <=4 or score_first <=5 or score_first <=6 or score_first <=7 or score_first <=8 or score_first <=9)  then --lowerright
-	r <= (others => ‘1’);
-	g <= (others => ‘1’);
-	b <= (others => ‘1’);
+if ((607 < vpos and vpos < 620) and (273 < hpos and hpos < 278))  and (score_first = 0 or score_first = 1 or score_first = 3 or score_first = 4 or score_first = 5 or score_first = 6 or score_first = 7 or score_first = 8 or score_first = 9)  then --lowerright
+	r <= (others => '1');
+	g <= (others => '1');
+	b <= (others => '1');
 end if;
-if ((603 < vpos and vpos < 608) and (261 < hpos and hpos < 274))  and (score_first <= 0 or score_first <=2 or score_first <=3 or score_first <=5 or score_first <=6 or score_first <=8 or score_first <=9)  then --lowermid
-	r <= (others => ‘1’);
-	g <= (others => ‘1’);
-	b <= (others => ‘1’);
+if ((603 < vpos and vpos < 608) and (261 < hpos and hpos < 274))  and (score_first  = 0 or score_first = 2 or score_first = 3 or score_first = 5 or score_first = 6 or score_first = 8 or score_first = 9)  then --lowermid
+	r <= (others => '1');
+	g <= (others => '1');
+	b <= (others => '1');
 end if;
 
 --score_second seven segement
-if ((635 < vpos and vpos < 640) and (261-28 < hpos and hpos < 274-28))  and (score_second <= 0 or score_second <=2 or score_second <=3 or score_second <=5 or score_second <=6 or score_second <=7 or score_second <=8 or score_second <=9)  then --uppermid
-	r <= (others => ‘1’);
-	g <= (others => ‘1’);
-	b <= (others => ‘1’);
+if ((635 < vpos and vpos < 640) and (261-28 < hpos and hpos < 274-28))  and (score_second = 0 or score_second = 2 or score_second = 3 or score_second = 5 or score_second = 6 or score_second = 7 or score_second = 8 or score_second = 9)  then --uppermid
+	r <= (others => '1');
+	g <= (others => '1');
+	b <= (others => '1');
 end if;
-if ((623 < vpos and vpos < 636) and (257-28 < hpos and hpos < 262-28))  and (score_second <= 0 or score_second <=4 or score_second <=5 or score_second <=6 or score_second <=8 or score_second <=9)  then --upperleft
-	r <= (others => ‘1’);
-	g <= (others => ‘1’);
-	b <= (others => ‘1’);
+if ((623 < vpos and vpos < 636) and (257-28 < hpos and hpos < 262-28))  and (score_second = 0 or score_second = 4 or score_second = 5 or score_second = 6 or score_second = 8 or score_second = 9)  then --upperleft
+	r <= (others => '1');
+	g <= (others => '1');
+	b <= (others => '1');
 end if;
-if ((623 < vpos and vpos < 636) and (273-28 < hpos and hpos < 278-28))  and (score_second <=0 or score_second <=1 or score_second <=2 or score_second <=3 or score_second <=4 or score_second <=7 or score_second <=8 or score_second <=9)  then  --upperright
-	r <= (others => ‘1’);
-	g <= (others => ‘1’);
-	b <= (others => ‘1’);
+if ((623 < vpos and vpos < 636) and (273-28 < hpos and hpos < 278-28))  and (score_second = 0 or score_second = 1 or score_second = 2 or score_second = 3 or score_second = 4 or score_second = 7 or score_second = 8 or score_second = 9)  then  --upperright
+	r <= (others => '1');
+	g <= (others => '1');
+	b <= (others => '1');
 end if;
-if ((619 < vpos and vpos < 624) and (261-28 < hpos and hpos < 274-28))  and (score_second <= 2 or score_second <=3 or score_second <=4 or score_second <=5 or score_second <=6 or score_second <=8 or score_second <=9)  then --mid
-	r <= (others => ‘1’);
-	g <= (others => ‘1’);
-	b <= (others => ‘1’);
+if ((619 < vpos and vpos < 624) and (261-28 < hpos and hpos < 274-28))  and (score_second = 2 or score_second = 3 or score_second = 4 or score_second = 5 or score_second = 6 or score_second = 8 or score_second = 9)  then --mid
+	r <= (others => '1');
+	g <= (others => '1');
+	b <= (others => '1');
 end if;
-if ((607 < vpos and vpos < 620) and (257-28 < hpos and hpos < 262-28))  and (score_second <=0 or score_second <=2 or score_second <=6 or score_second <=8)  then --lowerleft
-	r <= (others => ‘1’);
-	g <= (others => ‘1’);
-	b <= (others => ‘1’);
+if ((607 < vpos and vpos < 620) and (257-28 < hpos and hpos < 262-28))  and (score_second = 0 or score_second = 2 or score_second = 6 or score_second = 8)  then --lowerleft
+	r <= (others => '1');
+	g <= (others => '1');
+	b <= (others => '1');
 end if;
-if ((607 < vpos and vpos < 620) and (273-28 < hpos and hpos < 278-28))  and (score_second <= 0 or score_second <= 1 or score_second <=3 or score_second <=4 or score_second <=5 or score_second <=6 or score_second <=7 or score_second <=8 or score_second <=9)  then --lowerright
-	r <= (others => ‘1’);
-	g <= (others => ‘1’);
-	b <= (others => ‘1’);
+if ((607 < vpos and vpos < 620) and (273-28 < hpos and hpos < 278-28))  and (score_second = 0 or score_second = 1 or score_second = 3 or score_second = 4 or score_second = 5 or score_second = 6 or score_second = 7 or score_second = 8 or score_second = 9)  then --lowerright
+	r <= (others => '1');
+	g <= (others => '1');
+	b <= (others => '1');
 end if;
-if ((603 < vpos and vpos < 608) and (261-28 < hpos and hpos < 274-28))  and (score_second <= 0 or score_second <=2 or score_second <=3 or score_second <=5 or score_second <=6 or score_second <=8 or score_second <=9)  then --lowermid
-	r <= (others => ‘1’);
-	g <= (others => ‘1’);
-	b <= (others => ‘1’);
+if ((603 < vpos and vpos < 608) and (261-28 < hpos and hpos < 274-28))  and (score_second = 0 or score_second = 2 or score_second = 3 or score_second = 5 or score_second = 6 or score_second = 8 or score_second = 9)  then --lowermid
+	r <= (others => '1');
+	g <= (others => '1');
+	b <= (others => '1');
 end if;
 
 --score_third seven segement
-if ((635 < vpos and vpos < 640) and (261-56 < hpos and hpos < 274-56))  and (score_third <= 0 or score_third <=2 or score_third <=3 or score_third <=5 or score_third <=6 or score_third <=7 or score_third <=8 or score_third <=9)  then --uppermid
-	r <= (others => ‘1’);
-	g <= (others => ‘1’);
-	b <= (others => ‘1’);
+if ((635 < vpos and vpos < 640) and (261-56 < hpos and hpos < 274-56))  and (score_third = 0 or score_third = 2 or score_third = 3 or score_third = 5 or score_third = 6 or score_third = 7 or score_third = 8 or score_third = 9)  then --uppermid
+	r <= (others => '1');
+	g <= (others => '1');
+	b <= (others => '1');
 end if;
-if ((623 < vpos and vpos < 636) and (257-56 < hpos and hpos < 262-56))  and (score_third <=0 or score_third <=4 or score_third <=5 or score_third <=6 or score_third <=8 or score_third <=9)  then --upperleft
-	r <= (others => ‘1’);
-	g <= (others => ‘1’);
-	b <= (others => ‘1’);
+if ((623 < vpos and vpos < 636) and (257-56 < hpos and hpos < 262-56))  and (score_third = 0 or score_third = 4 or score_third = 5 or score_third = 6 or score_third = 8 or score_third = 9)  then --upperleft
+	r <= (others => '1');
+	g <= (others => '1');
+	b <= (others => '1');
 end if;
-if ((623 < vpos and vpos < 636) and (273-56 < hpos and hpos < 278-56))  and (score_third <= 0 or score_third <=1 or score_third <=2 or score_third <=3 or score_third <=4 or score_third <=7 or score_third <=8 or score_third <=9)  then  --upperright
-	r <= (others => ‘1’);
-	g <= (others => ‘1’);
-	b <= (others => ‘1’);
+if ((623 < vpos and vpos < 636) and (273-56 < hpos and hpos < 278-56))  and (score_third = 0 or score_third = 1 or score_third = 2 or score_third = 3 or score_third = 4 or score_third = 7 or score_third = 8 or score_third = 9)  then  --upperright
+	r <= (others => '1');
+	g <= (others => '1');
+	b <= (others => '1');
 end if;
-if ((619 < vpos and vpos < 624) and (261-56 < hpos and hpos < 274-56))  and (score_third <= 2 or score_third <=3 or score_third <=4 or score_third <=5 or score_third <=6 or score_third <=8 or score_third <=9)  then --mid
-	r <= (others => ‘1’);
-	g <= (others => ‘1’);
-	b <= (others => ‘1’);
+if ((619 < vpos and vpos < 624) and (261-56 < hpos and hpos < 274-56))  and (score_third = 2 or score_third = 3 or score_third = 4 or score_third = 5 or score_third = 6 or score_third = 8 or score_third = 9)  then --mid
+	r <= (others => '1');
+	g <= (others => '1');
+	b <= (others => '1');
 end if;
-if ((607 < vpos and vpos < 620) and (257-56 < hpos and hpos < 262-56))  and (score_third <=0 or score_third <=2 or score_third <=6 or score_third <=8)  then --lowerleft
-	r <= (others => ‘1’);
-	g <= (others => ‘1’);
-	b <= (others => ‘1’);
+if ((607 < vpos and vpos < 620) and (257-56 < hpos and hpos < 262-56))  and (score_third = 0 or score_third = 2 or score_third = 6 or score_third = 8)  then --lowerleft
+	r <= (others => '1');
+	g <= (others => '1');
+	b <= (others => '1');
 end if;
-if ((607 < vpos and vpos < 620) and (273-56 < hpos and hpos < 278-56))  and (score_third <= 0 or score_third <=1 or score_third <=3 or score_third <=4 or score_third <=5 or score_third <=6 or score_third <=7 or score_third <=8 or score_third <=9)  then --lowerright
-	r <= (others => ‘1’);
-	g <= (others => ‘1’);
-	b <= (others => ‘1’);
+if ((607 < vpos and vpos < 620) and (273-56 < hpos and hpos < 278-56))  and (score_third = 0 or score_third = 1 or score_third = 3 or score_third = 4 or score_third = 5 or score_third = 6 or score_third = 7 or score_third = 8 or score_third = 9)  then --lowerright
+	r <= (others => '1');
+	g <= (others => '1');
+	b <= (others => '1');
 end if;
-if ((603 < vpos and vpos < 608) and (261-56 < hpos and hpos < 274-56))  and (score_third <=0 or score_third <=2 or score_third <=3 or score_third <=5 or score_third <=6 or score_third <=8 or score_third <=9)  then --lowermid
-	r <= (others => ‘1’);
-	g <= (others => ‘1’);
-	b <= (others => ‘1’);
+if ((603 < vpos and vpos < 608) and (261-56 < hpos and hpos < 274-56))  and (score_third = 0 or score_third = 2 or score_third = 3 or score_third = 5 or score_third = 6 or score_third = 8 or score_third = 9)  then --lowermid
+	r <= (others => '1');
+	g <= (others => '1');
+	b <= (others => '1');
 end if;
