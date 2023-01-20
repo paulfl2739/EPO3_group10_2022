@@ -19,7 +19,7 @@ architecture behavioral of determine_position_tb is
     end component determine_position;
 
     signal sig_clk, sig_reset, sig_fp, sig_col : std_logic;
-    signal signedxvel : signed;
+    signal signedxvel : integer;
     signal sig_xvel : std_logic_vector(7 downto 0);
     signal sig_xpos : std_logic_vector(8 downto 0);
     signal sig_ypos : std_logic_vector(9 downto 0);
@@ -30,22 +30,29 @@ sig_clk <= '0' after 0 ns,
             '1' after 20 ns when sig_clk /= '1' else '0';
 sig_reset <= '1' after 0 ns,
             '0' after 50 ns;
-frame_passed <= '0' after 0 ns, -- 1/60 Hz officially, '1' for 1 clk cycle
-                '1' after 500 ns, -- I reduced duration for simulation ease
-                '0' after 520 ns,
-                '1' after 1020 ns,
-                '0' after 1030 ns;
+sig_fp <= '0' after 0 ns, -- 1/60 Hz officially, '1' for 1 clk cycle
+                '1' after 60 ns, -- I reduced duration for simulation ease
+                '0' after 80 ns,
+                '1' after 120 ns,
+                '0' after 140 ns,
+		'1' after 200 ns,
+		'0' after 220 ns,
+		'1' after 300 ns,
+		'0' after 320 ns;
+sig_col <= '0' after 0 ns,
+		'1' after 369 ns,
+		'0' after 390 ns,
+		'1' after 750 ns,
+		'0' after 770 ns;
 
-process(sig_clk, sig_xvel)
-begin 
-    if(rising_edge(sig_clk)) then 
-        if(signed(sig_xvel) < 150) then
-            signedxvel <= signed(sig_xvel) + 50;
-        else
-            signedxvel <= signed(sig_xvel) - 50;
-        end if;
-    end if;
-end process;
+signedxvel <= 0 after 0 ns,
+	53 after 10 ns,
+	79 after 40 ns,
+	20 after 60 ns,
+	35 after 70 ns,
+	-40 after 800 ns;
+
+sig_xvel <= std_logic_vector(to_signed(signedxvel, 8));
 
 lbldp: determine_position port map(
     clk => sig_clk,
