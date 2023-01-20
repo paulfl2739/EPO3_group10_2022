@@ -22,6 +22,10 @@ architecture behavioral of determine_position is
     signal next_x_pos1, next_x_pos2, current_x_pos, sum_x_pos, overflow_sum_x_pos: signed;
 
     begin
+        
+--------------------------
+-- Calculate y position --
+--------------------------
 
 sum_y_vel <= current_y_vel -375; -- '-375' is 'gravitational' acceleration
 next_y_vel1 <= sum_y_vel when (frame_passed = '1') else current_y_vel;
@@ -57,10 +61,6 @@ y_position <= std_logic_vector(current_y_pos);
 --------------------------
 -- Calculate x position --
 --------------------------
-
-
-
-
 
 sum_x_pos <= x_velocity + current_x_pos;
 
