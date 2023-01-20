@@ -17,8 +17,8 @@ begin
     begin
         if rising_edge(clk) then
             		if reset = '1' then
-              			x <= std_logic_vector(to_unsigned(240,9));
-                			y <= std_logic_vector(to_unsigned(275,10));
+              			x <= std_logic_vector(to_unsigned(240,8));
+                			y <= std_logic_vector(to_unsigned(275,8));
                 			death <= '1';
 		end if;
 		
@@ -32,7 +32,7 @@ begin
 			death <= '0';
 		end if;
 
-		if(frame_passed = '1' and ready = '1') then  -- Rising edge of frame_passed			
+		if(frame_passed = '1') then  -- Rising edge of frame_passed			
 			x_decimal <= to_integer(signed(velocity_x));
 			
 			if (velocity_x(7) = '1') then --Check the bounds of the screen
@@ -60,18 +60,18 @@ begin
 		
         end if;
 	
-	x <= std_logic_vector(to_unsigned(x_position,9));
-	y <= std_logic_vector(to_unsigned(y_position,10));
+	x <= std_logic_vector(to_unsigned(x_position,8));
+	y <= std_logic_vector(to_unsigned(y_position,8));
     end process;  
 
-	process(clk)
-	begin
-	if rising_edge(clk) then
-		if(frame_passed ='1' and frame_passed_prev = '0') then
-			ready <= '1';
-		end if;
-		frame_passed_prev <= frame_passed;
-	end if;
-	end process;
+--	process(clk)
+--	begin
+--	if rising_edge(clk) then
+--		if(frame_passed ='1' and frame_passed_prev = '0') then
+--			ready <= '1';
+--		end if;
+--		frame_passed_prev <= frame_passed;
+--	end if;
+--	end process;
 end behaviour;
 

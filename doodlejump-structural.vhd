@@ -6,17 +6,17 @@ architecture structural of integrate is
 
 
    component control -- top game entity
-      port(start         : in  std_logic;
-           clk           : in  std_logic;
-           reset         : in  std_logic;
-           frame_passed    : in  std_logic;
-   	velocity_x    : in std_logic_vector(7 downto 0);
-   	collision	    : in std_logic;
-           x             : out std_logic_vector(8 downto 0);
-           y             : out std_logic_vector(9 downto 0);		
-   	platform_grid : out std_logic_vector(255 downto 0);
-   	death	      : out std_logic;
-   	pixel_count_out : out std_logic_vector(4 downto 0));
+      port(	start         : in  std_logic;
+				clk           : in  std_logic;
+				reset         : in  std_logic;
+				frame_passed    : in  std_logic;
+				velocity_x    : in std_logic_vector(7 downto 0);
+				collision	    : in std_logic;
+				x             : out std_logic_vector(8 downto 0);
+				y             : out std_logic_vector(9 downto 0);		
+				platform_grid : out std_logic_vector(255 downto 0);
+				death	      : out std_logic;
+				pixel_count_out : out std_logic_vector(4 downto 0));
    end component;
 
    component reset_wrapper -- top gyro entity
@@ -41,10 +41,10 @@ architecture structural of integrate is
            lfsr  : in  std_logic_vector(255 downto 0);
            x_logic : in  std_logic_vector (8 downto 0);
            y_logic : in  std_logic_vector (9 downto 0);
-       death : in std_logic;
-       offset_logic : in std_logic_vector (4 downto 0); 
-	frame_count : out std_logic;
-       collision : out std_logic;
+				death : in std_logic;
+				offset_logic : in std_logic_vector (4 downto 0); 
+				frame_count : out std_logic;
+				collision : out std_logic;
            r     : out std_logic_vector (3 downto 0);
            g     : out std_logic_vector (3 downto 0);
            b     : out std_logic_vector (3 downto 0);
@@ -75,10 +75,10 @@ lbltop_vga: top_vga_entity port map(
 	lfsr => sig_grid,
 	x_logic => sig_x,
 	y_logic => sig_y,
-	death => sig_death,
 	offset_logic => sig_offset,
 	frame_count => sig_frame,
 	collision => sig_collision,
+	death => sig_death,
 	r => r,
 	g => g,
 	b => b,

@@ -1,0 +1,1024 @@
+Library vendor : Model Technology
+Maximum unnamed designs : 3
+ENTITY char_location
+    Source modified time: Mon Jan 16 10:10:25 2023
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/char_location.vhd
+    Source file: VHDL/char_location.vhd
+    Start location: VHDL/char_location.vhd:4
+    Version string: CKibW6ICG>:^z=ROml2GQ0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:15:24 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY behaviour
+    Source modified time: Mon Jan 16 10:16:15 2023
+    Depends on: E work char_location CKibW6ICG>:^z=ROml2GQ0
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/char_location-behaviour.vhd
+    Source file: VHDL/char_location-behaviour.vhd
+    Start location: VHDL/char_location-behaviour.vhd:5
+    Version string: KcEzJPPjfEQXGEmJnAD:P0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:16:15 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/pflee/Desktop/integratingEPO
+VHDL CONFIGURATION char_location_behaviour_cfg
+    Configuration applies to entity: char_location
+    Block configuration applies to architecture: behaviour
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: A work char_location behaviour KcEzJPPjfEQXGEmJnAD:P0
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work char_location CKibW6ICG>:^z=ROml2GQ0
+    Source modified time: Mon Jan 16 11:17:47 2023
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/char_location_behaviour_cfg.vhd
+    Source file: VHDL/char_location_behaviour_cfg.vhd
+    Start location: VHDL/char_location_behaviour_cfg.vhd:1
+    Version string: M09PW[TKfeX`nLmE_80GF0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 11:17:47 2023
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY char_location_tb
+    Source modified time: Mon Jan 16 10:08:19 2023
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/char_location_tb.vhd
+    Source file: VHDL/char_location_tb.vhd
+    Start location: VHDL/char_location_tb.vhd:4
+    Version string: G9Jg4^iGo6DK2EleoE:1I2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:15:24 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY behaviour
+    Depends on: E work char_location_tb G9Jg4^iGo6DK2EleoE:1I2
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/char_location_tb-behaviour.vhd
+    Source file: VHDL/char_location_tb-behaviour.vhd
+    Start location: VHDL/char_location_tb-behaviour.vhd:4
+    Version string: oJ0m^khhiD0aM5TYFBN^03
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:46:17 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/pflee/Desktop/integratingEPO
+    Source modified time: Mon Jan 16 10:08:19 2023
+ENTITY clk60hz_gen
+    Source modified time: Mon Jan 16 10:08:19 2023
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/clockgen_60hz.vhd
+    Source file: VHDL/clockgen_60hz.vhd
+    Start location: VHDL/clockgen_60hz.vhd:5
+    Version string: g^J0lcBZWA;a8oB85F[dg2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:15:24 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY behaviour
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work clk60hz_gen g^J0lcBZWA;a8oB85F[dg2
+    Start location: VHDL/clockgen_60hz.vhd:14
+    Version string: g@B]I3>Bbe1UCUhlXk1eM2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:46:17 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/pflee/Desktop/integratingEPO
+    Source file: VHDL/clockgen_60hz.vhd
+    Source modified time: Mon Jan 16 10:08:19 2023
+    HDL source file: VHDL/clockgen_60hz.vhd
+VHDL CONFIGURATION clk60hz_gen_behaviour_cfg
+    Configuration applies to entity: clk60hz_gen
+    Block configuration applies to architecture: behaviour
+    Depends on: A work clk60hz_gen behaviour g@B]I3>Bbe1UCUhlXk1eM2
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work clk60hz_gen g^J0lcBZWA;a8oB85F[dg2
+    Source modified time: Mon Jan 16 11:17:52 2023
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/clk60hz_gen_behaviour_cfg.vhd
+    Source file: VHDL/clk60hz_gen_behaviour_cfg.vhd
+    Start location: VHDL/clk60hz_gen_behaviour_cfg.vhd:1
+    Version string: e05[USPUEmP7lzYmF]n520
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 11:17:52 2023
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY control
+    Source modified time: Mon Jan 16 11:20:03 2023
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/control.vhd
+    Source file: VHDL/control.vhd
+    Start location: VHDL/control.vhd:4
+    Version string: ^zij^PF@>cT5fP>21_H4V1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 11:20:03 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY structural
+    Depends on: E work control ^zij^PF@>cT5fP>21_H4V1
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/control-behaviour.vhd
+    Source file: VHDL/control-behaviour.vhd
+    Start location: VHDL/control-behaviour.vhd:4
+    Version string: ]1?LFffJkB2V:Z>AKD8zd1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 11:20:09 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/pflee/Desktop/integratingEPO
+    Source modified time: Mon Jan 16 11:20:03 2023
+VHDL CONFIGURATION control_structural_cfg
+    Configuration applies to entity: control
+    Block configuration applies to architecture: structural
+    Depends on: E work char_location CKibW6ICG>:^z=ROml2GQ0
+    Depends on: E work platform aReCzbRW``L>:cWo<b8YT2
+    Depends on: E work offset_count ;;B<K<9OahZQG763Z4hf^3
+    Depends on: E work counter L@VKU]A]hU9kgcD2ACQm^3
+    Depends on: C work char_location_behaviour_cfg M09PW[TKfeX`nLmE_80GF0
+    Depends on: C work platform_behaviour_cfg da9[l7b^`YI^QY[WcOH[m1
+    Depends on: C work offset_count_behavioral_cfg WnSbLS^B;`MoUF>2:H=C11
+    Depends on: C work counter_behavioral_cfg dz43]3_Qd<LgJc<h3oj4]3
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: A work control structural ]1?LFffJkB2V:Z>AKD8zd1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work control ^zij^PF@>cT5fP>21_H4V1
+    Source modified time: Mon Jan 16 11:20:13 2023
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/control_structural_cfg.vhd
+    Source file: VHDL/control_structural_cfg.vhd
+    Start location: VHDL/control_structural_cfg.vhd:1
+    Version string: 0e403J5GHFiKN==il9PLS1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 11:20:13 2023
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY counter
+    Source modified time: Mon Jan 16 10:08:19 2023
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/counter.vhd
+    Source file: VHDL/counter.vhd
+    Start location: VHDL/counter.vhd:4
+    Version string: L@VKU]A]hU9kgcD2ACQm^3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:15:24 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY behavioral
+    Depends on: E work counter L@VKU]A]hU9kgcD2ACQm^3
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/counter-behaviour.vhd
+    Source file: VHDL/counter-behaviour.vhd
+    Start location: VHDL/counter-behaviour.vhd:7
+    Version string: ?nKFTH40j?dXakdGOkol>2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:46:17 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/pflee/Desktop/integratingEPO
+    Source modified time: Mon Jan 16 10:08:19 2023
+VHDL CONFIGURATION counter_behavioral_cfg
+    Configuration applies to entity: counter
+    Block configuration applies to architecture: behavioral
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: A work counter behavioral ?nKFTH40j?dXakdGOkol>2
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work counter L@VKU]A]hU9kgcD2ACQm^3
+    Source modified time: Mon Jan 16 11:17:31 2023
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/counter_behavioral_cfg.vhd
+    Source file: VHDL/counter_behavioral_cfg.vhd
+    Start location: VHDL/counter_behavioral_cfg.vhd:1
+    Version string: dz43]3_Qd<LgJc<h3oj4]3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 11:17:31 2023
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY doodlejump
+    Source modified time: Mon Jan 16 11:12:18 2023
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/integrate.vhd
+    Source file: VHDL/integrate.vhd
+    Start location: VHDL/integrate.vhd:4
+    Version string: JbG?N<<4_F2[P4ba1<ZjG1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 11:12:20 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY structural
+    Source modified time: Mon Jan 16 11:26:18 2023
+    Depends on: E work doodlejump JbG?N<<4_F2[P4ba1<ZjG1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/doodlejump-structural.vhd
+    Source file: VHDL/doodlejump-structural.vhd
+    Start location: VHDL/doodlejump-structural.vhd:4
+    Version string: 5gYZFSD1]GGg]18@BoMD:1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 11:26:18 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/pflee/Desktop/integratingEPO
+ENTITY driver
+    Source modified time: Mon Jan 16 10:08:19 2023
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/driver.vhd
+    Source file: VHDL/driver.vhd
+    Start location: VHDL/driver.vhd:5
+    Version string: >3PZkG4GnjUkj_8SNT=RO1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:15:24 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY behaviour
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work driver >3PZkG4GnjUkj_8SNT=RO1
+    Start location: VHDL/driver.vhd:22
+    Version string: WQSMbSRB7H6@[AUT_1kni0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:46:17 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/pflee/Desktop/integratingEPO
+    Source file: VHDL/driver.vhd
+    Source modified time: Mon Jan 16 10:08:19 2023
+    HDL source file: VHDL/driver.vhd
+VHDL CONFIGURATION driver_behaviour_cfg
+    Configuration applies to entity: driver
+    Block configuration applies to architecture: behaviour
+    Depends on: A work driver behaviour WQSMbSRB7H6@[AUT_1kni0
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work driver >3PZkG4GnjUkj_8SNT=RO1
+    Source modified time: Mon Jan 16 11:16:55 2023
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/driver_behaviour_cfg.vhd
+    Source file: VHDL/driver_behaviour_cfg.vhd
+    Start location: VHDL/driver_behaviour_cfg.vhd:1
+    Version string: MNUYD[O1S6CT[L9@1c_[j3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 11:16:55 2023
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY final_tb
+    Source modified time: Mon Jan 16 10:08:19 2023
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/final_testbench.vhd
+    Source file: VHDL/final_testbench.vhd
+    Start location: VHDL/final_testbench.vhd:5
+    Version string: bQCJ2]XK7Ugd0Ej3[2?aX3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:15:24 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY structural
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work final_tb bQCJ2]XK7Ugd0Ej3[2?aX3
+    Start location: VHDL/final_testbench.vhd:8
+    Version string: >c^oHfDF[;`FcKH[LC3oS1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:46:18 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/pflee/Desktop/integratingEPO
+    Source file: VHDL/final_testbench.vhd
+    Source modified time: Mon Jan 16 10:08:19 2023
+    HDL source file: VHDL/final_testbench.vhd
+ENTITY integrate
+    Source modified time: Mon Jan 16 11:39:20 2023
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/integrate.vhd
+    Source file: VHDL/integrate.vhd
+    Start location: VHDL/integrate.vhd:4
+    Version string: bQajUaDELT^MFjgPKgHo32
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Tue Jan 17 09:01:59 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY structural
+    Source modified time: Tue Jan 17 09:01:55 2023
+    Depends on: E work integrate bQajUaDELT^MFjgPKgHo32
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/doodlejump-structural.vhd
+    Source file: VHDL/doodlejump-structural.vhd
+    Start location: VHDL/doodlejump-structural.vhd:4
+    Version string: C`@D08l]A=:lM8F7X1=KN2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Tue Jan 17 09:01:55 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/pflee/Desktop/integratingEPO
+ENTITY l3gd20h_driver
+    Source modified time: Mon Jan 16 10:08:19 2023
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/l3gd20h_driver.vhd
+    Source file: VHDL/l3gd20h_driver.vhd
+    Start location: VHDL/l3gd20h_driver.vhd:5
+    Version string: 5>`A6fe[eAPHm4Y?QLC[<2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:15:24 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY structural
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work l3gd20h_driver 5>`A6fe[eAPHm4Y?QLC[<2
+    Start location: VHDL/l3gd20h_driver.vhd:23
+    Version string: VFKYXJV^e[em_<;]M3IeB2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:46:18 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/pflee/Desktop/integratingEPO
+    Source file: VHDL/l3gd20h_driver.vhd
+    Source modified time: Mon Jan 16 10:08:19 2023
+    HDL source file: VHDL/l3gd20h_driver.vhd
+VHDL CONFIGURATION l3gd20h_driver_structural_cfg
+    Configuration applies to entity: l3gd20h_driver
+    Block configuration applies to architecture: structural
+    Depends on: E work spi_data_ctrl K1:S`ZD]IZZLT]7;=RzJ@0
+    Depends on: E work spi_rom l3cHzIIRLcc2]nU:R`Dd?3
+    Depends on: E work driver >3PZkG4GnjUkj_8SNT=RO1
+    Depends on: E work spc_clockgen FJFeTL54mIYe@ZS4aNA4C3
+    Depends on: C work spi_data_ctrl_behaviour_cfg dUI85jN5:@B`5Q2jjC]WU1
+    Depends on: C work spi_rom_behaviour_cfg 5khWa1E^I_9c4OHTDZ[f^2
+    Depends on: C work driver_behaviour_cfg MNUYD[O1S6CT[L9@1c_[j3
+    Depends on: C work spc_clockgen_behaviour_cfg `bV^mYg`kNVQa1IC`lP<Z1
+    Depends on: A work l3gd20h_driver structural VFKYXJV^e[em_<;]M3IeB2
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work l3gd20h_driver 5>`A6fe[eAPHm4Y?QLC[<2
+    Source modified time: Mon Jan 16 11:16:57 2023
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/l3gd20h_driver_structural_cfg.vhd
+    Source file: VHDL/l3gd20h_driver_structural_cfg.vhd
+    Start location: VHDL/l3gd20h_driver_structural_cfg.vhd:1
+    Version string: M^LHhOfC6[47iZb9AVb[j0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 11:16:57 2023
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY offset_count
+    Source modified time: Mon Jan 16 10:08:19 2023
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/offset_count.vhd
+    Source file: VHDL/offset_count.vhd
+    Start location: VHDL/offset_count.vhd:5
+    Version string: ;;B<K<9OahZQG763Z4hf^3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:15:25 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY behavioral
+    Depends on: E work offset_count ;;B<K<9OahZQG763Z4hf^3
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/offset_count-behaviour.vhd
+    Source file: VHDL/offset_count-behaviour.vhd
+    Start location: VHDL/offset_count-behaviour.vhd:6
+    Version string: ADUT<XlN0Z^Ll]gf`CZPT2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:46:18 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/pflee/Desktop/integratingEPO
+    Source modified time: Mon Jan 16 10:08:19 2023
+VHDL CONFIGURATION offset_count_behavioral_cfg
+    Configuration applies to entity: offset_count
+    Block configuration applies to architecture: behavioral
+    Depends on: A work offset_count behavioral ADUT<XlN0Z^Ll]gf`CZPT2
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work offset_count ;;B<K<9OahZQG763Z4hf^3
+    Source modified time: Mon Jan 16 11:18:23 2023
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/offset_count_behavioral_cfg.vhd
+    Source file: VHDL/offset_count_behavioral_cfg.vhd
+    Start location: VHDL/offset_count_behavioral_cfg.vhd:1
+    Version string: WnSbLS^B;`MoUF>2:H=C11
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 11:18:23 2023
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY platform
+    Source modified time: Mon Jan 16 10:08:19 2023
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/platform.vhd
+    Source file: VHDL/platform.vhd
+    Start location: VHDL/platform.vhd:4
+    Version string: aReCzbRW``L>:cWo<b8YT2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:15:25 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY behaviour
+    Depends on: E work platform aReCzbRW``L>:cWo<b8YT2
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/platform-behaviour.vhd
+    Source file: VHDL/platform-behaviour.vhd
+    Start location: VHDL/platform-behaviour.vhd:4
+    Version string: OIda2o3GzY8U2BMQ;<XK10
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:46:18 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/pflee/Desktop/integratingEPO
+    Source modified time: Mon Jan 16 10:08:19 2023
+VHDL CONFIGURATION platform_behaviour_cfg
+    Configuration applies to entity: platform
+    Block configuration applies to architecture: behaviour
+    Depends on: A work platform behaviour OIda2o3GzY8U2BMQ;<XK10
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work platform aReCzbRW``L>:cWo<b8YT2
+    Source modified time: Mon Jan 16 11:18:24 2023
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/platform_behaviour_cfg.vhd
+    Source file: VHDL/platform_behaviour_cfg.vhd
+    Start location: VHDL/platform_behaviour_cfg.vhd:1
+    Version string: da9[l7b^`YI^QY[WcOH[m1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 11:18:25 2023
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY platform_tb
+    Source modified time: Mon Jan 16 10:08:19 2023
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/platform_tb.vhd
+    Source file: VHDL/platform_tb.vhd
+    Start location: VHDL/platform_tb.vhd:4
+    Version string: :l0k6DUgZ;e5U_:nT07GA1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:15:25 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY behaviour
+    Depends on: E work platform_tb :l0k6DUgZ;e5U_:nT07GA1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/platform_tb-behaviour.vhd
+    Source file: VHDL/platform_tb-behaviour.vhd
+    Start location: VHDL/platform_tb-behaviour.vhd:4
+    Version string: Eb3c?cD]NJ>0@IAZ]eF0[3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:46:18 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/pflee/Desktop/integratingEPO
+    Source modified time: Mon Jan 16 10:08:19 2023
+ENTITY reset_module
+    Source modified time: Mon Jan 16 10:08:19 2023
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/reset_module.vhd
+    Source file: VHDL/reset_module.vhd
+    Start location: VHDL/reset_module.vhd:5
+    Version string: j>gQ4K9>GLJ[ec:okI3bz1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:15:25 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY behavioural
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work reset_module j>gQ4K9>GLJ[ec:okI3bz1
+    Start location: VHDL/reset_module.vhd:16
+    Version string: nOdVFcKT?71X1;QI4LmKS0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:46:18 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/pflee/Desktop/integratingEPO
+    Source file: VHDL/reset_module.vhd
+    Source modified time: Mon Jan 16 10:08:19 2023
+    HDL source file: VHDL/reset_module.vhd
+VHDL CONFIGURATION reset_module_behavioural_cfg
+    Configuration applies to entity: reset_module
+    Block configuration applies to architecture: behavioural
+    Depends on: A work reset_module behavioural nOdVFcKT?71X1;QI4LmKS0
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work reset_module j>gQ4K9>GLJ[ec:okI3bz1
+    Source modified time: Mon Jan 16 11:17:12 2023
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/reset_module_behavioural_cfg.vhd
+    Source file: VHDL/reset_module_behavioural_cfg.vhd
+    Start location: VHDL/reset_module_behavioural_cfg.vhd:1
+    Version string: :bI=>7J2]e6RmnlQIYYRb3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 11:17:12 2023
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY reset_wrapper
+    Source modified time: Mon Jan 16 10:08:19 2023
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/reset_wrapper.vhd
+    Source file: VHDL/reset_wrapper.vhd
+    Start location: VHDL/reset_wrapper.vhd:5
+    Version string: fQn_aL9Dj]n3DGPPkmMLO2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:15:25 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY structural
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work reset_wrapper fQn_aL9Dj]n3DGPPkmMLO2
+    Start location: VHDL/reset_wrapper.vhd:21
+    Version string: 7S33GYoHc`N9h<BCTfeDQ2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:46:18 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/pflee/Desktop/integratingEPO
+    Source file: VHDL/reset_wrapper.vhd
+    Source modified time: Mon Jan 16 10:08:19 2023
+    HDL source file: VHDL/reset_wrapper.vhd
+VHDL CONFIGURATION reset_wrapper_structural_cfg
+    Configuration applies to entity: reset_wrapper
+    Block configuration applies to architecture: structural
+    Depends on: E work clk60hz_gen g^J0lcBZWA;a8oB85F[dg2
+    Depends on: E work reset_module j>gQ4K9>GLJ[ec:okI3bz1
+    Depends on: E work l3gd20h_driver 5>`A6fe[eAPHm4Y?QLC[<2
+    Depends on: C work clk60hz_gen_behaviour_cfg e05[USPUEmP7lzYmF]n520
+    Depends on: C work reset_module_behavioural_cfg :bI=>7J2]e6RmnlQIYYRb3
+    Depends on: C work l3gd20h_driver_structural_cfg M^LHhOfC6[47iZb9AVb[j0
+    Depends on: A work reset_wrapper structural 7S33GYoHc`N9h<BCTfeDQ2
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work reset_wrapper fQn_aL9Dj]n3DGPPkmMLO2
+    Source modified time: Mon Jan 16 11:18:40 2023
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/reset_wrapper_structural_cfg.vhd
+    Source file: VHDL/reset_wrapper_structural_cfg.vhd
+    Start location: VHDL/reset_wrapper_structural_cfg.vhd:1
+    Version string: 2[PmKWo`fF5QdIWb_nAi21
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 11:18:40 2023
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY spc_clockgen
+    Source modified time: Mon Jan 16 10:08:19 2023
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/spc_clockgen.vhd
+    Source file: VHDL/spc_clockgen.vhd
+    Start location: VHDL/spc_clockgen.vhd:5
+    Version string: FJFeTL54mIYe@ZS4aNA4C3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:15:25 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY behaviour
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work spc_clockgen FJFeTL54mIYe@ZS4aNA4C3
+    Start location: VHDL/spc_clockgen.vhd:14
+    Version string: Ik32@?<TU=aADLE5^d1I^2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:46:18 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/pflee/Desktop/integratingEPO
+    Source file: VHDL/spc_clockgen.vhd
+    Source modified time: Mon Jan 16 10:08:19 2023
+    HDL source file: VHDL/spc_clockgen.vhd
+VHDL CONFIGURATION spc_clockgen_behaviour_cfg
+    Configuration applies to entity: spc_clockgen
+    Block configuration applies to architecture: behaviour
+    Depends on: A work spc_clockgen behaviour Ik32@?<TU=aADLE5^d1I^2
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work spc_clockgen FJFeTL54mIYe@ZS4aNA4C3
+    Source modified time: Mon Jan 16 11:16:32 2023
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/spc_clockgen_behaviour_cfg.vhd
+    Source file: VHDL/spc_clockgen_behaviour_cfg.vhd
+    Start location: VHDL/spc_clockgen_behaviour_cfg.vhd:1
+    Version string: `bV^mYg`kNVQa1IC`lP<Z1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 11:16:32 2023
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY spi_data_ctrl
+    Source modified time: Mon Jan 16 10:08:19 2023
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/spi_data_ctrl.vhd
+    Source file: VHDL/spi_data_ctrl.vhd
+    Start location: VHDL/spi_data_ctrl.vhd:5
+    Version string: K1:S`ZD]IZZLT]7;=RzJ@0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:15:25 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY behaviour
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work spi_data_ctrl K1:S`ZD]IZZLT]7;=RzJ@0
+    Start location: VHDL/spi_data_ctrl.vhd:19
+    Version string: jU=^e5DN]VLdZmmM^HIaS1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:46:18 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/pflee/Desktop/integratingEPO
+    Source file: VHDL/spi_data_ctrl.vhd
+    Source modified time: Mon Jan 16 10:08:19 2023
+    HDL source file: VHDL/spi_data_ctrl.vhd
+VHDL CONFIGURATION spi_data_ctrl_behaviour_cfg
+    Configuration applies to entity: spi_data_ctrl
+    Block configuration applies to architecture: behaviour
+    Depends on: A work spi_data_ctrl behaviour jU=^e5DN]VLdZmmM^HIaS1
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work spi_data_ctrl K1:S`ZD]IZZLT]7;=RzJ@0
+    Source modified time: Mon Jan 16 11:16:31 2023
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/spi_data_ctrl_behaviour_cfg.vhd
+    Source file: VHDL/spi_data_ctrl_behaviour_cfg.vhd
+    Start location: VHDL/spi_data_ctrl_behaviour_cfg.vhd:1
+    Version string: dUI85jN5:@B`5Q2jjC]WU1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 11:16:31 2023
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY spi_rom
+    Source modified time: Mon Jan 16 10:08:19 2023
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/spi_rom.vhd
+    Source file: VHDL/spi_rom.vhd
+    Start location: VHDL/spi_rom.vhd:5
+    Version string: l3cHzIIRLcc2]nU:R`Dd?3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:15:25 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY behaviour
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work spi_rom l3cHzIIRLcc2]nU:R`Dd?3
+    Start location: VHDL/spi_rom.vhd:12
+    Version string: 0eH>]GfaGCCHk3Xnocg^T0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 10:46:18 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/pflee/Desktop/integratingEPO
+    Source file: VHDL/spi_rom.vhd
+    Source modified time: Mon Jan 16 10:08:19 2023
+    HDL source file: VHDL/spi_rom.vhd
+VHDL CONFIGURATION spi_rom_behaviour_cfg
+    Configuration applies to entity: spi_rom
+    Block configuration applies to architecture: behaviour
+    Depends on: A work spi_rom behaviour 0eH>]GfaGCCHk3Xnocg^T0
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work spi_rom l3cHzIIRLcc2]nU:R`Dd?3
+    Source modified time: Mon Jan 16 11:16:29 2023
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/spi_rom_behaviour_cfg.vhd
+    Source file: VHDL/spi_rom_behaviour_cfg.vhd
+    Start location: VHDL/spi_rom_behaviour_cfg.vhd:1
+    Version string: 5khWa1E^I_9c4OHTDZ[f^2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 11:16:29 2023
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY test
+    Source modified time: Tue Jan 17 14:28:12 2023
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/test.vhd
+    Source file: VHDL/test.vhd
+    Start location: VHDL/test.vhd:4
+    Version string: :_3_B`efLa4;@`c4BekL:2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Tue Jan 17 14:28:12 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY top_vga_entity
+    Source modified time: Tue Jan 17 08:57:03 2023
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/top_lvl_entity_vga.vhd
+    Source file: VHDL/top_lvl_entity_vga.vhd
+    Start location: VHDL/top_lvl_entity_vga.vhd:4
+    Version string: ldbzVZJDT_b<f`HLn:<kM1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Tue Jan 17 08:57:03 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY structural
+    Source modified time: Tue Jan 17 09:07:50 2023
+    Depends on: E work top_vga_entity ldbzVZJDT_b<f`HLn:<kM1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/top_structural_vga.vhd
+    Source file: VHDL/top_structural_vga.vhd
+    Start location: VHDL/top_structural_vga.vhd:4
+    Version string: ^G8JSM@<6?fK8`U2;kHkc0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Tue Jan 17 09:07:50 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/pflee/Desktop/integratingEPO
+VHDL CONFIGURATION top_vga_entity_structural_cfg
+    Configuration applies to entity: top_vga_entity
+    Block configuration applies to architecture: structural
+    Depends on: E work vga_platforms l[LUmVl?b6F^<?7<GZ>zF2
+    Depends on: C work vga_platforms_behaviour_cfg >Nc[DF8EYWJMo3ghCeo3M0
+    Depends on: A work top_vga_entity structural NzL8W[bSWXjbd[gT@o:Vd1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work top_vga_entity @]i29icG4H9XHZ@S6m`UV0
+    Source modified time: Mon Jan 16 11:18:45 2023
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/top_vga_entity_structural_cfg.vhd
+    Source file: VHDL/top_vga_entity_structural_cfg.vhd
+    Start location: VHDL/top_vga_entity_structural_cfg.vhd:1
+    Version string: mY[lcXAbZWl@@7mSA>3?`3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 11:18:46 2023
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY vga_platforms
+    Source modified time: Thu Jan 19 10:27:46 2023
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/entity_vga_platform_char.vhd
+    Source file: VHDL/entity_vga_platform_char.vhd
+    Start location: VHDL/entity_vga_platform_char.vhd:4
+    Version string: Jh1=l9g1dkAbn?2IbNSAz2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Jan 19 10:27:46 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY behaviour
+    Source modified time: Thu Jan 19 10:40:44 2023
+    Depends on: E work vga_platforms Jh1=l9g1dkAbn?2IbNSAz2
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/behaviour_plat_char.vhd
+    Source file: VHDL/behaviour_plat_char.vhd
+    Start location: VHDL/behaviour_plat_char.vhd:6
+    Version string: _=GSo_Nmdl=5kOY^edTbB1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Thu Jan 19 10:40:44 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/pflee/Desktop/integratingEPO
+VHDL CONFIGURATION vga_platforms_behaviour_cfg
+    Configuration applies to entity: vga_platforms
+    Block configuration applies to architecture: behaviour
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: A work vga_platforms behaviour ]O0QM2=P^k2mHOlAPCQ6j0
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work vga_platforms l[LUmVl?b6F^<?7<GZ>zF2
+    Source modified time: Mon Jan 16 11:16:26 2023
+    Source directory: /home/pflee/Desktop/integratingEPO
+    HDL source file: VHDL/vga_platforms_behaviour_cfg.vhd
+    Source file: VHDL/vga_platforms_behaviour_cfg.vhd
+    Start location: VHDL/vga_platforms_behaviour_cfg.vhd:1
+    Version string: >Nc[DF8EYWJMo3ghCeo3M0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Mon Jan 16 11:16:26 2023
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0

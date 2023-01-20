@@ -53,7 +53,7 @@ architecture structural of integrate is
    end component;
 
 	--VGA signals
-	signal sig_reset, sig_death, sig_collision: std_logic;
+	signal sig_death, sig_collision: std_logic;
 	signal sig_grid : std_logic_vector(255 downto 0);
 	signal sig_x : std_logic_vector(8 downto 0);
 	signal sig_y : std_logic_vector(9 downto 0);
@@ -71,7 +71,7 @@ begin
 
 lbltop_vga: top_vga_entity port map(
 	clk => clk,
-	reset => sig_reset,
+	reset => reset,
 	lfsr => sig_grid,
 	x_logic => sig_x,
 	y_logic => sig_y,
@@ -88,7 +88,7 @@ lbltop_vga: top_vga_entity port map(
 
 lblreset_wrapper: reset_wrapper port map(
 	clk => clk,
-	reset => sig_reset,
+	reset => reset,
 	start_switch => start,
 	drdy => drdy,
 	sdo => sdo,
@@ -101,7 +101,7 @@ lblreset_wrapper: reset_wrapper port map(
 lblcontrol: control port map(
 	start => start,
 	clk => clk,
-	reset => sig_reset,
+	reset => reset,
 	frame_passed => sig_frame,
 	velocity_x => sig_velocity_x,
 	collision => sig_collision,
