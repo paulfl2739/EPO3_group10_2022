@@ -62,7 +62,7 @@ y_position <= std_logic_vector(current_y_pos);
 -- Calculate x position --
 --------------------------
 
-sum_x_pos <=  signed(x_velocity) + current_x_pos;
+sum_x_pos <=  signed(x_position) + current_x_pos;
 
 overflow_sum_x_pos <= sum_x_pos-to_signed(479,9) when sum_x_pos > 479 else sum_x_pos+to_signed(479,9); -- overflow_sum_x is position of x when looped round the screen
 

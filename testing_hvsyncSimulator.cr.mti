@@ -1,9 +1,1 @@
-C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/hsyncvsync_for_SPI_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/hsyncvsync_for_SPI_tb.vhd
-QuestaSim-64 vcom 10.6g Compiler 2019.08 Aug  3 2019
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity hsyncvsync_for_spi_tb
--- Compiling architecture behavioral of hsyncvsync_for_spi_tb
 
-} {} {}}

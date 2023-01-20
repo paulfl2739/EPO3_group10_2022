@@ -19,7 +19,7 @@ architecture behavioral of determine_position_tb is
     end component determine_position;
 
     signal sig_clk, sig_reset, sig_fp, sig_col : std_logic;
-    signal signedxvel : signed(7 downto 0);
+    signal signedxvel : signed;
     signal sig_xvel : std_logic_vector(7 downto 0);
     signal sig_xpos : std_logic_vector(8 downto 0);
     signal sig_ypos : std_logic_vector(9 downto 0);
@@ -30,7 +30,7 @@ sig_clk <= '0' after 0 ns,
             '1' after 20 ns when sig_clk /= '1' else '0';
 sig_reset <= '1' after 0 ns,
             '0' after 50 ns;
-sig_fp <= '0' after 0 ns, -- 1/60 Hz officially, '1' for 1 clk cycle
+frame_passed <= '0' after 0 ns, -- 1/60 Hz officially, '1' for 1 clk cycle
                 '1' after 500 ns, -- I reduced duration for simulation ease
                 '0' after 520 ns,
                 '1' after 1020 ns,

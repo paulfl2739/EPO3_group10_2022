@@ -121,14 +121,96 @@ R21
 !i113 0
 R13
 R14
-Edriver
-Z22 w1673354526
+Edetermine_position
+Z22 w1674209539
 R2
 R3
 R4
 R5
-Z23 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd
-Z24 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd
+Z23 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/Game/determine_position.vhd
+Z24 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/Game/determine_position.vhd
+l0
+L5
+VP0l36HR1GSLVGDh4fA5Jk1
+!s100 V@RcQhQC5R9eaDnO8gThF1
+R8
+32
+Z25 !s110 1674209546
+!i10b 1
+Z26 !s108 1674209546.000000
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/Game/determine_position.vhd|
+!s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/Game/determine_position.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+DEx4 work 18 determine_position 0 22 P0l36HR1GSLVGDh4fA5Jk1
+l24
+L17
+V?JiEONE3EdY5d;JjD;Z^`0
+!s100 G1KBZ]bZRjU6LZi7ee1SN0
+R8
+32
+R25
+!i10b 1
+R26
+R27
+Z28 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/Game/determine_position.vhd|
+!i113 0
+R13
+R14
+Edetermine_position_tb
+Z29 w1674209377
+R2
+R3
+R4
+R5
+Z30 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/Game/determine_position_tb.vhd
+Z31 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/Game/determine_position_tb.vhd
+l0
+L5
+V`PfzOHYI2]Ek;8cP`PKo<1
+!s100 Ng^I3RVdZPa7B4o0J@Hm41
+R8
+32
+Z32 !s110 1674209506
+!i10b 1
+Z33 !s108 1674209506.000000
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/Game/determine_position_tb.vhd|
+Z35 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/Game/determine_position_tb.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+DEx4 work 21 determine_position_tb 0 22 `PfzOHYI2]Ek;8cP`PKo<1
+l27
+L8
+VSoN?55f^e9SmPADH?8J]33
+!s100 6z51W@Y?K9UGd2=_aWALz0
+R8
+32
+R32
+!i10b 1
+R33
+R34
+R35
+!i113 0
+R13
+R14
+Edriver
+Z36 w1673354526
+R2
+R3
+R4
+R5
+Z37 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd
+Z38 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd
 l0
 L5
 V7?SB1Veo^iSO@]Rc:QQcV2
@@ -138,10 +220,10 @@ R8
 R9
 !i10b 1
 R10
-Z25 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd|
-Z26 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd|
+Z39 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd|
+Z40 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main.vhd|
 !i113 0
-Z27 o-work work -2008 -explicit
+Z41 o-work work -2008 -explicit
 R14
 Abehaviour
 R2
@@ -157,18 +239,18 @@ R8
 R9
 !i10b 1
 R10
-R25
-R26
+R39
+R40
 !i113 0
-R27
+R41
 R14
 Eedgedetector
-Z28 w1670315301
+Z42 w1670315301
 R3
 R4
 R5
-Z29 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/falling_edge_spc.vhd
-Z30 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/falling_edge_spc.vhd
+Z43 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/falling_edge_spc.vhd
+Z44 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/falling_edge_spc.vhd
 l0
 L4
 VY=Gl_ahB[<GNi^o^24bR`3
@@ -178,8 +260,8 @@ R8
 R9
 !i10b 1
 R10
-Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/falling_edge_spc.vhd|
-Z32 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/falling_edge_spc.vhd|
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/falling_edge_spc.vhd|
+Z46 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/falling_edge_spc.vhd|
 !i113 0
 R13
 R14
@@ -196,19 +278,19 @@ R8
 R9
 !i10b 1
 R10
-R31
-R32
+R45
+R46
 !i113 0
 R13
 R14
 Efinal_testbench
-R22
+R36
 R2
 R3
 R4
 R5
-Z33 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/final testbench.vhd
-Z34 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/final testbench.vhd
+Z47 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/final testbench.vhd
+Z48 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/final testbench.vhd
 l0
 L5
 V>[IiJ]m136dUVBSgL1Nei1
@@ -218,8 +300,8 @@ R8
 R9
 !i10b 1
 R10
-Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/final testbench.vhd|
-Z36 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/final testbench.vhd|
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/final testbench.vhd|
+Z50 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/final testbench.vhd|
 !i113 0
 R13
 R14
@@ -237,13 +319,13 @@ R8
 R9
 !i10b 1
 R10
-R35
-R36
+R49
+R50
 !i113 0
 R13
 R14
 Efull_register
-R22
+R36
 R3
 R4
 R5
@@ -264,23 +346,23 @@ R10
 R13
 R14
 Ehigh_edgedetector
-R28
+R42
 R3
 R4
 R5
-Z37 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/rising_edge_spc.vhd
-Z38 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/rising_edge_spc.vhd
+Z51 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/rising_edge_spc.vhd
+Z52 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/rising_edge_spc.vhd
 l0
 L4
 V>_TR<BM1?1DX9l;HkL`EN3
 !s100 58Td^VaKR4TU?4o2]m8<S1
 R8
 32
-Z39 !s110 1673367261
+Z53 !s110 1673367261
 !i10b 1
-Z40 !s108 1673367261.000000
-Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/rising_edge_spc.vhd|
-Z42 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/rising_edge_spc.vhd|
+Z54 !s108 1673367261.000000
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/rising_edge_spc.vhd|
+Z56 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/rising_edge_spc.vhd|
 !i113 0
 R13
 R14
@@ -294,32 +376,32 @@ VLYNGT;PKemX48JKX;BXO42
 !s100 kzDnQo2o;[dEEYK35:<ao0
 R8
 32
-R39
+R53
 !i10b 1
-R40
-R41
-R42
+R54
+R55
+R56
 !i113 0
 R13
 R14
 Ehsyncvsync_for_spi_tb
-Z43 w1673618453
+Z57 w1673618453
 R3
 R4
 R5
-Z44 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/hsyncvsync_for_SPI_tb.vhd
-Z45 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/hsyncvsync_for_SPI_tb.vhd
+Z58 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/hsyncvsync_for_SPI_tb.vhd
+Z59 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/hsyncvsync_for_SPI_tb.vhd
 l0
 L4
 VEITmRN=6YT>9hY3J<nXeA0
 !s100 VBe><UZ;?>JF7P3^Q@mC22
 R8
 32
-Z46 !s110 1673618459
+Z60 !s110 1673618459
 !i10b 1
-Z47 !s108 1673618459.000000
-Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/hsyncvsync_for_SPI_tb.vhd|
-Z49 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/hsyncvsync_for_SPI_tb.vhd|
+Z61 !s108 1673618459.000000
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/hsyncvsync_for_SPI_tb.vhd|
+Z63 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/hsyncvsync_for_SPI_tb.vhd|
 !i113 0
 R13
 R14
@@ -328,37 +410,37 @@ R3
 R4
 DEx4 work 21 hsyncvsync_for_spi_tb 0 22 EITmRN=6YT>9hY3J<nXeA0
 32
-R46
+R60
 l17
 L7
 V214lThePSZhE;aQMfc^JO0
 !s100 mXf>6d99GG]Zj84V?7Shf2
 R8
 !i10b 1
-R47
-R48
-R49
+R61
+R62
+R63
 !i113 0
 R13
 R14
 Ehvsyncsimulator
-Z50 w1673620712
+Z64 w1673620712
 R3
 R4
 R5
-Z51 8C:\Users\Paul\Documents\BScEE\EPO3\EPO3_group10_2022-main\EPO3_group10_2022\hsyncvsync_for_SPI.vhd
-Z52 FC:\Users\Paul\Documents\BScEE\EPO3\EPO3_group10_2022-main\EPO3_group10_2022\hsyncvsync_for_SPI.vhd
+Z65 8C:\Users\Paul\Documents\BScEE\EPO3\EPO3_group10_2022-main\EPO3_group10_2022\hsyncvsync_for_SPI.vhd
+Z66 FC:\Users\Paul\Documents\BScEE\EPO3\EPO3_group10_2022-main\EPO3_group10_2022\hsyncvsync_for_SPI.vhd
 l0
 L4
 V`B;Z;R7hg0@do=_1njAUa3
 !s100 UfZcK@kmc=@mU[I7QD?8X3
 R8
 32
-Z53 !s110 1673620716
+Z67 !s110 1673620716
 !i10b 1
-Z54 !s108 1673620716.000000
-Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:\Users\Paul\Documents\BScEE\EPO3\EPO3_group10_2022-main\EPO3_group10_2022\hsyncvsync_for_SPI.vhd|
-Z56 !s107 C:\Users\Paul\Documents\BScEE\EPO3\EPO3_group10_2022-main\EPO3_group10_2022\hsyncvsync_for_SPI.vhd|
+Z68 !s108 1673620716.000000
+Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:\Users\Paul\Documents\BScEE\EPO3\EPO3_group10_2022-main\EPO3_group10_2022\hsyncvsync_for_SPI.vhd|
+Z70 !s107 C:\Users\Paul\Documents\BScEE\EPO3\EPO3_group10_2022-main\EPO3_group10_2022\hsyncvsync_for_SPI.vhd|
 !i113 0
 R13
 R14
@@ -367,27 +449,27 @@ R3
 R4
 DEx4 work 15 hvsyncsimulator 0 22 `B;Z;R7hg0@do=_1njAUa3
 32
-R53
+R67
 l30
 L11
 V;D=9YN39_K2bC:[^ndIjW2
 !s100 0o>91Mh93boHOON_kzAXb3
 R8
 !i10b 1
-R54
-R55
-R56
+R68
+R69
+R70
 !i113 0
 R13
 R14
 El3gd20h_driver
-R22
+R36
 R2
 R3
 R4
 R5
-Z57 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/L3GD20H driver.vhd
-Z58 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/L3GD20H driver.vhd
+Z71 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/L3GD20H driver.vhd
+Z72 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/L3GD20H driver.vhd
 l0
 L5
 VKka@V8Kc=f:nX>1YLV@5G1
@@ -397,8 +479,8 @@ R8
 R9
 !i10b 1
 R10
-Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/L3GD20H driver.vhd|
-Z60 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/L3GD20H driver.vhd|
+Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/L3GD20H driver.vhd|
+Z74 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/L3GD20H driver.vhd|
 !i113 0
 R13
 R14
@@ -416,30 +498,30 @@ R8
 R9
 !i10b 1
 R10
-R59
-R60
+R73
+R74
 !i113 0
 R13
 R14
 Emain_testbench
-Z61 w1671195536
+Z75 w1671195536
 R2
 R3
 R4
 R5
-Z62 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main_tb.vhd
-Z63 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main_tb.vhd
+Z76 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main_tb.vhd
+Z77 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main_tb.vhd
 l0
 L5
 V3jOXdkjM`c@B5;;<7_92>3
 !s100 FSY`31@GXhz3NTc?N7;V72
 R8
 32
-R39
+R53
 !i10b 1
 R10
-Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main_tb.vhd|
-Z65 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main_tb.vhd|
+Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main_tb.vhd|
+Z79 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/main_tb.vhd|
 !i113 0
 R13
 R14
@@ -454,33 +536,33 @@ VPRFIX85HUMTJCC<TlHVVj0
 !s100 82b>]Xb5HRe:OO6J>T`;D2
 R8
 32
-R39
+R53
 !i10b 1
 R10
-R64
-R65
+R78
+R79
 !i113 0
 R13
 R14
 Espc_clk_testbench
-R28
+R42
 R2
 R3
 R4
 R5
-Z66 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spcgen_tb.vhd
-Z67 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spcgen_tb.vhd
+Z80 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spcgen_tb.vhd
+Z81 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spcgen_tb.vhd
 l0
 L5
 V^eZ28JNjJYiS^fZL8NVPT0
 !s100 6l`dd947aTEjLGf3fEhcJ0
 R8
 32
-R39
+R53
 !i10b 1
-R40
-Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spcgen_tb.vhd|
-Z69 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spcgen_tb.vhd|
+R54
+Z82 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spcgen_tb.vhd|
+Z83 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spcgen_tb.vhd|
 !i113 0
 R13
 R14
@@ -495,33 +577,33 @@ VCAKklnCDcL:0MDm4:hRR[3
 !s100 KH`R_3BGL0dd5ie_X@ISU0
 R8
 32
-R39
+R53
 !i10b 1
-R40
-R68
-R69
+R54
+R82
+R83
 !i113 0
 R13
 R14
 Espc_clockgen
-Z70 w1671263292
+Z84 w1671263292
 R2
 R3
 R4
 R5
-Z71 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spcgen.vhd
-Z72 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spcgen.vhd
+Z85 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spcgen.vhd
+Z86 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spcgen.vhd
 l0
 L5
 V01<amQ>MdS=iaoBQ6B8?;0
 !s100 _Dh8]@FZT^WgXPMWU[Z_j0
 R8
 32
-R39
+R53
 !i10b 1
-R40
-Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spcgen.vhd|
-Z74 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spcgen.vhd|
+R54
+Z87 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spcgen.vhd|
+Z88 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spcgen.vhd|
 !i113 0
 R13
 R14
@@ -536,33 +618,33 @@ VL:Ul`e9kK04OGoA6c89k`2
 !s100 PkbJeO5?>3Q2YbPAKiloL2
 R8
 32
-R39
+R53
 !i10b 1
-R40
-R73
-R74
+R54
+R87
+R88
 !i113 0
 R13
 R14
 Espi_data_controller
-Z75 w1670594220
+Z89 w1670594220
 R2
 R3
 R4
 R5
-Z76 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spi_data_controller.vhd
-Z77 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spi_data_controller.vhd
+Z90 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spi_data_controller.vhd
+Z91 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spi_data_controller.vhd
 l0
 L5
 V<TjD`naMR;9X^e7mV4z=S2
 !s100 iB[IYX8Ph0m5g9nOVHTUk3
 R8
 32
-R39
+R53
 !i10b 1
-R40
-Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spi_data_controller.vhd|
-Z79 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spi_data_controller.vhd|
+R54
+Z92 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spi_data_controller.vhd|
+Z93 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/spi_data_controller.vhd|
 !i113 0
 R13
 R14
@@ -577,33 +659,33 @@ VHkPY;0j5YXYMi]mPV596A2
 !s100 SJYkO?MA9LA=n^2D<nhiY3
 R8
 32
-R39
+R53
 !i10b 1
-R40
-R78
-R79
+R54
+R92
+R93
 !i113 0
 R13
 R14
 Espi_rom
-Z80 w1670504972
+Z94 w1670504972
 R2
 R3
 R4
 R5
-Z81 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/storage.vhd
-Z82 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/storage.vhd
+Z95 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/storage.vhd
+Z96 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/storage.vhd
 l0
 L5
 V^1Y;MXj11n`>;KY3F;Ti_1
 !s100 n8lc:aNI2j@SggU]3YT3W0
 R8
 32
-R39
+R53
 !i10b 1
-R40
-Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/storage.vhd|
-Z84 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/storage.vhd|
+R54
+Z97 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/storage.vhd|
+Z98 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/storage.vhd|
 !i113 0
 R13
 R14
@@ -618,11 +700,11 @@ VUP?3i;FoiHMlZ2Pk`@dlA0
 !s100 ?MW=ZeVA2=`ddXR@O_dKG3
 R8
 32
-R39
+R53
 !i10b 1
-R40
-R83
-R84
+R54
+R97
+R98
 !i113 0
 R13
 R14
@@ -649,46 +731,46 @@ R8
 R13
 R14
 Abehavior
-Z85 w1673366610
+Z99 w1673366610
 R2
 R3
 R4
 DEx4 work 4 xpos 0 22 eTQ^oIIV7;@hz^Zj56K9R0
-Z86 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/xposSPI.vhd
-Z87 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/xposSPI.vhd
+Z100 8C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/xposSPI.vhd
+Z101 FC:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/xposSPI.vhd
 l17
 L13
 V3@gSAlHd4KTEVe1g?]@V31
 !s100 KS37B9KSo@RFd2iNL5T]D1
 R8
 32
-R39
+R53
 !i10b 1
-R40
-Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/xposSPI.vhd|
-Z89 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/xposSPI.vhd|
+R54
+Z102 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/xposSPI.vhd|
+Z103 !s107 C:/Users/Paul/Documents/BScEE/EPO3/EPO3_group10_2022-main/EPO3_group10_2022/xposSPI.vhd|
 !i113 0
 R13
 R14
 Exposspi
-R85
+R99
 R2
 R3
 R4
 R5
-R86
-R87
+R100
+R101
 l0
 L5
 V`QfQzJMa>oj`4<fo:dOT71
 !s100 Pl9S5hlAC6mDC1FI7>X]R1
 R8
 32
-R39
+R53
 !i10b 1
-R40
-R88
-R89
+R54
+R102
+R103
 !i113 0
 R13
 R14
