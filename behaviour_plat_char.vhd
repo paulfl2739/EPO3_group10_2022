@@ -28,16 +28,21 @@ signal count_col : integer range 0 to 1;
 signal score_count : integer range 0 to 120;
 signal score_first, score_second, score_third : integer range 0 to 9;
 
+--signal death_vga
+signal next_death_vga, current_death_vga: std_logic;
+
+
 begin
 
 offset <= to_integer(unsigned(offset_logic));
 x <= to_integer(unsigned(x_logic));
 y <= to_integer(unsigned(y_logic));
 collision <= collision_reg;
+death <= current_death_vga;
 
 
 --process for when a frame is passed
-process(clk)
+process(clk, reset, hpos, vpos)	
 begin
 if(clk'event and clk = '1') then
    if (reset = '1') then
@@ -54,7 +59,7 @@ end process;
 
 
 -- vsync and hsync 
-process (clk, reset)
+process (clk, reset, hpos, vpos, new_collision_reg)
 begin 
 
 if (clk'event and clk = '1') then 
@@ -89,17 +94,18 @@ end if;
 end process;
 
 --score count 
-process(clk)
+process(clk, next_death_vga, start, hpos, vpos, score_first, score_count, score_second, score_third)
 begin
 
 --counters for score
-	if (clk'event and clk = '1')  then
-		if (reset = '1') then
-			score_count <= 0;
-			score_first <= 0;
-			score_second <= 0;
-			score_third <= 0;    
-		else
+if (clk'event and clk = '1')  then
+	if start = '1' then
+		score_first <= 0;
+		score_second <= 0;
+		score_third <= 0;
+		score_count <= 0;
+	else
+		if next_death_vga = '0' then
 			if (hpos = 0 and vpos = 0) then
 				if (score_count < 60) then
 					score_count <= score_count  + 1;
@@ -128,27 +134,52 @@ begin
 					end if; --score_first
 				else
 					score_count <= score_count;
-				end if;
+				end if; -- score count 
 			else
 				score_first <= score_first;
 				score_second <= score_second;
 				score_third <= score_third;
 				score_count <= score_count;
 			end if;
+		else	
+			score_first <= score_first;
+			score_second <= score_second;
+			score_third <= score_third;
+			score_count <= score_count;
 		end if;
 	end if;
+end if;
+end process;
+
+
+--start proces, asynchronous
+process(y, start, current_death_vga)
+begin
+
+if (start = '1') then 
+	next_death_vga <= '0';
+elsif (y < 10) then
+	next_death_vga <= '1';
+else
+	next_death_vga <= current_death_vga;
+end if;
 
 end process;
+
+current_death_vga <= next_death_vga;
 
 
 
 -- process rgb assign
-process(clk, death, collision_reg, hpos, vpos, lfsr, countx, county, x, y, score_first, score_second, score_third)
+process(clk, current_death_vga, collision_reg, hpos, vpos, lfsr, countx, county, x, y, score_first, score_second, score_third)
 variable groen_getekend : std_logic; 
 begin
 groen_getekend  := '0';
+new_collision_reg <= collision_reg;
 
-if death = '0' then -- game code
+
+
+if current_death_vga = '0' then -- game code
 
 ------ standard values
     r<=(others=> '0');
@@ -209,7 +240,7 @@ if death = '0' then -- game code
 			b <= (others => '0' );
 		end if;
 --pixel for collision
-		if ((vpos = y) and (hpos = x))then
+		if ((vpos = y+1) and (hpos = x+1))then
 			r <= (others => '0');
 			g <= (others => '0');
 			b <= (others => '1');
@@ -219,14 +250,20 @@ if death = '0' then -- game code
 				new_collision_reg <= '0';
 			end if;
 		end if;
+		
+		--if ((vpos = y+1) and (hpos = x+1) and groen_getekend = '1')then
+	--		new_collision_reg <= '1';
+	--	else			
+	--		new_collision_reg <= '0';
+		--end if;
+		
 	-- else 
 		--... -- no else yet
 	end if;
 	
 
 
-end if;
-if( death = '1') then
+else -- can be an else
 --if death = 1
 -- end game code 
 -- sta2rtscreen code
@@ -234,7 +271,7 @@ if( death = '1') then
    g<=(others=> '0');    
    b<=(others=> '0');    
 
-	new_collision_reg <= '1';
+	new_collision_reg <= '1'; -- else detect collision in start screen
 		  
 --start text
 	if ((313 < vpos and vpos < 322) and (129+12 < hpos and hpos < 154+12)) then
@@ -470,6 +507,7 @@ if( death = '1') then
       g<=(others=> '0');
       b<=(others=> '1');
 	end if;
+
 	if ((342 < hpos and hpos < 357) and (569 < vpos and vpos < 577)) then
 		r<=(others=> '0');
       g<=(others=> '0');
@@ -679,7 +717,7 @@ end process;
 
 
 -- counters for the platform positions
-process (clk, reset, hpos, vpos)
+process (clk, reset, hpos, vpos, countypixel, countxpixel)
 begin 
 if (clk'event and clk='1') then
 	if (hpos >= 0 and hpos < 479 and vpos >= 0 and vpos < 639)  then
